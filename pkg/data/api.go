@@ -146,7 +146,7 @@ func (i *InitializeRequest) HasFatalLog() bool {
 
 // Check if Request requires temporary keys
 func (i *InitializeRequest) ShouldCreateTempKeys() bool {
-	return i.GetClient() == InitializeRequest_RPC && i.GetOptions().GetIsPairing()
+	return i.GetClient() == InitializeRequest_RPC && i.GetOptions().GetIsPairing() && i.GetDevice().GetPlatform().IsMobile()
 }
 
 // Check if Request is Existing User and Verified

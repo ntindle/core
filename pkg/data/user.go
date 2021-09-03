@@ -42,7 +42,13 @@ func (d *Device) Initialize(r *InitializeRequest) (*KeyChain, *SonrError) {
 
 	// Check Initialize Options
 	if r.ShouldLoadKeychain() {
-		return d.loadKeyChain()
+		kc, err := d.loadKeyChain()
+		if err != nil {
+			LogError(err.Error)
+			return d.newKeyChain()
+		}
+		d.KeyChain = kc
+		return kc, nil
 	} else if r.ShouldCreateTempKeys() {
 		return d.tempKeyChain()
 	} else {

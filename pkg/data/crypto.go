@@ -92,6 +92,21 @@ func (d *Device) loadKeyPair(t KeyPair_Type) (*KeyPair, *SonrError) {
 
 // Method to Create all keys in Device
 func (d *Device) newKeyChain() (*KeyChain, *SonrError) {
+	// Erase Account Key Pair if Exists
+	if d.HasKeys(KeyPair_ACCOUNT) {
+		d.deleteKeyPair(KeyPair_ACCOUNT)
+	}
+
+	// Erase Device Key Pair if Exists
+	if d.HasKeys(KeyPair_DEVICE) {
+		d.deleteKeyPair(KeyPair_DEVICE)
+	}
+
+	// Erase Group Key Pair if Exists
+	if d.HasKeys(KeyPair_GROUP) {
+		d.deleteKeyPair(KeyPair_GROUP)
+	}
+
 	// Load AccountKeys
 	accountKeys, err := d.newKeyPair(KeyPair_ACCOUNT)
 	if err != nil {

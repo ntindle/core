@@ -12,6 +12,47 @@ import (
 	"github.com/sonr-io/core/internal/emitter"
 )
 
+
+// Method Checks for Desktop
+func (d Platform) IsDesktop() bool {
+	return d == Platform_MACOS || d == Platform_LINUX || d == Platform_WINDOWS
+}
+
+// Method Checks for Mobile
+func (d Platform) IsMobile() bool {
+	return d == Platform_IOS || d == Platform_ANDROID
+}
+
+// Method Checks for IOS
+func (d Platform) IsIOS() bool {
+	return d == Platform_IOS
+}
+
+// Method Checks for Android
+func (d Platform) IsAndroid() bool {
+	return d == Platform_ANDROID
+}
+
+// Method Checks for MacOS
+func (d Platform) IsMacOS() bool {
+	return d == Platform_MACOS
+}
+
+// Method Checks for Linux
+func (d Platform) IsLinux() bool {
+	return d == Platform_LINUX
+}
+
+// Method Checks for Web
+func (d Platform) IsWeb() bool {
+	return d == Platform_WEB
+}
+
+// Method Checks for Windows
+func (d Platform) IsWindows() bool {
+	return d == Platform_WINDOWS
+}
+
 // ** ─── CALLBACK MANAGEMENT ────────────────────────────────────────────────────────
 type OnConnected func(r *ConnectionResponse)
 type HTTPHandler func(http.ResponseWriter, *http.Request)
