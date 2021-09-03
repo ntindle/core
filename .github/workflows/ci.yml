@@ -145,6 +145,30 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_GITHUB_TOKEN }}
 
+
+  # Release Daemon for Desktops
+  handle-rpc-failure:
+    needs: [build-rpc]
+    name: "Release RPC Daemon  🎉 "
+    runs-on: ubuntu-latest
+    if: ${{ failure() }}
+
+      # Steps
+    steps:
+      # 5. Get Version
+      - id: get_version
+        uses: battila7/get-version-action@v2
+
+  # Release Daemon for Desktops
+  release-rpc:
+    # Configuration
+    needs: [build-rpc]
+    name: "Release RPC Daemon  🎉 "
+    runs-on: ubuntu-latest
+    if: ${{ success() }}
+
+    # Steps
+    steps:
       # 5. Get Version
       - id: get_version
         uses: battila7/get-version-action@v2
@@ -158,12 +182,14 @@ jobs:
           event-type: build-electron
           client-payload: '{"version":"${{ steps.get_version.outputs.version-without-v }}"}'
 
+
   # Add Frameworks to Release
   release-frameworks:
     # Configuration
     needs: [build-android, build-ios]
     name: "Release Frameworks 🎉 "
     runs-on: ubuntu-latest
+    if: ${{ success() }}
 
     # Steps
     steps:
@@ -214,3 +240,4 @@ jobs:
           repository: sonr-io/plugin
           event-type: update-plugin
           client-payload: '{"version":"${{ steps.get_version.outputs.version-without-v }}"}'
+

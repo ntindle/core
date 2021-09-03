@@ -1,4 +1,3 @@
-#!/bin/bash
 echo "🔷 Building Library..."
 SCRIPTDIR=$(dirname "$0")
 cd ${SCRIPTDIR}/../../

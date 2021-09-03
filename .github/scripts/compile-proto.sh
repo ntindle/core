@@ -1,4 +1,3 @@
-#!/bin/bash
 echo "🔷 Compiling Protobufs..."
 SCRIPTDIR=$(dirname "$0")
 cd ${SCRIPTDIR}/../../

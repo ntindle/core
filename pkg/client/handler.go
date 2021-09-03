@@ -37,6 +37,7 @@ func (c *client) onConnected(e *emitter.Event) {
 		c.call.OnError(data.NewError(err, data.ErrorEvent_UNMARSHAL))
 		return
 	}
+
 	// Call Event
 	c.call.OnResponse(bytes)
 }
@@ -172,6 +173,7 @@ func (n *client) onInvite(e *emitter.Event) {
 	buf := e.Args[0].([]byte)
 
 	// Update Status
+	n.call.SetStatus(data.Status_INVITED)
 	data.LogInfo("Received Invite")
 
 	// Create Request
@@ -226,6 +228,7 @@ func (n *client) onReply(e *emitter.Event) {
 		// Check for File Transfer
 		if resp.HasAcceptedTransfer() && n.session != nil {
 			data.LogInfo("Beginning Transfer")
+			n.call.SetStatus(data.Status_TRANSFER)
 			pid := data.SonrProtocol_LocalTransfer.NewIDProtocol(id)
 
 			// Create New Auth Stream
@@ -237,7 +240,11 @@ func (n *client) onReply(e *emitter.Event) {
 
 			// Write to Stream on Session
 			n.session.WriteToStream(stream)
+		} else {
+			n.call.SetStatus(data.Status_AVAILABLE)
 		}
+	} else {
+		n.call.SetStatus(data.Status_AVAILABLE)
 	}
 }
 
@@ -277,6 +284,7 @@ func (n *client) onCompleted(e *emitter.Event) {
 
 		// Call Event
 		n.call.OnEvent(buf)
+		n.call.SetStatus(data.Status_AVAILABLE)
 		n.Host.CloseStream(pid, stream)
 	} else if completeEvent.Direction == data.CompleteEvent_OUTGOING {
 		// Convert to Generic
@@ -288,5 +296,6 @@ func (n *client) onCompleted(e *emitter.Event) {
 
 		// Call Event
 		n.call.OnEvent(buf)
+		n.call.SetStatus(data.Status_AVAILABLE)
 	}
 }

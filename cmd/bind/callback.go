@@ -21,6 +21,7 @@ func (mn *Node) callback() data.Callback {
 
 		// Middleware
 		OnError:   mn.handleError,
+		SetStatus: mn.setStatus,
 	}
 }
 

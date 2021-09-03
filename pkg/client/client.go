@@ -171,6 +171,7 @@ func (c *client) Invite(invite *data.InviteRequest, t *room.RoomManager) *data.S
 
 		// Initialize Session if transfer
 		if invite.IsPayloadTransfer() {
+			c.call.SetStatus(data.Status_PENDING)
 			// Start New Session
 			invite.SetProtocol(data.SonrProtocol_LocalTransfer, id)
 			c.session = data.NewOutSession(c.account.CurrentDevice(), invite, c.emitter)
@@ -247,6 +248,7 @@ func (c *client) newExitEvent(inv *data.InviteRequest) {
 
 	// Callback Event and Return Peer Error
 	c.call.OnEvent(buf)
+	c.call.SetStatus(data.Status_AVAILABLE)
 	return
 }
 

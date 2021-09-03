@@ -17,11 +17,13 @@ type OnConnected func(r *ConnectionResponse)
 type HTTPHandler func(http.ResponseWriter, *http.Request)
 type OnProtobuf func([]byte)
 type OnError func(err *SonrError)
+type SetStatus func(status Status)
 type Callback struct {
 	OnEvent    OnProtobuf
 	OnRequest  OnProtobuf
 	OnResponse OnProtobuf
 	OnError    OnError
+	SetStatus  SetStatus
 }
 
 // ** ─── State MANAGEMENT ────────────────────────────────────────────────────────

@@ -124,3 +124,17 @@ func (n *Node) setAvailable(val bool) {
 	}
 	n.call.OnStatus(res)
 }
+
+// Sets Node to be Available Status
+func (n *Node) setStatus(s data.Status) {
+	// Update Status
+	su := n.account.SetStatus(s)
+
+	// Callback Status
+	res, err := proto.Marshal(su)
+	if err != nil {
+		n.handleError(data.NewError(err, data.ErrorEvent_MARSHAL))
+		return
+	}
+	n.call.OnStatus(res)
+}

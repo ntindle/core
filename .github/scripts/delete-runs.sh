@@ -1,5 +1,3 @@
-#!/bin/bash
-
 org=sonr-io
 repo=core
 

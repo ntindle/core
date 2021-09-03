@@ -234,6 +234,7 @@ func (s *NodeServer) callback() data.Callback {
 		OnRequest:  s.handleRequest,
 		OnResponse: s.handleResponse,
 		OnError:    s.handleError,
+		SetStatus:  s.setStatus,
 	}
 }
 
