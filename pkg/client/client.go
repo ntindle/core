@@ -9,7 +9,6 @@ import (
 	net "github.com/sonr-io/core/internal/host"
 	room "github.com/sonr-io/core/internal/room"
 	srv "github.com/sonr-io/core/internal/service"
-	"github.com/sonr-io/core/internal/state"
 	ac "github.com/sonr-io/core/pkg/account"
 	data "github.com/sonr-io/core/pkg/data"
 	"github.com/sonr-io/core/pkg/util"
@@ -37,14 +36,13 @@ type client struct {
 	Client
 
 	// Properties
-	ctx          context.Context
-	call         data.Callback
-	isLinker     bool
-	account      ac.Account
-	session      *data.Session
-	request      *data.ConnectionRequest
-	emitter      *emitter.Emitter
-	stateMachine *state.StateMachine
+	ctx      context.Context
+	call     data.Callback
+	isLinker bool
+	account  ac.Account
+	session  *data.Session
+	request  *data.ConnectionRequest
+	emitter  *emitter.Emitter
 
 	// References
 	Host    net.HostNode
@@ -54,10 +52,9 @@ type client struct {
 // NewClient Initializes Node with Router ^
 func NewClient(ctx context.Context, a ac.Account, call data.Callback) Client {
 	c := &client{
-		ctx:          ctx,
-		call:         call,
-		account:      a,
-		stateMachine: newStateMachine(),
+		ctx:     ctx,
+		call:    call,
+		account: a,
 	}
 
 	c.initEmitter()
@@ -67,36 +64,55 @@ func NewClient(ctx context.Context, a ac.Account, call data.Callback) Client {
 // Connects Host Node from Private Key
 func (c *client) Connect(cr *data.ConnectionRequest) (*data.Peer, *data.SonrError) {
 	// Set Request
-	connCtx := &ConnectionContext{
-		connReq: cr,
-		c:  c,
-	}
+	c.request = cr
+	c.isLinker = cr.GetIsLinker()
 
-	// Send Event to State Machine
-	err := c.stateMachine.SendEvent(Connect, connCtx)
+	// Set Host
+	hn, err := net.NewHost(c.ctx, cr, c.account.AccountKeys(), c.emitter)
 	if err != nil {
-		return nil, connCtx.err
+		return nil, err
 	}
 
-	// Wait for Connection
-	return connCtx.peer, nil
+	// Get MultiAddrs
+	maddr, err := hn.MultiAddr()
+	if err != nil {
+		return nil, err
+	}
+
+	// Set Peer
+	peer, _ := c.account.CurrentDevice().SetPeer(hn.ID(), maddr, cr.GetIsLinker())
+
+	// Set Host
+	c.Host = hn
+	return peer, nil
 }
 
 // Begins Bootstrapping HostNode
 func (c *client) Bootstrap(cr *data.ConnectionRequest) (*room.RoomManager, *data.SonrError) {
-	bootCtx := &BootstrapContext{
-		connReq: cr,
-		c:  c,
-	}
-
-	// Send Event to State Machine
-	err := c.stateMachine.SendEvent(Bootstrap, bootCtx)
+	// Bootstrap Host
+	err := c.Host.Bootstrap(c.account.CurrentDevice().GetId())
 	if err != nil {
-		return nil, bootCtx.err
+		return nil, err
 	}
 
-	// Wait for Bootstrap
-	return bootCtx.room, nil
+	// Start Services
+	s, err := srv.NewService(c.ctx, c.Host, c.account.CurrentDevice(), c.request, c.emitter)
+	if err != nil {
+		return nil, err
+	}
+	c.Service = s
+
+	// Join Local
+	RoomName := c.account.CurrentDevice().NewLocalRoom(cr.GetServiceOptions())
+	if t, err := room.JoinRoom(c.ctx, c.Host, c.account, RoomName, c.emitter); err != nil {
+		return nil, err
+	} else {
+		// Check if Auto Update Events
+		if cr.GetServiceOptions().GetAutoUpdate() {
+			go c.sendPeriodicRoomEvents(t)
+		}
+		return t, nil
+	}
 }
 
 // Handle a Mailbox Request from Node
