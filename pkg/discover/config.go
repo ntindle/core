@@ -87,7 +87,7 @@ func (o *options) Apply(p *DiscoverProtocol) error {
 
 		// Create Topic Name
 		logger.Debug("Calculated OLC for Location: " + code)
-		topicName := fmt.Sprintf("sonr/topic/%s", code)
+		topicName := fmt.Sprintf("topic/olc/%s", code)
 
 		// Join Topic
 		topic, err := p.host.Join(topicName)

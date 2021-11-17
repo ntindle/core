@@ -116,6 +116,15 @@ message SearchResponse {
   string sName = 5;        // SName
 }
 
+// (Client) SubscribeRequest is Message for Joining a Pub/Sub Topic defaults to Local OLC
+message SubscribeRequest {
+  oneof topic {
+    bool joinLocal = 1;  // SName combined with Device ID and Hashed
+    string id = 2; // Topic ID
+  }
+}
+
+
 // -----------------------------------------------------------------------------
 // Highway Node API
 // -----------------------------------------------------------------------------

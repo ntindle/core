@@ -87,7 +87,7 @@ func (m StubMode) Prefix() string {
 // CallbackImpl is the implementation of Callback interface
 type CallbackImpl interface {
 	// OnRefresh is called when the LobbyProtocol is refreshed and pushes a RefreshEvent
-	OnRefresh(event *RefreshEvent)
+	OnRefresh(event *SubscribeEvent)
 
 	// OnMailbox is called when the MailboxProtocol receives a MailboxEvent
 	OnMailbox(event *MailboxEvent)

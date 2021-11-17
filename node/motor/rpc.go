@@ -47,7 +47,7 @@ type MotorStub struct {
 	decisionEvents chan *api.DecisionEvent
 
 	// LobbyProtocol - refreshEvents
-	refreshEvents chan *api.RefreshEvent
+	refreshEvents chan *api.SubscribeEvent
 
 	// MailboxProtocol - mailEvents
 	mailEvents chan *api.MailboxEvent
@@ -72,7 +72,7 @@ func NewMotorStub(ctx context.Context, h *host.SNRHost, n api.NodeImpl, loc *com
 		node:           n,
 		grpcServer:     grpcServer,
 		decisionEvents: make(chan *api.DecisionEvent),
-		refreshEvents:  make(chan *api.RefreshEvent),
+		refreshEvents:  make(chan *api.SubscribeEvent),
 		inviteEvents:   make(chan *api.InviteEvent),
 		mailEvents:     make(chan *api.MailboxEvent),
 		progressEvents: make(chan *api.ProgressEvent),
@@ -160,72 +160,35 @@ func (s *MotorStub) Update() error {
 	}
 }
 
-// Edit method edits the node's properties in the Key/Value Store
-func (s *MotorStub) Edit(ctx context.Context, req *api.EditRequest) (*api.EditResponse, error) {
-	// Call Internal Update
-	if err := s.Update(); err != nil {
-		return &api.EditResponse{
-			Success: false,
-			Error:   err.Error(),
-		}, nil
-	}
-
-	// Send Response
-	return &api.EditResponse{
-		Success: true,
-	}, nil
-}
-
-// Fetch method retreives Node properties from Key/Value Store
-func (s *MotorStub) Fetch(ctx context.Context, req *api.FetchRequest) (*api.FetchResponse, error) {
+// Send method sends a message to the given peer and returns TransmitEvent stream.
+func (s *MotorStub) Send(req *api.ShareRequest, stream MotorStub_SendServer) error {
 	// Call Lobby Update
 	if err := s.Update(); err != nil {
 		logger.Warnf("%s - Failed to Update Lobby", err)
 	}
-
-	// Call Internal Fetch4
-	profile, err := s.node.Profile()
-	if err != nil {
-		return &api.FetchResponse{
-			Success: false,
-			Error:   err.Error(),
-		}, nil
+	if err := s.ExchangeProtocol.Request(req); err != nil {
+		logger.Errorf("Failed to Request on ExchangeProtocol: %s", err)
+		return err
 	}
-
-	// Send Response
-	return &api.FetchResponse{
-		Success: true,
-		Profile: profile,
-	}, nil
+	return nil
 }
 
-// Share method sends supplied files/urls with a peer
-func (s *MotorStub) Share(ctx context.Context, req *api.ShareRequest) (*api.ShareResponse, error) {
+// Send method sends a message to the given peer and returns TransmitEvent stream.
+func (s *MotorStub) Decide(req *api.RespondRequest, stream MotorStub_DecideServer) error {
 	// Call Lobby Update
 	if err := s.Update(); err != nil {
 		logger.Warnf("%s - Failed to Update Lobby", err)
 	}
+	return nil
+}
 
-	// Request Peer to Transmit File
-	if s.TransmitProtocol != nil {
-		err := s.ExchangeProtocol.Request(req)
-		if err != nil {
-			return &api.ShareResponse{
-				Success: false,
-				Error:   err.Error(),
-			}, nil
-		}
-	} else {
-		return &api.ShareResponse{
-			Success: false,
-			Error:   ErrProtocolsNotSet.Error(),
-		}, nil
+// Send method sends a message to the given peer and returns TransmitEvent stream.
+func (s *MotorStub) Subscribe(req *api.SubscribeRequest, stream MotorStub_SubscribeServer) error {
+	// Call Lobby Update
+	if err := s.Update(); err != nil {
+		logger.Warnf("%s - Failed to Update Lobby", err)
 	}
-
-	// Send Response
-	return &api.ShareResponse{
-		Success: true,
-	}, nil
+	return nil
 }
 
 // Search Method to find a Peer by SName

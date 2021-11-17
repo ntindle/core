@@ -157,8 +157,8 @@ func (p *Local) handleEvents() {
 func (lp *Local) callRefresh() {
 	// Create Event
 	logger.Debug("Calling Refresh Event")
-	lp.callback.OnRefresh(&api.RefreshEvent{
-		Olc:      lp.olc,
+	lp.callback.OnRefresh(&api.SubscribeEvent{
+		Id:      lp.olc,
 		Peers:    lp.peers,
 		Received: int64(time.Now().Unix()),
 	})

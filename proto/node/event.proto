@@ -13,8 +13,8 @@ message DecisionEvent {
 }
 
 // Message Sent when peer messages Lobby
-message RefreshEvent {
-  string olc = 1;                    // OLC Code of Topic
+message SubscribeEvent {
+  string id = 1;                    // OLC Code of Topic
   repeated sonr.core.Peer peers = 2; // User Information
   int64 received = 3;                // Invite received Timestamp
 }
@@ -53,4 +53,20 @@ message CompleteEvent {
   int64 createdAt = 5;     // Transfer Created Timestamp
   int64 receivedAt = 6;    // Transfer Received Timestamp
   map<int32, bool> results = 7; // Transfer Success
+}
+
+message TransmitEvent {
+  sonr.core.Peer from = 1; // Peer that sent the Complete Event
+  sonr.core.Peer to = 2;   // Peer that received the Complete Event
+  double progress = 3;              // Current Transfer Progress
+  Status status = 4; // Status of Transfer
+
+  enum Status {
+    PENDING = 0;
+    ACCEPTED = 1;
+    DECLINED = 2;
+    OFFLINE = 3;
+    CANCELLED = 4;
+    COMPLETE = 5;
+  }
 }

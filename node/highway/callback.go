@@ -30,7 +30,7 @@ func (n *HighwayStub) OnMailbox(event *api.MailboxEvent) {
 }
 
 // OnRefresh is callback for NodeImpl for refreshEvents
-func (n *HighwayStub) OnRefresh(event *api.RefreshEvent) {
+func (n *HighwayStub) OnRefresh(event *api.SubscribeEvent) {
 	if event == nil {
 		logger.Warn("Received nil event: OnRefresh")
 		return

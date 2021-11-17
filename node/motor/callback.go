@@ -31,7 +31,7 @@ func (n *MotorStub) OnMailbox(event *api.MailboxEvent) {
 }
 
 // OnRefresh is callback for NodeImpl for refreshEvents
-func (n *MotorStub) OnRefresh(event *api.RefreshEvent) {
+func (n *MotorStub) OnRefresh(event *api.SubscribeEvent) {
 	if event == nil {
 		logger.Warn("Received nil event: OnRefresh")
 		return

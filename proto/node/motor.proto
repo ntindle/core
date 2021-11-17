@@ -10,19 +10,21 @@ message Empty {}
 
 // RPC Service with Equivalent Methods of a binded Node
 service MotorStub {
-  // Node Methods
-  // Respond Method to an Invite with Decision
-  rpc Share(sonr.api.ShareRequest) returns (sonr.api.ShareResponse) {}
+  // Send sends an Invite to Exchange to given Peer
+  rpc Send(sonr.api.ShareRequest) returns (stream sonr.api.TransmitEvent) {}
 
-  // Respond Method to an Invite with Decision
-  rpc Respond(sonr.api.RespondRequest) returns (sonr.api.RespondResponse) {}
+  // Decide responds to Exchange Invite from Peer given ID
+  rpc Decide(sonr.api.RespondRequest) returns (stream sonr.api.ProgressEvent) {}
+
+  // Subscribe responds to Exchange Invite from Peer given ID
+  rpc Subscribe(sonr.api.SubscribeRequest) returns (stream sonr.api.SubscribeEvent) {}
 
   // Search Method to find a Peer by SName or PeerID
   rpc Search(sonr.api.SearchRequest) returns (sonr.api.SearchResponse) {}
 
   // Events Streams
   // Returns a stream of Lobby Refresh Events
-  rpc OnLobbyRefresh(Empty) returns (stream sonr.api.RefreshEvent) {}
+  rpc OnLobbyRefresh(Empty) returns (stream sonr.api.SubscribeEvent) {}
 
   // Returns a stream of Mailbox Message Events
   rpc OnMailboxMessage(Empty) returns (stream sonr.api.MailboxEvent) {}

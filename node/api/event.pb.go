@@ -21,6 +21,64 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
+type TransmitEvent_Status int32
+
+const (
+	TransmitEvent_PENDING   TransmitEvent_Status = 0
+	TransmitEvent_ACCEPTED  TransmitEvent_Status = 1
+	TransmitEvent_DECLINED  TransmitEvent_Status = 2
+	TransmitEvent_OFFLINE   TransmitEvent_Status = 3
+	TransmitEvent_CANCELLED TransmitEvent_Status = 4
+	TransmitEvent_COMPLETE  TransmitEvent_Status = 5
+)
+
+// Enum value maps for TransmitEvent_Status.
+var (
+	TransmitEvent_Status_name = map[int32]string{
+		0: "PENDING",
+		1: "ACCEPTED",
+		2: "DECLINED",
+		3: "OFFLINE",
+		4: "CANCELLED",
+		5: "COMPLETE",
+	}
+	TransmitEvent_Status_value = map[string]int32{
+		"PENDING":   0,
+		"ACCEPTED":  1,
+		"DECLINED":  2,
+		"OFFLINE":   3,
+		"CANCELLED": 4,
+		"COMPLETE":  5,
+	}
+)
+
+func (x TransmitEvent_Status) Enum() *TransmitEvent_Status {
+	p := new(TransmitEvent_Status)
+	*p = x
+	return p
+}
+
+func (x TransmitEvent_Status) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (TransmitEvent_Status) Descriptor() protoreflect.EnumDescriptor {
+	return file_proto_node_event_proto_enumTypes[0].Descriptor()
+}
+
+func (TransmitEvent_Status) Type() protoreflect.EnumType {
+	return &file_proto_node_event_proto_enumTypes[0]
+}
+
+func (x TransmitEvent_Status) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use TransmitEvent_Status.Descriptor instead.
+func (TransmitEvent_Status) EnumDescriptor() ([]byte, []int) {
+	return file_proto_node_event_proto_rawDescGZIP(), []int{6, 0}
+}
+
 // DecisionEvent is emitted when a decision is made by Peer.
 type DecisionEvent struct {
 	state         protoimpl.MessageState
@@ -86,18 +144,18 @@ func (x *DecisionEvent) GetReceived() int64 {
 }
 
 // Message Sent when peer messages Lobby
-type RefreshEvent struct {
+type SubscribeEvent struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Olc      string         `protobuf:"bytes,1,opt,name=olc,proto3" json:"olc,omitempty"`            // OLC Code of Topic
+	Id       string         `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`              // OLC Code of Topic
 	Peers    []*common.Peer `protobuf:"bytes,2,rep,name=peers,proto3" json:"peers,omitempty"`        // User Information
 	Received int64          `protobuf:"varint,3,opt,name=received,proto3" json:"received,omitempty"` // Invite received Timestamp
 }
 
-func (x *RefreshEvent) Reset() {
-	*x = RefreshEvent{}
+func (x *SubscribeEvent) Reset() {
+	*x = SubscribeEvent{}
 	if protoimpl.UnsafeEnabled {
 		mi := &file_proto_node_event_proto_msgTypes[1]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -105,13 +163,13 @@ func (x *RefreshEvent) Reset() {
 	}
 }
 
-func (x *RefreshEvent) String() string {
+func (x *SubscribeEvent) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*RefreshEvent) ProtoMessage() {}
+func (*SubscribeEvent) ProtoMessage() {}
 
-func (x *RefreshEvent) ProtoReflect() protoreflect.Message {
+func (x *SubscribeEvent) ProtoReflect() protoreflect.Message {
 	mi := &file_proto_node_event_proto_msgTypes[1]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -123,26 +181,26 @@ func (x *RefreshEvent) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use RefreshEvent.ProtoReflect.Descriptor instead.
-func (*RefreshEvent) Descriptor() ([]byte, []int) {
+// Deprecated: Use SubscribeEvent.ProtoReflect.Descriptor instead.
+func (*SubscribeEvent) Descriptor() ([]byte, []int) {
 	return file_proto_node_event_proto_rawDescGZIP(), []int{1}
 }
 
-func (x *RefreshEvent) GetOlc() string {
+func (x *SubscribeEvent) GetId() string {
 	if x != nil {
-		return x.Olc
+		return x.Id
 	}
 	return ""
 }
 
-func (x *RefreshEvent) GetPeers() []*common.Peer {
+func (x *SubscribeEvent) GetPeers() []*common.Peer {
 	if x != nil {
 		return x.Peers
 	}
 	return nil
 }
 
-func (x *RefreshEvent) GetReceived() int64 {
+func (x *SubscribeEvent) GetReceived() int64 {
 	if x != nil {
 		return x.Received
 	}
@@ -469,6 +527,77 @@ func (x *CompleteEvent) GetResults() map[int32]bool {
 	return nil
 }
 
+type TransmitEvent struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	From     *common.Peer         `protobuf:"bytes,1,opt,name=from,proto3" json:"from,omitempty"`                                         // Peer that sent the Complete Event
+	To       *common.Peer         `protobuf:"bytes,2,opt,name=to,proto3" json:"to,omitempty"`                                             // Peer that received the Complete Event
+	Progress float64              `protobuf:"fixed64,3,opt,name=progress,proto3" json:"progress,omitempty"`                               // Current Transfer Progress
+	Status   TransmitEvent_Status `protobuf:"varint,4,opt,name=status,proto3,enum=sonr.api.TransmitEvent_Status" json:"status,omitempty"` // Status of Transfer
+}
+
+func (x *TransmitEvent) Reset() {
+	*x = TransmitEvent{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_proto_node_event_proto_msgTypes[6]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *TransmitEvent) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TransmitEvent) ProtoMessage() {}
+
+func (x *TransmitEvent) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_node_event_proto_msgTypes[6]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TransmitEvent.ProtoReflect.Descriptor instead.
+func (*TransmitEvent) Descriptor() ([]byte, []int) {
+	return file_proto_node_event_proto_rawDescGZIP(), []int{6}
+}
+
+func (x *TransmitEvent) GetFrom() *common.Peer {
+	if x != nil {
+		return x.From
+	}
+	return nil
+}
+
+func (x *TransmitEvent) GetTo() *common.Peer {
+	if x != nil {
+		return x.To
+	}
+	return nil
+}
+
+func (x *TransmitEvent) GetProgress() float64 {
+	if x != nil {
+		return x.Progress
+	}
+	return 0
+}
+
+func (x *TransmitEvent) GetStatus() TransmitEvent_Status {
+	if x != nil {
+		return x.Status
+	}
+	return TransmitEvent_PENDING
+}
+
 var File_proto_node_event_proto protoreflect.FileDescriptor
 
 var file_proto_node_event_proto_rawDesc = []byte{
@@ -484,9 +613,9 @@ var file_proto_node_event_proto_rawDesc = []byte{
 	0x0f, 0x2e, 0x73, 0x6f, 0x6e, 0x72, 0x2e, 0x63, 0x6f, 0x72, 0x65, 0x2e, 0x50, 0x65, 0x65, 0x72,
 	0x52, 0x04, 0x66, 0x72, 0x6f, 0x6d, 0x12, 0x1a, 0x0a, 0x08, 0x72, 0x65, 0x63, 0x65, 0x69, 0x76,
 	0x65, 0x64, 0x18, 0x03, 0x20, 0x01, 0x28, 0x03, 0x52, 0x08, 0x72, 0x65, 0x63, 0x65, 0x69, 0x76,
-	0x65, 0x64, 0x22, 0x63, 0x0a, 0x0c, 0x52, 0x65, 0x66, 0x72, 0x65, 0x73, 0x68, 0x45, 0x76, 0x65,
-	0x6e, 0x74, 0x12, 0x10, 0x0a, 0x03, 0x6f, 0x6c, 0x63, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52,
-	0x03, 0x6f, 0x6c, 0x63, 0x12, 0x25, 0x0a, 0x05, 0x70, 0x65, 0x65, 0x72, 0x73, 0x18, 0x02, 0x20,
+	0x65, 0x64, 0x22, 0x63, 0x0a, 0x0e, 0x53, 0x75, 0x62, 0x73, 0x63, 0x72, 0x69, 0x62, 0x65, 0x45,
+	0x76, 0x65, 0x6e, 0x74, 0x12, 0x0e, 0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09,
+	0x52, 0x02, 0x69, 0x64, 0x12, 0x25, 0x0a, 0x05, 0x70, 0x65, 0x65, 0x72, 0x73, 0x18, 0x02, 0x20,
 	0x03, 0x28, 0x0b, 0x32, 0x0f, 0x2e, 0x73, 0x6f, 0x6e, 0x72, 0x2e, 0x63, 0x6f, 0x72, 0x65, 0x2e,
 	0x50, 0x65, 0x65, 0x72, 0x52, 0x05, 0x70, 0x65, 0x65, 0x72, 0x73, 0x12, 0x1a, 0x0a, 0x08, 0x72,
 	0x65, 0x63, 0x65, 0x69, 0x76, 0x65, 0x64, 0x18, 0x03, 0x20, 0x01, 0x28, 0x03, 0x52, 0x08, 0x72,
@@ -543,10 +672,27 @@ var file_proto_node_event_proto_rawDesc = []byte{
 	0x73, 0x1a, 0x3a, 0x0a, 0x0c, 0x52, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x73, 0x45, 0x6e, 0x74, 0x72,
 	0x79, 0x12, 0x10, 0x0a, 0x03, 0x6b, 0x65, 0x79, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x03,
 	0x6b, 0x65, 0x79, 0x12, 0x14, 0x0a, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x18, 0x02, 0x20, 0x01,
-	0x28, 0x08, 0x52, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x3a, 0x02, 0x38, 0x01, 0x42, 0x22, 0x5a,
-	0x20, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x73, 0x6f, 0x6e, 0x72,
-	0x2d, 0x69, 0x6f, 0x2f, 0x63, 0x6f, 0x72, 0x65, 0x2f, 0x6e, 0x6f, 0x64, 0x65, 0x2f, 0x61, 0x70,
-	0x69, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x28, 0x08, 0x52, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x3a, 0x02, 0x38, 0x01, 0x22, 0x86, 0x02,
+	0x0a, 0x0d, 0x54, 0x72, 0x61, 0x6e, 0x73, 0x6d, 0x69, 0x74, 0x45, 0x76, 0x65, 0x6e, 0x74, 0x12,
+	0x23, 0x0a, 0x04, 0x66, 0x72, 0x6f, 0x6d, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x0f, 0x2e,
+	0x73, 0x6f, 0x6e, 0x72, 0x2e, 0x63, 0x6f, 0x72, 0x65, 0x2e, 0x50, 0x65, 0x65, 0x72, 0x52, 0x04,
+	0x66, 0x72, 0x6f, 0x6d, 0x12, 0x1f, 0x0a, 0x02, 0x74, 0x6f, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0b,
+	0x32, 0x0f, 0x2e, 0x73, 0x6f, 0x6e, 0x72, 0x2e, 0x63, 0x6f, 0x72, 0x65, 0x2e, 0x50, 0x65, 0x65,
+	0x72, 0x52, 0x02, 0x74, 0x6f, 0x12, 0x1a, 0x0a, 0x08, 0x70, 0x72, 0x6f, 0x67, 0x72, 0x65, 0x73,
+	0x73, 0x18, 0x03, 0x20, 0x01, 0x28, 0x01, 0x52, 0x08, 0x70, 0x72, 0x6f, 0x67, 0x72, 0x65, 0x73,
+	0x73, 0x12, 0x36, 0x0a, 0x06, 0x73, 0x74, 0x61, 0x74, 0x75, 0x73, 0x18, 0x04, 0x20, 0x01, 0x28,
+	0x0e, 0x32, 0x1e, 0x2e, 0x73, 0x6f, 0x6e, 0x72, 0x2e, 0x61, 0x70, 0x69, 0x2e, 0x54, 0x72, 0x61,
+	0x6e, 0x73, 0x6d, 0x69, 0x74, 0x45, 0x76, 0x65, 0x6e, 0x74, 0x2e, 0x53, 0x74, 0x61, 0x74, 0x75,
+	0x73, 0x52, 0x06, 0x73, 0x74, 0x61, 0x74, 0x75, 0x73, 0x22, 0x5b, 0x0a, 0x06, 0x53, 0x74, 0x61,
+	0x74, 0x75, 0x73, 0x12, 0x0b, 0x0a, 0x07, 0x50, 0x45, 0x4e, 0x44, 0x49, 0x4e, 0x47, 0x10, 0x00,
+	0x12, 0x0c, 0x0a, 0x08, 0x41, 0x43, 0x43, 0x45, 0x50, 0x54, 0x45, 0x44, 0x10, 0x01, 0x12, 0x0c,
+	0x0a, 0x08, 0x44, 0x45, 0x43, 0x4c, 0x49, 0x4e, 0x45, 0x44, 0x10, 0x02, 0x12, 0x0b, 0x0a, 0x07,
+	0x4f, 0x46, 0x46, 0x4c, 0x49, 0x4e, 0x45, 0x10, 0x03, 0x12, 0x0d, 0x0a, 0x09, 0x43, 0x41, 0x4e,
+	0x43, 0x45, 0x4c, 0x4c, 0x45, 0x44, 0x10, 0x04, 0x12, 0x0c, 0x0a, 0x08, 0x43, 0x4f, 0x4d, 0x50,
+	0x4c, 0x45, 0x54, 0x45, 0x10, 0x05, 0x42, 0x22, 0x5a, 0x20, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62,
+	0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x73, 0x6f, 0x6e, 0x72, 0x2d, 0x69, 0x6f, 0x2f, 0x63, 0x6f, 0x72,
+	0x65, 0x2f, 0x6e, 0x6f, 0x64, 0x65, 0x2f, 0x61, 0x70, 0x69, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x33,
 }
 
 var (
@@ -561,40 +707,46 @@ func file_proto_node_event_proto_rawDescGZIP() []byte {
 	return file_proto_node_event_proto_rawDescData
 }
 
-var file_proto_node_event_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
+var file_proto_node_event_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_proto_node_event_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
 var file_proto_node_event_proto_goTypes = []interface{}{
-	(*DecisionEvent)(nil),   // 0: sonr.api.DecisionEvent
-	(*RefreshEvent)(nil),    // 1: sonr.api.RefreshEvent
-	(*InviteEvent)(nil),     // 2: sonr.api.InviteEvent
-	(*MailboxEvent)(nil),    // 3: sonr.api.MailboxEvent
-	(*ProgressEvent)(nil),   // 4: sonr.api.ProgressEvent
-	(*CompleteEvent)(nil),   // 5: sonr.api.CompleteEvent
-	nil,                     // 6: sonr.api.CompleteEvent.ResultsEntry
-	(*common.Peer)(nil),     // 7: sonr.core.Peer
-	(*common.Payload)(nil),  // 8: sonr.core.Payload
-	(*common.Profile)(nil),  // 9: sonr.core.Profile
-	(*common.Metadata)(nil), // 10: sonr.core.Metadata
-	(common.Direction)(0),   // 11: sonr.core.Direction
+	(TransmitEvent_Status)(0), // 0: sonr.api.TransmitEvent.Status
+	(*DecisionEvent)(nil),     // 1: sonr.api.DecisionEvent
+	(*SubscribeEvent)(nil),    // 2: sonr.api.SubscribeEvent
+	(*InviteEvent)(nil),       // 3: sonr.api.InviteEvent
+	(*MailboxEvent)(nil),      // 4: sonr.api.MailboxEvent
+	(*ProgressEvent)(nil),     // 5: sonr.api.ProgressEvent
+	(*CompleteEvent)(nil),     // 6: sonr.api.CompleteEvent
+	(*TransmitEvent)(nil),     // 7: sonr.api.TransmitEvent
+	nil,                       // 8: sonr.api.CompleteEvent.ResultsEntry
+	(*common.Peer)(nil),       // 9: sonr.core.Peer
+	(*common.Payload)(nil),    // 10: sonr.core.Payload
+	(*common.Profile)(nil),    // 11: sonr.core.Profile
+	(*common.Metadata)(nil),   // 12: sonr.core.Metadata
+	(common.Direction)(0),     // 13: sonr.core.Direction
 }
 var file_proto_node_event_proto_depIdxs = []int32{
-	7,  // 0: sonr.api.DecisionEvent.from:type_name -> sonr.core.Peer
-	7,  // 1: sonr.api.RefreshEvent.peers:type_name -> sonr.core.Peer
-	7,  // 2: sonr.api.InviteEvent.from:type_name -> sonr.core.Peer
-	8,  // 3: sonr.api.InviteEvent.payload:type_name -> sonr.core.Payload
-	9,  // 4: sonr.api.MailboxEvent.from:type_name -> sonr.core.Profile
-	9,  // 5: sonr.api.MailboxEvent.to:type_name -> sonr.core.Profile
-	10, // 6: sonr.api.MailboxEvent.metadata:type_name -> sonr.core.Metadata
-	11, // 7: sonr.api.ProgressEvent.direction:type_name -> sonr.core.Direction
-	11, // 8: sonr.api.CompleteEvent.direction:type_name -> sonr.core.Direction
-	8,  // 9: sonr.api.CompleteEvent.payload:type_name -> sonr.core.Payload
-	7,  // 10: sonr.api.CompleteEvent.from:type_name -> sonr.core.Peer
-	7,  // 11: sonr.api.CompleteEvent.to:type_name -> sonr.core.Peer
-	6,  // 12: sonr.api.CompleteEvent.results:type_name -> sonr.api.CompleteEvent.ResultsEntry
-	13, // [13:13] is the sub-list for method output_type
-	13, // [13:13] is the sub-list for method input_type
-	13, // [13:13] is the sub-list for extension type_name
-	13, // [13:13] is the sub-list for extension extendee
-	0,  // [0:13] is the sub-list for field type_name
+	9,  // 0: sonr.api.DecisionEvent.from:type_name -> sonr.core.Peer
+	9,  // 1: sonr.api.SubscribeEvent.peers:type_name -> sonr.core.Peer
+	9,  // 2: sonr.api.InviteEvent.from:type_name -> sonr.core.Peer
+	10, // 3: sonr.api.InviteEvent.payload:type_name -> sonr.core.Payload
+	11, // 4: sonr.api.MailboxEvent.from:type_name -> sonr.core.Profile
+	11, // 5: sonr.api.MailboxEvent.to:type_name -> sonr.core.Profile
+	12, // 6: sonr.api.MailboxEvent.metadata:type_name -> sonr.core.Metadata
+	13, // 7: sonr.api.ProgressEvent.direction:type_name -> sonr.core.Direction
+	13, // 8: sonr.api.CompleteEvent.direction:type_name -> sonr.core.Direction
+	10, // 9: sonr.api.CompleteEvent.payload:type_name -> sonr.core.Payload
+	9,  // 10: sonr.api.CompleteEvent.from:type_name -> sonr.core.Peer
+	9,  // 11: sonr.api.CompleteEvent.to:type_name -> sonr.core.Peer
+	8,  // 12: sonr.api.CompleteEvent.results:type_name -> sonr.api.CompleteEvent.ResultsEntry
+	9,  // 13: sonr.api.TransmitEvent.from:type_name -> sonr.core.Peer
+	9,  // 14: sonr.api.TransmitEvent.to:type_name -> sonr.core.Peer
+	0,  // 15: sonr.api.TransmitEvent.status:type_name -> sonr.api.TransmitEvent.Status
+	16, // [16:16] is the sub-list for method output_type
+	16, // [16:16] is the sub-list for method input_type
+	16, // [16:16] is the sub-list for extension type_name
+	16, // [16:16] is the sub-list for extension extendee
+	0,  // [0:16] is the sub-list for field type_name
 }
 
 func init() { file_proto_node_event_proto_init() }
@@ -616,7 +768,7 @@ func file_proto_node_event_proto_init() {
 			}
 		}
 		file_proto_node_event_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*RefreshEvent); i {
+			switch v := v.(*SubscribeEvent); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -675,19 +827,32 @@ func file_proto_node_event_proto_init() {
 				return nil
 			}
 		}
+		file_proto_node_event_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*TransmitEvent); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_proto_node_event_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   7,
+			NumEnums:      1,
+			NumMessages:   8,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
 		GoTypes:           file_proto_node_event_proto_goTypes,
 		DependencyIndexes: file_proto_node_event_proto_depIdxs,
+		EnumInfos:         file_proto_node_event_proto_enumTypes,
 		MessageInfos:      file_proto_node_event_proto_msgTypes,
 	}.Build()
 	File_proto_node_event_proto = out.File

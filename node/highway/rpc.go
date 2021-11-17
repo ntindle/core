@@ -42,7 +42,7 @@ type HighwayStub struct {
 	decisionEvents chan *api.DecisionEvent
 
 	// LobbyProtocol - refreshEvents
-	refreshEvents chan *api.RefreshEvent
+	refreshEvents chan *api.SubscribeEvent
 
 	// MailboxProtocol - mailEvents
 	mailEvents chan *api.MailboxEvent
@@ -67,7 +67,7 @@ func NewHighwayStub(ctx context.Context, h *host.SNRHost, n api.NodeImpl, loc *c
 		ctx:            ctx,
 		grpcServer:     grpcServer,
 		decisionEvents: make(chan *api.DecisionEvent),
-		refreshEvents:  make(chan *api.RefreshEvent),
+		refreshEvents:  make(chan *api.SubscribeEvent),
 		inviteEvents:   make(chan *api.InviteEvent),
 		mailEvents:     make(chan *api.MailboxEvent),
 		progressEvents: make(chan *api.ProgressEvent),
@@ -118,45 +118,45 @@ func (s *HighwayStub) Serve(ctx context.Context, listener net.Listener) {
 	}
 }
 
-// Authorize Signing Method Request for Data
-func (s *HighwayStub) Authorize(ctx context.Context, req *api.AuthenticateRequest) (*api.AuthenticateResponse, error) {
-	logger.Debug("HighwayStub.Authorize() is Unimplemented")
-	return nil, nil
-}
+// // Authorize Signing Method Request for Data
+// func (s *HighwayStub) Authorize(ctx context.Context, req *api.AuthenticateRequest) (*api.AuthenticateResponse, error) {
+// 	logger.Debug("HighwayStub.Authorize() is Unimplemented")
+// 	return nil, nil
+// }
 
-// Link a new Device to the Node
-func (s *HighwayStub) Link(ctx context.Context, req *api.LinkRequest) (*api.LinkResponse, error) {
-	logger.Debug("HighwayStub.Link() is Unimplemented")
-	return nil, nil
-}
+// // Link a new Device to the Node
+// func (s *HighwayStub) Link(ctx context.Context, req *api.LinkRequest) (*api.LinkResponse, error) {
+// 	logger.Debug("HighwayStub.Link() is Unimplemented")
+// 	return nil, nil
+// }
 
-// Register a new domain with the Node on the highway
-func (s *HighwayStub) Register(ctx context.Context, req *api.RegisterRequest) (*api.RegisterResponse, error) {
-	// Get Values
-	pfix := req.GetPrefix()
-	name := req.GetSName()
-	fprint := req.GetFingerprint()
+// // Register a new domain with the Node on the highway
+// func (s *HighwayStub) Register(ctx context.Context, req *api.RegisterRequest) (*api.RegisterResponse, error) {
+// 	// Get Values
+// 	pfix := req.GetPrefix()
+// 	name := req.GetSName()
+// 	fprint := req.GetFingerprint()
 
-	// Check Values
-	if pfix == "" || name == "" || fprint == "" {
-		return &api.RegisterResponse{
-			Success: false,
-			Error:   "Invalid request. One or more of the required fields are empty.",
-		}, nil
-	}
+// 	// Check Values
+// 	if pfix == "" || name == "" || fprint == "" {
+// 		return &api.RegisterResponse{
+// 			Success: false,
+// 			Error:   "Invalid request. One or more of the required fields are empty.",
+// 		}, nil
+// 	}
 
-	// Create Record
-	resp, err := s.RegistryProtocol.Register(req)
-	if err != nil {
-		return &api.RegisterResponse{
-			Success: false,
-			Error:   err.Error(),
-		}, nil
-	}
+// 	// Create Record
+// 	resp, err := s.RegistryProtocol.Register(req)
+// 	if err != nil {
+// 		return &api.RegisterResponse{
+// 			Success: false,
+// 			Error:   err.Error(),
+// 		}, nil
+// 	}
 
-	// Return Response
-	return &api.RegisterResponse{
-		Success: true,
-		Records: resp,
-	}, nil
-}
+// 	// Return Response
+// 	return &api.RegisterResponse{
+// 		Success: true,
+// 		Records: resp,
+// 	}, nil
+// }
