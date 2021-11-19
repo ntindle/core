@@ -113,6 +113,14 @@ func (p *DiscoverProtocol) Update() error {
 	return nil
 }
 
+// Find method lists all peers for given topic
+func (p *DiscoverProtocol) Find(req *api.ListPeersRequest) error {
+	if p.mode.Motor() {
+		return nil
+	}
+	return nil
+}
+
 // Close method closes the ExchangeProtocol
 func (p *DiscoverProtocol) Close() error {
 	p.local.eventHandler.Cancel()
