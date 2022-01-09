@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package common.v1;
 import "common/v1/core.proto";
-option go_package = "github.com/sonr-io/core/common";
+option go_package = "github.com/sonr-io/core/types/go/common/v1";
 
 enum Direction {
   DIRECTION_UNSPECIFIED = 0;

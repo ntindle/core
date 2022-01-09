@@ -4,7 +4,10 @@ syntax = "proto3";
 package node.motor.v1;
 import "common/v1/core.proto";
 import "common/v1/data.proto";
-option go_package = "github.com/sonr-io/core/node/motor";
+
+option go_package = "github.com/sonr-io/core/types/go/node/motor/v1";
+
+
 
 // (Client) ShareResponse is response to ShareRequest
 message ShareResponse {

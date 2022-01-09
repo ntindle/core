@@ -13,7 +13,7 @@ import (
 	dht "github.com/libp2p/go-libp2p-kad-dht"
 	ps "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-msgio"
-	"github.com/sonr-io/core/common"
+	"github.com/sonr-io/core/types/go/common/v1"
 
 	"github.com/sonr-io/core/wallet"
 	"google.golang.org/protobuf/proto"

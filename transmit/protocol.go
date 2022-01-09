@@ -4,10 +4,14 @@ import (
 	"context"
 
 	"github.com/libp2p/go-libp2p-core/network"
-	"github.com/sonr-io/core/common"
+	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/node"
 	"github.com/sonr-io/core/types/go/node/motor/v1"
+	"github.com/sonr-io/core/types/go/protocols/transmit/v1"
+	_ "github.com/sonr-io/core/types/go/protocols/transmit/v1"
 )
+
+type Session = transmit.Session
 
 // TransmitProtocol type
 type TransmitProtocol struct {
@@ -57,7 +61,7 @@ func (p *TransmitProtocol) Incoming(payload *common.Payload, from *common.Peer) 
 	}
 
 	// Create New TransferEntry
-	p.current = NewInSession(payload, from, to)
+	p.current = transmit.NewInSession(payload, from, to)
 	return nil
 }
 
@@ -78,7 +82,7 @@ func (p *TransmitProtocol) Outgoing(payload *common.Payload, to *common.Peer) er
 	}
 
 	// Create New TransferEntry
-	p.current = NewOutSession(payload, from, to)
+	p.current = transmit.NewOutSession(payload, from, to)
 
 	// Send Files
 	if p.current.Payload.IsFile() {

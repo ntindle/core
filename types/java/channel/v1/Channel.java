@@ -36,13 +36,29 @@ public final class Channel {
      */
     EVENT_TYPE_DELETE(3),
     /**
-     * <code>EVENT_TYPE_PUT = 4;</code>
+     * <code>EVENT_TYPE_PUSH = 4;</code>
      */
-    EVENT_TYPE_PUT(4),
+    EVENT_TYPE_PUSH(4),
     /**
      * <code>EVENT_TYPE_SYNC = 5;</code>
      */
     EVENT_TYPE_SYNC(5),
+    /**
+     * <code>EVENT_TYPE_CREATE = 6;</code>
+     */
+    EVENT_TYPE_CREATE(6),
+    /**
+     * <code>EVENT_TYPE_INVITE = 7;</code>
+     */
+    EVENT_TYPE_INVITE(7),
+    /**
+     * <code>EVENT_TYPE_JOIN = 8;</code>
+     */
+    EVENT_TYPE_JOIN(8),
+    /**
+     * <code>EVENT_TYPE_LEAVE = 9;</code>
+     */
+    EVENT_TYPE_LEAVE(9),
     UNRECOGNIZED(-1),
     ;
 
@@ -63,13 +79,29 @@ public final class Channel {
      */
     public static final int EVENT_TYPE_DELETE_VALUE = 3;
     /**
-     * <code>EVENT_TYPE_PUT = 4;</code>
+     * <code>EVENT_TYPE_PUSH = 4;</code>
      */
-    public static final int EVENT_TYPE_PUT_VALUE = 4;
+    public static final int EVENT_TYPE_PUSH_VALUE = 4;
     /**
      * <code>EVENT_TYPE_SYNC = 5;</code>
      */
     public static final int EVENT_TYPE_SYNC_VALUE = 5;
+    /**
+     * <code>EVENT_TYPE_CREATE = 6;</code>
+     */
+    public static final int EVENT_TYPE_CREATE_VALUE = 6;
+    /**
+     * <code>EVENT_TYPE_INVITE = 7;</code>
+     */
+    public static final int EVENT_TYPE_INVITE_VALUE = 7;
+    /**
+     * <code>EVENT_TYPE_JOIN = 8;</code>
+     */
+    public static final int EVENT_TYPE_JOIN_VALUE = 8;
+    /**
+     * <code>EVENT_TYPE_LEAVE = 9;</code>
+     */
+    public static final int EVENT_TYPE_LEAVE_VALUE = 9;
 
 
     public final int getNumber() {
@@ -100,8 +132,12 @@ public final class Channel {
         case 1: return EVENT_TYPE_GET;
         case 2: return EVENT_TYPE_SET;
         case 3: return EVENT_TYPE_DELETE;
-        case 4: return EVENT_TYPE_PUT;
+        case 4: return EVENT_TYPE_PUSH;
         case 5: return EVENT_TYPE_SYNC;
+        case 6: return EVENT_TYPE_CREATE;
+        case 7: return EVENT_TYPE_INVITE;
+        case 8: return EVENT_TYPE_JOIN;
+        case 9: return EVENT_TYPE_LEAVE;
         default: return null;
       }
     }
@@ -163,16 +199,16 @@ public final class Channel {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string peer = 1 [json_name = "peer"];</code>
-     * @return The peer.
+     * <code>string creator = 1 [json_name = "creator"];</code>
+     * @return The creator.
      */
-    java.lang.String getPeer();
+    java.lang.String getCreator();
     /**
-     * <code>string peer = 1 [json_name = "peer"];</code>
-     * @return The bytes for peer.
+     * <code>string creator = 1 [json_name = "creator"];</code>
+     * @return The bytes for creator.
      */
     com.google.protobuf.ByteString
-        getPeerBytes();
+        getCreatorBytes();
 
     /**
      * <code>.channel.v1.EventType type = 2 [json_name = "type"];</code>
@@ -228,7 +264,7 @@ public final class Channel {
       super(builder);
     }
     private Event() {
-      peer_ = "";
+      creator_ = "";
       type_ = 0;
     }
 
@@ -265,7 +301,7 @@ public final class Channel {
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              peer_ = s;
+              creator_ = s;
               break;
             }
             case 16: {
@@ -332,38 +368,38 @@ public final class Channel {
               channel.v1.Channel.Event.class, channel.v1.Channel.Event.Builder.class);
     }
 
-    public static final int PEER_FIELD_NUMBER = 1;
-    private volatile java.lang.Object peer_;
+    public static final int CREATOR_FIELD_NUMBER = 1;
+    private volatile java.lang.Object creator_;
     /**
-     * <code>string peer = 1 [json_name = "peer"];</code>
-     * @return The peer.
+     * <code>string creator = 1 [json_name = "creator"];</code>
+     * @return The creator.
      */
     @java.lang.Override
-    public java.lang.String getPeer() {
-      java.lang.Object ref = peer_;
+    public java.lang.String getCreator() {
+      java.lang.Object ref = creator_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        peer_ = s;
+        creator_ = s;
         return s;
       }
     }
     /**
-     * <code>string peer = 1 [json_name = "peer"];</code>
-     * @return The bytes for peer.
+     * <code>string creator = 1 [json_name = "creator"];</code>
+     * @return The bytes for creator.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getPeerBytes() {
-      java.lang.Object ref = peer_;
+        getCreatorBytes() {
+      java.lang.Object ref = creator_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        peer_ = b;
+        creator_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -455,8 +491,8 @@ public final class Channel {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(peer_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, peer_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(creator_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, creator_);
       }
       if (type_ != channel.v1.Channel.EventType.EVENT_TYPE_UNSPECIFIED.getNumber()) {
         output.writeEnum(2, type_);
@@ -476,8 +512,8 @@ public final class Channel {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(peer_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, peer_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(creator_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, creator_);
       }
       if (type_ != channel.v1.Channel.EventType.EVENT_TYPE_UNSPECIFIED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
@@ -506,8 +542,8 @@ public final class Channel {
       }
       channel.v1.Channel.Event other = (channel.v1.Channel.Event) obj;
 
-      if (!getPeer()
-          .equals(other.getPeer())) return false;
+      if (!getCreator()
+          .equals(other.getCreator())) return false;
       if (type_ != other.type_) return false;
       if (hasEntry() != other.hasEntry()) return false;
       if (hasEntry()) {
@@ -530,8 +566,8 @@ public final class Channel {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PEER_FIELD_NUMBER;
-      hash = (53 * hash) + getPeer().hashCode();
+      hash = (37 * hash) + CREATOR_FIELD_NUMBER;
+      hash = (53 * hash) + getCreator().hashCode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + type_;
       if (hasEntry()) {
@@ -675,7 +711,7 @@ public final class Channel {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        peer_ = "";
+        creator_ = "";
 
         type_ = 0;
 
@@ -717,7 +753,7 @@ public final class Channel {
       @java.lang.Override
       public channel.v1.Channel.Event buildPartial() {
         channel.v1.Channel.Event result = new channel.v1.Channel.Event(this);
-        result.peer_ = peer_;
+        result.creator_ = creator_;
         result.type_ = type_;
         if (entryBuilder_ == null) {
           result.entry_ = entry_;
@@ -777,8 +813,8 @@ public final class Channel {
 
       public Builder mergeFrom(channel.v1.Channel.Event other) {
         if (other == channel.v1.Channel.Event.getDefaultInstance()) return this;
-        if (!other.getPeer().isEmpty()) {
-          peer_ = other.peer_;
+        if (!other.getCreator().isEmpty()) {
+          creator_ = other.creator_;
           onChanged();
         }
         if (other.type_ != 0) {
@@ -819,78 +855,78 @@ public final class Channel {
         return this;
       }
 
-      private java.lang.Object peer_ = "";
+      private java.lang.Object creator_ = "";
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
-       * @return The peer.
+       * <code>string creator = 1 [json_name = "creator"];</code>
+       * @return The creator.
        */
-      public java.lang.String getPeer() {
-        java.lang.Object ref = peer_;
+      public java.lang.String getCreator() {
+        java.lang.Object ref = creator_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          peer_ = s;
+          creator_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
-       * @return The bytes for peer.
+       * <code>string creator = 1 [json_name = "creator"];</code>
+       * @return The bytes for creator.
        */
       public com.google.protobuf.ByteString
-          getPeerBytes() {
-        java.lang.Object ref = peer_;
+          getCreatorBytes() {
+        java.lang.Object ref = creator_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          peer_ = b;
+          creator_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
-       * @param value The peer to set.
+       * <code>string creator = 1 [json_name = "creator"];</code>
+       * @param value The creator to set.
        * @return This builder for chaining.
        */
-      public Builder setPeer(
+      public Builder setCreator(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        peer_ = value;
+        creator_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
+       * <code>string creator = 1 [json_name = "creator"];</code>
        * @return This builder for chaining.
        */
-      public Builder clearPeer() {
+      public Builder clearCreator() {
         
-        peer_ = getDefaultInstance().getPeer();
+        creator_ = getDefaultInstance().getCreator();
         onChanged();
         return this;
       }
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
-       * @param value The bytes for peer to set.
+       * <code>string creator = 1 [json_name = "creator"];</code>
+       * @param value The bytes for creator to set.
        * @return This builder for chaining.
        */
-      public Builder setPeerBytes(
+      public Builder setCreatorBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        peer_ = value;
+        creator_ = value;
         onChanged();
         return this;
       }
@@ -2197,16 +2233,16 @@ public final class Channel {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string peer = 1 [json_name = "peer"];</code>
-     * @return The peer.
+     * <code>string creator = 1 [json_name = "creator"];</code>
+     * @return The creator.
      */
-    java.lang.String getPeer();
+    java.lang.String getCreator();
     /**
-     * <code>string peer = 1 [json_name = "peer"];</code>
-     * @return The bytes for peer.
+     * <code>string creator = 1 [json_name = "creator"];</code>
+     * @return The bytes for creator.
      */
     com.google.protobuf.ByteString
-        getPeerBytes();
+        getCreatorBytes();
 
     /**
      * <code>string key = 2 [json_name = "key"];</code>
@@ -2257,7 +2293,7 @@ public final class Channel {
       super(builder);
     }
     private StoreEntry() {
-      peer_ = "";
+      creator_ = "";
       key_ = "";
       value_ = com.google.protobuf.ByteString.EMPTY;
     }
@@ -2295,7 +2331,7 @@ public final class Channel {
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              peer_ = s;
+              creator_ = s;
               break;
             }
             case 18: {
@@ -2356,38 +2392,38 @@ public final class Channel {
               channel.v1.Channel.StoreEntry.class, channel.v1.Channel.StoreEntry.Builder.class);
     }
 
-    public static final int PEER_FIELD_NUMBER = 1;
-    private volatile java.lang.Object peer_;
+    public static final int CREATOR_FIELD_NUMBER = 1;
+    private volatile java.lang.Object creator_;
     /**
-     * <code>string peer = 1 [json_name = "peer"];</code>
-     * @return The peer.
+     * <code>string creator = 1 [json_name = "creator"];</code>
+     * @return The creator.
      */
     @java.lang.Override
-    public java.lang.String getPeer() {
-      java.lang.Object ref = peer_;
+    public java.lang.String getCreator() {
+      java.lang.Object ref = creator_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        peer_ = s;
+        creator_ = s;
         return s;
       }
     }
     /**
-     * <code>string peer = 1 [json_name = "peer"];</code>
-     * @return The bytes for peer.
+     * <code>string creator = 1 [json_name = "creator"];</code>
+     * @return The bytes for creator.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getPeerBytes() {
-      java.lang.Object ref = peer_;
+        getCreatorBytes() {
+      java.lang.Object ref = creator_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        peer_ = b;
+        creator_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -2490,8 +2526,8 @@ public final class Channel {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(peer_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, peer_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(creator_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, creator_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(key_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, key_);
@@ -2517,8 +2553,8 @@ public final class Channel {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(peer_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, peer_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(creator_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, creator_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(key_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, key_);
@@ -2554,8 +2590,8 @@ public final class Channel {
       }
       channel.v1.Channel.StoreEntry other = (channel.v1.Channel.StoreEntry) obj;
 
-      if (!getPeer()
-          .equals(other.getPeer())) return false;
+      if (!getCreator()
+          .equals(other.getCreator())) return false;
       if (!getKey()
           .equals(other.getKey())) return false;
       if (!getValue()
@@ -2577,8 +2613,8 @@ public final class Channel {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PEER_FIELD_NUMBER;
-      hash = (53 * hash) + getPeer().hashCode();
+      hash = (37 * hash) + CREATOR_FIELD_NUMBER;
+      hash = (53 * hash) + getCreator().hashCode();
       hash = (37 * hash) + KEY_FIELD_NUMBER;
       hash = (53 * hash) + getKey().hashCode();
       hash = (37 * hash) + VALUE_FIELD_NUMBER;
@@ -2725,7 +2761,7 @@ public final class Channel {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        peer_ = "";
+        creator_ = "";
 
         key_ = "";
 
@@ -2763,7 +2799,7 @@ public final class Channel {
       @java.lang.Override
       public channel.v1.Channel.StoreEntry buildPartial() {
         channel.v1.Channel.StoreEntry result = new channel.v1.Channel.StoreEntry(this);
-        result.peer_ = peer_;
+        result.creator_ = creator_;
         result.key_ = key_;
         result.value_ = value_;
         result.expiration_ = expiration_;
@@ -2817,8 +2853,8 @@ public final class Channel {
 
       public Builder mergeFrom(channel.v1.Channel.StoreEntry other) {
         if (other == channel.v1.Channel.StoreEntry.getDefaultInstance()) return this;
-        if (!other.getPeer().isEmpty()) {
-          peer_ = other.peer_;
+        if (!other.getCreator().isEmpty()) {
+          creator_ = other.creator_;
           onChanged();
         }
         if (!other.getKey().isEmpty()) {
@@ -2866,78 +2902,78 @@ public final class Channel {
         return this;
       }
 
-      private java.lang.Object peer_ = "";
+      private java.lang.Object creator_ = "";
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
-       * @return The peer.
+       * <code>string creator = 1 [json_name = "creator"];</code>
+       * @return The creator.
        */
-      public java.lang.String getPeer() {
-        java.lang.Object ref = peer_;
+      public java.lang.String getCreator() {
+        java.lang.Object ref = creator_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          peer_ = s;
+          creator_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
-       * @return The bytes for peer.
+       * <code>string creator = 1 [json_name = "creator"];</code>
+       * @return The bytes for creator.
        */
       public com.google.protobuf.ByteString
-          getPeerBytes() {
-        java.lang.Object ref = peer_;
+          getCreatorBytes() {
+        java.lang.Object ref = creator_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          peer_ = b;
+          creator_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
-       * @param value The peer to set.
+       * <code>string creator = 1 [json_name = "creator"];</code>
+       * @param value The creator to set.
        * @return This builder for chaining.
        */
-      public Builder setPeer(
+      public Builder setCreator(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        peer_ = value;
+        creator_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
+       * <code>string creator = 1 [json_name = "creator"];</code>
        * @return This builder for chaining.
        */
-      public Builder clearPeer() {
+      public Builder clearCreator() {
         
-        peer_ = getDefaultInstance().getPeer();
+        creator_ = getDefaultInstance().getCreator();
         onChanged();
         return this;
       }
       /**
-       * <code>string peer = 1 [json_name = "peer"];</code>
-       * @param value The bytes for peer to set.
+       * <code>string creator = 1 [json_name = "creator"];</code>
+       * @param value The bytes for creator to set.
        * @return This builder for chaining.
        */
-      public Builder setPeerBytes(
+      public Builder setCreatorBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        peer_ = value;
+        creator_ = value;
         onChanged();
         return this;
       }
@@ -3226,26 +3262,28 @@ public final class Channel {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030channel/v1/channel.proto\022\nchannel.v1\"\235" +
-      "\001\n\005Event\022\022\n\004peer\030\001 \001(\tR\004peer\022)\n\004type\030\002 \001" +
-      "(\0162\025.channel.v1.EventTypeR\004type\022,\n\005entry" +
-      "\030\003 \001(\0132\026.channel.v1.StoreEntryR\005entry\022\'\n" +
-      "\005store\030\004 \001(\0132\021.channel.v1.StoreR\005store\"\323" +
-      "\001\n\005Store\022/\n\004data\030\001 \003(\0132\033.channel.v1.Stor" +
-      "e.DataEntryR\004data\022\032\n\010capacity\030\002 \001(\005R\010cap" +
-      "acity\022\032\n\010modified\030\003 \001(\003R\010modified\022\020\n\003ttl" +
-      "\030\004 \001(\003R\003ttl\032O\n\tDataEntry\022\020\n\003key\030\001 \001(\tR\003k" +
-      "ey\022,\n\005value\030\002 \001(\0132\026.channel.v1.StoreEntr" +
-      "yR\005value:\0028\001\"\236\001\n\nStoreEntry\022\022\n\004peer\030\001 \001(" +
-      "\tR\004peer\022\020\n\003key\030\002 \001(\tR\003key\022\024\n\005value\030\003 \001(\014" +
-      "R\005value\022\036\n\nexpiration\030\004 \001(\003R\nexpiration\022" +
-      "\030\n\007created\030\005 \001(\003R\007created\022\032\n\010modified\030\006 " +
-      "\001(\003R\010modified*\217\001\n\tEventType\022\032\n\026EVENT_TYP" +
-      "E_UNSPECIFIED\020\000\022\022\n\016EVENT_TYPE_GET\020\001\022\022\n\016E" +
-      "VENT_TYPE_SET\020\002\022\025\n\021EVENT_TYPE_DELETE\020\003\022\022" +
-      "\n\016EVENT_TYPE_PUT\020\004\022\023\n\017EVENT_TYPE_SYNC\020\005B" +
-      "!Z\037github.com/sonr-io/core/channelb\006prot" +
-      "o3"
+      "\n\030channel/v1/channel.proto\022\nchannel.v1\"\243" +
+      "\001\n\005Event\022\030\n\007creator\030\001 \001(\tR\007creator\022)\n\004ty" +
+      "pe\030\002 \001(\0162\025.channel.v1.EventTypeR\004type\022,\n" +
+      "\005entry\030\003 \001(\0132\026.channel.v1.StoreEntryR\005en" +
+      "try\022\'\n\005store\030\004 \001(\0132\021.channel.v1.StoreR\005s" +
+      "tore\"\323\001\n\005Store\022/\n\004data\030\001 \003(\0132\033.channel.v" +
+      "1.Store.DataEntryR\004data\022\032\n\010capacity\030\002 \001(" +
+      "\005R\010capacity\022\032\n\010modified\030\003 \001(\003R\010modified\022" +
+      "\020\n\003ttl\030\004 \001(\003R\003ttl\032O\n\tDataEntry\022\020\n\003key\030\001 " +
+      "\001(\tR\003key\022,\n\005value\030\002 \001(\0132\026.channel.v1.Sto" +
+      "reEntryR\005value:\0028\001\"\244\001\n\nStoreEntry\022\030\n\007cre" +
+      "ator\030\001 \001(\tR\007creator\022\020\n\003key\030\002 \001(\tR\003key\022\024\n" +
+      "\005value\030\003 \001(\014R\005value\022\036\n\nexpiration\030\004 \001(\003R" +
+      "\nexpiration\022\030\n\007created\030\005 \001(\003R\007created\022\032\n" +
+      "\010modified\030\006 \001(\003R\010modified*\351\001\n\tEventType\022" +
+      "\032\n\026EVENT_TYPE_UNSPECIFIED\020\000\022\022\n\016EVENT_TYP" +
+      "E_GET\020\001\022\022\n\016EVENT_TYPE_SET\020\002\022\025\n\021EVENT_TYP" +
+      "E_DELETE\020\003\022\023\n\017EVENT_TYPE_PUSH\020\004\022\023\n\017EVENT" +
+      "_TYPE_SYNC\020\005\022\025\n\021EVENT_TYPE_CREATE\020\006\022\025\n\021E" +
+      "VENT_TYPE_INVITE\020\007\022\023\n\017EVENT_TYPE_JOIN\020\010\022" +
+      "\024\n\020EVENT_TYPE_LEAVE\020\tB!Z\037github.com/sonr" +
+      "-io/core/channelb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3256,7 +3294,7 @@ public final class Channel {
     internal_static_channel_v1_Event_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_channel_v1_Event_descriptor,
-        new java.lang.String[] { "Peer", "Type", "Entry", "Store", });
+        new java.lang.String[] { "Creator", "Type", "Entry", "Store", });
     internal_static_channel_v1_Store_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_channel_v1_Store_fieldAccessorTable = new
@@ -3274,7 +3312,7 @@ public final class Channel {
     internal_static_channel_v1_StoreEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_channel_v1_StoreEntry_descriptor,
-        new java.lang.String[] { "Peer", "Key", "Value", "Expiration", "Created", "Modified", });
+        new java.lang.String[] { "Creator", "Key", "Value", "Expiration", "Created", "Modified", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

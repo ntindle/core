@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/sonr-io/core/common"
+	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/device"
 	"github.com/sonr-io/core/types/go/node/motor/v1"
 )
@@ -111,7 +111,7 @@ type Configuration struct {
 func defaultConfiguration() *Configuration {
 	// Default configuration
 	c := &Configuration{
-		connection: common.Connection_WIFI,
+		connection: common.Connection_CONNECTION_WIFI,
 		location:   common.NewDefaultLocation(),
 		profile:    common.NewDefaultProfile(),
 	}

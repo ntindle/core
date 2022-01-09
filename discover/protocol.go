@@ -5,8 +5,8 @@ import (
 
 	"github.com/kataras/golog"
 	"github.com/pkg/errors"
-	"github.com/sonr-io/core/channel"
-	"github.com/sonr-io/core/common"
+	"github.com/sonr-io/core/types/go/channel/v1"
+	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/node"
 	"google.golang.org/protobuf/proto"
 )
@@ -23,7 +23,7 @@ type DiscoverProtocol struct {
 	node     node.NodeImpl
 	callback node.CallbackImpl
 	ctx      context.Context
-	global   channel.Channel
+	global   channel.StoreChannel
 	local    *Local
 	mode     node.Role
 }

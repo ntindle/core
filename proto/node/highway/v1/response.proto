@@ -3,23 +3,46 @@ syntax = "proto3";
 
 package node.highway.v1;
 import "common/v1/core.proto";
-import "node/codes/v1/response.proto";
-option go_package = "github.com/sonr-io/core/node/highway";
+option go_package = "github.com/sonr-io/core/types/go/node/highway/v1";
+
+enum ResponseType {
+    StatusResponse_UNSPECIFIED = 0;
+    StatusResponse_OK = 1;
+    StatusResponse_ERROR = 2;
+    StatusResponse_UNAUTHORIZED = 3;
+    StatusResponse_INVALID_ARGUMENT = 4;
+    StatusResponse_NOT_FOUND = 5;
+    StatusResponse_ALREADY_EXISTS = 6;
+    StatusResponse_PERMISSION_DENIED = 7;
+    StatusResponse_RESOURCE_EXHAUSTED = 8;
+    StatusResponse_FAILED_PRECONDITION = 9;
+    StatusResponse_ABORTED = 10;
+    StatusResponse_OUT_OF_RANGE = 11;
+    StatusResponse_UNIMPLEMENTED = 12;
+}
+
+message ResponseInfo {
+    bool ok = 1;
+    int32 code = 2;
+    ResponseType type = 3;
+    string message = 4;
+}
+
 
 message CreateChannelResponse {
-  node.codes.v1.ResponseInfo info = 1;
+  ResponseInfo info = 1;
 }
 
 message SubscribeChannelResponse {
-  node.codes.v1.ResponseInfo info = 1;
+  ResponseInfo info = 1;
 }
 
 message UnsubscribeChannelResponse {
-  node.codes.v1.ResponseInfo info = 1;
+  ResponseInfo info = 1;
 }
 
 message UpdateChannelResponse {
-  node.codes.v1.ResponseInfo info = 1;
+  ResponseInfo info = 1;
 }
 
 // (Highway) AuthenticateResponse is Message for Verifying Response (Hmac Sha256)

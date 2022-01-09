@@ -3,7 +3,8 @@ syntax = "proto3";
 package protocols.transmit.v1;
 import "common/v1/core.proto";
 import "common/v1/data.proto";
-option go_package = "github.com/sonr-io/core/transmit";
+
+option go_package = "github.com/sonr-io/core/types/go/protocols/transmit/v1";
 
 message Session {
   common.v1.Direction direction = 1;

@@ -6,9 +6,10 @@ import (
 
 	"github.com/libp2p/go-libp2p-core/peer"
 	ps "github.com/libp2p/go-libp2p-pubsub"
-	"github.com/sonr-io/core/common"
+	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/node"
 	"github.com/sonr-io/core/types/go/node/motor/v1"
+	"github.com/sonr-io/core/types/go/protocols/discover/v1"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -127,7 +128,7 @@ func (p *Local) handleTopic() {
 		// Check Message and Validate not User
 		if msg.ReceivedFrom != p.selfID {
 			// Unmarshal Message
-			data := &LobbyMessage{}
+			data := &discover.LobbyMessage{}
 			err = proto.Unmarshal(msg.Data, data)
 			if err != nil {
 				logger.Errorf("%s - Failed to Unmarshal Message", err)
@@ -180,7 +181,7 @@ func (lp *Local) callUpdate() error {
 // createLobbyMsgBuf Creates a new Message Buffer for Local Topic
 func createLobbyMsgBuf(p *common.Peer) []byte {
 	// Marshal Event
-	event := &LobbyMessage{Peer: p}
+	event := &discover.LobbyMessage{Peer: p}
 	eventBuf, err := proto.Marshal(event)
 	if err != nil {
 		logger.Errorf("%s - Failed to Marshal Event", err)
@@ -195,14 +196,14 @@ func (lp *Local) hasPeer(data *common.Peer) bool {
 	hasInTopic := false
 	// Check if Peer is in Data List
 	for _, p := range lp.peers {
-		if p.GetPeerID() == data.GetPeerID() {
+		if p.GetPeerId() == data.GetPeerId() {
 			hasInList = true
 		}
 	}
 
 	// Check if Peer is in Topic
 	for _, p := range lp.topic.ListPeers() {
-		if p.String() == data.GetPeerID() {
+		if p.String() == data.GetPeerId() {
 			hasInTopic = true
 		}
 	}
@@ -245,7 +246,7 @@ func (lp *Local) indexOfPeer(peer *common.Peer) int {
 // removePeer Removes Peer from Local Peer-Data List
 func (lp *Local) removePeer(peerID peer.ID) bool {
 	for i, p := range lp.peers {
-		if p.GetPeerID() == peerID.String() {
+		if p.GetPeerId() == peerID.String() {
 			lp.peers = append(lp.peers[:i], lp.peers[i+1:]...)
 			lp.callRefresh()
 			return true

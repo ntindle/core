@@ -9,7 +9,7 @@
 package motor
 
 import (
-	common "github.com/sonr-io/core/common"
+	common "github.com/sonr-io/core/types/go/common/v1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

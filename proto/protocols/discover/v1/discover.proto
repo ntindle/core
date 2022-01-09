@@ -2,7 +2,10 @@ syntax = "proto3";
 
 package protocols.discover.v1;
 import "common/v1/core.proto";
-option go_package = "github.com/sonr-io/core/discover";
+
+option go_package = "github.com/sonr-io/core/types/go/protocols/discover/v1";
+
+
 
 // LobbyMessage is message passed from Peer in Lobby
 message LobbyMessage {

@@ -5,8 +5,6 @@ import (
 
 	"github.com/kataras/golog"
 	"github.com/libp2p/go-libp2p-core/protocol"
-	"github.com/sonr-io/core/common"
-	"github.com/sonr-io/core/device"
 )
 
 // Transfer Protocol ID's
@@ -42,49 +40,4 @@ func (o *options) Apply(p *TransmitProtocol) error {
 	// Apply options
 	p.mode = p.node.Role()
 	return nil
-}
-
-// NewSessionPayload creates session payload
-func NewSessionPayload(p *common.Payload) *SessionPayload {
-	return &SessionPayload{
-		Payload: p,
-	}
-}
-
-// CreateItems creates list of sessionItems
-func (sp *SessionPayload) CreateItems(dir common.Direction) []*SessionItem {
-	// Initialize Properties
-	count := len(sp.GetPayload().GetItems())
-	items := make([]*SessionItem, 0)
-
-	// Iterate over items
-	for i, v := range sp.GetPayload().GetItems() {
-		// Get default payload item properties
-		fi := v.GetFile()
-		path := fi.GetPath()
-
-		// Set Path for Incoming
-		if dir == common.Direction_INCOMING {
-			inpath, err := fi.SetPathFromFolder(device.Downloads)
-			if err == nil {
-				path = inpath
-			} else {
-				logger.Errorf("%s - Failed to generate path for file: %s", err, fi.Name)
-			}
-		}
-
-		// Create Session Item
-		item := &SessionItem{
-			Item:      fi,
-			Index:     int32(i),
-			TotalSize: sp.GetPayload().GetSize(),
-			Size:      fi.GetSize(),
-			Count:     int32(count),
-			Direction: dir,
-			Written:   0,
-			Path:      path,
-		}
-		items = append(items, item)
-	}
-	return items
 }

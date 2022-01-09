@@ -1,30 +1,9 @@
 package exchange
 
 import (
-	"time"
-
 	"github.com/libp2p/go-libp2p-core/peer"
-	common "github.com/sonr-io/core/common"
-	"github.com/sonr-io/core/types/go/node/motor/v1"
+	common "github.com/sonr-io/core/types/go/common/v1"
 )
-
-// ToEvent method on InviteResponse converts InviteResponse to DecisionEvent.
-func (ir *InviteResponse) ToEvent() *motor.OnTransmitDecisionResponse {
-	return &motor.OnTransmitDecisionResponse{
-		From:     ir.GetFrom(),
-		Received: int64(time.Now().Unix()),
-		Decision: ir.GetDecision(),
-	}
-}
-
-// ToEvent method on InviteRequest converts InviteRequest to InviteEvent.
-func (ir *InviteRequest) ToEvent() *motor.OnTransmitInviteResponse {
-	return &motor.OnTransmitInviteResponse{
-		Received: int64(time.Now().Unix()),
-		From:     ir.GetFrom(),
-		Payload:  ir.GetPayload(),
-	}
-}
 
 // createRequest creates a new InviteRequest
 func (p *ExchangeProtocol) createRequest(to *common.Peer, payload *common.Payload) (peer.ID, *InviteRequest, error) {

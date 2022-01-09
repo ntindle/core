@@ -15,7 +15,7 @@ import (
 	"github.com/libp2p/go-libp2p/p2p/discovery/mdns"
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/pkg/errors"
-	"github.com/sonr-io/core/common"
+	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/wallet"
 )
 

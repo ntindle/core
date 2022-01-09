@@ -4,7 +4,7 @@ syntax = "proto3";
 package node.highway.v1;
 import "node/highway/v1/request.proto";
 import "node/highway/v1/response.proto";
-option go_package = "github.com/sonr-io/core/node/highway";
+option go_package = "github.com/sonr-io/core/types/go/node/highway/v1";
 
 // RPC Service with Equivalent Methods of a binded Node
 service HighwayService {

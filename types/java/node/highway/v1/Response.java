@@ -14,24 +14,1047 @@ public final class Response {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  /**
+   * Protobuf enum {@code node.highway.v1.ResponseType}
+   */
+  public enum ResponseType
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>StatusResponse_UNSPECIFIED = 0;</code>
+     */
+    StatusResponse_UNSPECIFIED(0),
+    /**
+     * <code>StatusResponse_OK = 1;</code>
+     */
+    StatusResponse_OK(1),
+    /**
+     * <code>StatusResponse_ERROR = 2;</code>
+     */
+    StatusResponse_ERROR(2),
+    /**
+     * <code>StatusResponse_UNAUTHORIZED = 3;</code>
+     */
+    StatusResponse_UNAUTHORIZED(3),
+    /**
+     * <code>StatusResponse_INVALID_ARGUMENT = 4;</code>
+     */
+    StatusResponse_INVALID_ARGUMENT(4),
+    /**
+     * <code>StatusResponse_NOT_FOUND = 5;</code>
+     */
+    StatusResponse_NOT_FOUND(5),
+    /**
+     * <code>StatusResponse_ALREADY_EXISTS = 6;</code>
+     */
+    StatusResponse_ALREADY_EXISTS(6),
+    /**
+     * <code>StatusResponse_PERMISSION_DENIED = 7;</code>
+     */
+    StatusResponse_PERMISSION_DENIED(7),
+    /**
+     * <code>StatusResponse_RESOURCE_EXHAUSTED = 8;</code>
+     */
+    StatusResponse_RESOURCE_EXHAUSTED(8),
+    /**
+     * <code>StatusResponse_FAILED_PRECONDITION = 9;</code>
+     */
+    StatusResponse_FAILED_PRECONDITION(9),
+    /**
+     * <code>StatusResponse_ABORTED = 10;</code>
+     */
+    StatusResponse_ABORTED(10),
+    /**
+     * <code>StatusResponse_OUT_OF_RANGE = 11;</code>
+     */
+    StatusResponse_OUT_OF_RANGE(11),
+    /**
+     * <code>StatusResponse_UNIMPLEMENTED = 12;</code>
+     */
+    StatusResponse_UNIMPLEMENTED(12),
+    UNRECOGNIZED(-1),
+    ;
+
+    /**
+     * <code>StatusResponse_UNSPECIFIED = 0;</code>
+     */
+    public static final int StatusResponse_UNSPECIFIED_VALUE = 0;
+    /**
+     * <code>StatusResponse_OK = 1;</code>
+     */
+    public static final int StatusResponse_OK_VALUE = 1;
+    /**
+     * <code>StatusResponse_ERROR = 2;</code>
+     */
+    public static final int StatusResponse_ERROR_VALUE = 2;
+    /**
+     * <code>StatusResponse_UNAUTHORIZED = 3;</code>
+     */
+    public static final int StatusResponse_UNAUTHORIZED_VALUE = 3;
+    /**
+     * <code>StatusResponse_INVALID_ARGUMENT = 4;</code>
+     */
+    public static final int StatusResponse_INVALID_ARGUMENT_VALUE = 4;
+    /**
+     * <code>StatusResponse_NOT_FOUND = 5;</code>
+     */
+    public static final int StatusResponse_NOT_FOUND_VALUE = 5;
+    /**
+     * <code>StatusResponse_ALREADY_EXISTS = 6;</code>
+     */
+    public static final int StatusResponse_ALREADY_EXISTS_VALUE = 6;
+    /**
+     * <code>StatusResponse_PERMISSION_DENIED = 7;</code>
+     */
+    public static final int StatusResponse_PERMISSION_DENIED_VALUE = 7;
+    /**
+     * <code>StatusResponse_RESOURCE_EXHAUSTED = 8;</code>
+     */
+    public static final int StatusResponse_RESOURCE_EXHAUSTED_VALUE = 8;
+    /**
+     * <code>StatusResponse_FAILED_PRECONDITION = 9;</code>
+     */
+    public static final int StatusResponse_FAILED_PRECONDITION_VALUE = 9;
+    /**
+     * <code>StatusResponse_ABORTED = 10;</code>
+     */
+    public static final int StatusResponse_ABORTED_VALUE = 10;
+    /**
+     * <code>StatusResponse_OUT_OF_RANGE = 11;</code>
+     */
+    public static final int StatusResponse_OUT_OF_RANGE_VALUE = 11;
+    /**
+     * <code>StatusResponse_UNIMPLEMENTED = 12;</code>
+     */
+    public static final int StatusResponse_UNIMPLEMENTED_VALUE = 12;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static ResponseType valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static ResponseType forNumber(int value) {
+      switch (value) {
+        case 0: return StatusResponse_UNSPECIFIED;
+        case 1: return StatusResponse_OK;
+        case 2: return StatusResponse_ERROR;
+        case 3: return StatusResponse_UNAUTHORIZED;
+        case 4: return StatusResponse_INVALID_ARGUMENT;
+        case 5: return StatusResponse_NOT_FOUND;
+        case 6: return StatusResponse_ALREADY_EXISTS;
+        case 7: return StatusResponse_PERMISSION_DENIED;
+        case 8: return StatusResponse_RESOURCE_EXHAUSTED;
+        case 9: return StatusResponse_FAILED_PRECONDITION;
+        case 10: return StatusResponse_ABORTED;
+        case 11: return StatusResponse_OUT_OF_RANGE;
+        case 12: return StatusResponse_UNIMPLEMENTED;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<ResponseType>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        ResponseType> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ResponseType>() {
+            public ResponseType findValueByNumber(int number) {
+              return ResponseType.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return node.highway.v1.Response.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final ResponseType[] VALUES = values();
+
+    public static ResponseType valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private ResponseType(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:node.highway.v1.ResponseType)
+  }
+
+  public interface ResponseInfoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:node.highway.v1.ResponseInfo)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>bool ok = 1 [json_name = "ok"];</code>
+     * @return The ok.
+     */
+    boolean getOk();
+
+    /**
+     * <code>int32 code = 2 [json_name = "code"];</code>
+     * @return The code.
+     */
+    int getCode();
+
+    /**
+     * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+     * @return The enum numeric value on the wire for type.
+     */
+    int getTypeValue();
+    /**
+     * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+     * @return The type.
+     */
+    node.highway.v1.Response.ResponseType getType();
+
+    /**
+     * <code>string message = 4 [json_name = "message"];</code>
+     * @return The message.
+     */
+    java.lang.String getMessage();
+    /**
+     * <code>string message = 4 [json_name = "message"];</code>
+     * @return The bytes for message.
+     */
+    com.google.protobuf.ByteString
+        getMessageBytes();
+  }
+  /**
+   * Protobuf type {@code node.highway.v1.ResponseInfo}
+   */
+  public static final class ResponseInfo extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:node.highway.v1.ResponseInfo)
+      ResponseInfoOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ResponseInfo.newBuilder() to construct.
+    private ResponseInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ResponseInfo() {
+      type_ = 0;
+      message_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new ResponseInfo();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ResponseInfo(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              ok_ = input.readBool();
+              break;
+            }
+            case 16: {
+
+              code_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+
+              type_ = rawValue;
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              message_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return node.highway.v1.Response.internal_static_node_highway_v1_ResponseInfo_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return node.highway.v1.Response.internal_static_node_highway_v1_ResponseInfo_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              node.highway.v1.Response.ResponseInfo.class, node.highway.v1.Response.ResponseInfo.Builder.class);
+    }
+
+    public static final int OK_FIELD_NUMBER = 1;
+    private boolean ok_;
+    /**
+     * <code>bool ok = 1 [json_name = "ok"];</code>
+     * @return The ok.
+     */
+    @java.lang.Override
+    public boolean getOk() {
+      return ok_;
+    }
+
+    public static final int CODE_FIELD_NUMBER = 2;
+    private int code_;
+    /**
+     * <code>int32 code = 2 [json_name = "code"];</code>
+     * @return The code.
+     */
+    @java.lang.Override
+    public int getCode() {
+      return code_;
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 3;
+    private int type_;
+    /**
+     * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+     * @return The enum numeric value on the wire for type.
+     */
+    @java.lang.Override public int getTypeValue() {
+      return type_;
+    }
+    /**
+     * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+     * @return The type.
+     */
+    @java.lang.Override public node.highway.v1.Response.ResponseType getType() {
+      @SuppressWarnings("deprecation")
+      node.highway.v1.Response.ResponseType result = node.highway.v1.Response.ResponseType.valueOf(type_);
+      return result == null ? node.highway.v1.Response.ResponseType.UNRECOGNIZED : result;
+    }
+
+    public static final int MESSAGE_FIELD_NUMBER = 4;
+    private volatile java.lang.Object message_;
+    /**
+     * <code>string message = 4 [json_name = "message"];</code>
+     * @return The message.
+     */
+    @java.lang.Override
+    public java.lang.String getMessage() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        message_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string message = 4 [json_name = "message"];</code>
+     * @return The bytes for message.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getMessageBytes() {
+      java.lang.Object ref = message_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        message_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (ok_ != false) {
+        output.writeBool(1, ok_);
+      }
+      if (code_ != 0) {
+        output.writeInt32(2, code_);
+      }
+      if (type_ != node.highway.v1.Response.ResponseType.StatusResponse_UNSPECIFIED.getNumber()) {
+        output.writeEnum(3, type_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, message_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (ok_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, ok_);
+      }
+      if (code_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, code_);
+      }
+      if (type_ != node.highway.v1.Response.ResponseType.StatusResponse_UNSPECIFIED.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, type_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(message_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, message_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof node.highway.v1.Response.ResponseInfo)) {
+        return super.equals(obj);
+      }
+      node.highway.v1.Response.ResponseInfo other = (node.highway.v1.Response.ResponseInfo) obj;
+
+      if (getOk()
+          != other.getOk()) return false;
+      if (getCode()
+          != other.getCode()) return false;
+      if (type_ != other.type_) return false;
+      if (!getMessage()
+          .equals(other.getMessage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + OK_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getOk());
+      hash = (37 * hash) + CODE_FIELD_NUMBER;
+      hash = (53 * hash) + getCode();
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + type_;
+      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getMessage().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static node.highway.v1.Response.ResponseInfo parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static node.highway.v1.Response.ResponseInfo parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(node.highway.v1.Response.ResponseInfo prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code node.highway.v1.ResponseInfo}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:node.highway.v1.ResponseInfo)
+        node.highway.v1.Response.ResponseInfoOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return node.highway.v1.Response.internal_static_node_highway_v1_ResponseInfo_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return node.highway.v1.Response.internal_static_node_highway_v1_ResponseInfo_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                node.highway.v1.Response.ResponseInfo.class, node.highway.v1.Response.ResponseInfo.Builder.class);
+      }
+
+      // Construct using node.highway.v1.Response.ResponseInfo.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        ok_ = false;
+
+        code_ = 0;
+
+        type_ = 0;
+
+        message_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return node.highway.v1.Response.internal_static_node_highway_v1_ResponseInfo_descriptor;
+      }
+
+      @java.lang.Override
+      public node.highway.v1.Response.ResponseInfo getDefaultInstanceForType() {
+        return node.highway.v1.Response.ResponseInfo.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public node.highway.v1.Response.ResponseInfo build() {
+        node.highway.v1.Response.ResponseInfo result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public node.highway.v1.Response.ResponseInfo buildPartial() {
+        node.highway.v1.Response.ResponseInfo result = new node.highway.v1.Response.ResponseInfo(this);
+        result.ok_ = ok_;
+        result.code_ = code_;
+        result.type_ = type_;
+        result.message_ = message_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof node.highway.v1.Response.ResponseInfo) {
+          return mergeFrom((node.highway.v1.Response.ResponseInfo)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(node.highway.v1.Response.ResponseInfo other) {
+        if (other == node.highway.v1.Response.ResponseInfo.getDefaultInstance()) return this;
+        if (other.getOk() != false) {
+          setOk(other.getOk());
+        }
+        if (other.getCode() != 0) {
+          setCode(other.getCode());
+        }
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
+        }
+        if (!other.getMessage().isEmpty()) {
+          message_ = other.message_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        node.highway.v1.Response.ResponseInfo parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (node.highway.v1.Response.ResponseInfo) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private boolean ok_ ;
+      /**
+       * <code>bool ok = 1 [json_name = "ok"];</code>
+       * @return The ok.
+       */
+      @java.lang.Override
+      public boolean getOk() {
+        return ok_;
+      }
+      /**
+       * <code>bool ok = 1 [json_name = "ok"];</code>
+       * @param value The ok to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOk(boolean value) {
+        
+        ok_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool ok = 1 [json_name = "ok"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOk() {
+        
+        ok_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int code_ ;
+      /**
+       * <code>int32 code = 2 [json_name = "code"];</code>
+       * @return The code.
+       */
+      @java.lang.Override
+      public int getCode() {
+        return code_;
+      }
+      /**
+       * <code>int32 code = 2 [json_name = "code"];</code>
+       * @param value The code to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCode(int value) {
+        
+        code_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 code = 2 [json_name = "code"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCode() {
+        
+        code_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int type_ = 0;
+      /**
+       * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+       * @return The enum numeric value on the wire for type.
+       */
+      @java.lang.Override public int getTypeValue() {
+        return type_;
+      }
+      /**
+       * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+       * @param value The enum numeric value on the wire for type to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTypeValue(int value) {
+        
+        type_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+       * @return The type.
+       */
+      @java.lang.Override
+      public node.highway.v1.Response.ResponseType getType() {
+        @SuppressWarnings("deprecation")
+        node.highway.v1.Response.ResponseType result = node.highway.v1.Response.ResponseType.valueOf(type_);
+        return result == null ? node.highway.v1.Response.ResponseType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+       * @param value The type to set.
+       * @return This builder for chaining.
+       */
+      public Builder setType(node.highway.v1.Response.ResponseType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        type_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.node.highway.v1.ResponseType type = 3 [json_name = "type"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearType() {
+        
+        type_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object message_ = "";
+      /**
+       * <code>string message = 4 [json_name = "message"];</code>
+       * @return The message.
+       */
+      public java.lang.String getMessage() {
+        java.lang.Object ref = message_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          message_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string message = 4 [json_name = "message"];</code>
+       * @return The bytes for message.
+       */
+      public com.google.protobuf.ByteString
+          getMessageBytes() {
+        java.lang.Object ref = message_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          message_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string message = 4 [json_name = "message"];</code>
+       * @param value The message to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMessage(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 4 [json_name = "message"];</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMessage() {
+        
+        message_ = getDefaultInstance().getMessage();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string message = 4 [json_name = "message"];</code>
+       * @param value The bytes for message to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMessageBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        message_ = value;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:node.highway.v1.ResponseInfo)
+    }
+
+    // @@protoc_insertion_point(class_scope:node.highway.v1.ResponseInfo)
+    private static final node.highway.v1.Response.ResponseInfo DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new node.highway.v1.Response.ResponseInfo();
+    }
+
+    public static node.highway.v1.Response.ResponseInfo getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ResponseInfo>
+        PARSER = new com.google.protobuf.AbstractParser<ResponseInfo>() {
+      @java.lang.Override
+      public ResponseInfo parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ResponseInfo(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ResponseInfo> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ResponseInfo> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public node.highway.v1.Response.ResponseInfo getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface CreateChannelResponseOrBuilder extends
       // @@protoc_insertion_point(interface_extends:node.highway.v1.CreateChannelResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return The info.
      */
-    node.codes.v1.Response.ResponseInfo getInfo();
+    node.highway.v1.Response.ResponseInfo getInfo();
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      */
-    node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder();
+    node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder();
   }
   /**
    * Protobuf type {@code node.highway.v1.CreateChannelResponse}
@@ -79,11 +1102,11 @@ public final class Response {
               done = true;
               break;
             case 10: {
-              node.codes.v1.Response.ResponseInfo.Builder subBuilder = null;
+              node.highway.v1.Response.ResponseInfo.Builder subBuilder = null;
               if (info_ != null) {
                 subBuilder = info_.toBuilder();
               }
-              info_ = input.readMessage(node.codes.v1.Response.ResponseInfo.parser(), extensionRegistry);
+              info_ = input.readMessage(node.highway.v1.Response.ResponseInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(info_);
                 info_ = subBuilder.buildPartial();
@@ -124,9 +1147,9 @@ public final class Response {
     }
 
     public static final int INFO_FIELD_NUMBER = 1;
-    private node.codes.v1.Response.ResponseInfo info_;
+    private node.highway.v1.Response.ResponseInfo info_;
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
     @java.lang.Override
@@ -134,18 +1157,18 @@ public final class Response {
       return info_ != null;
     }
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return The info.
      */
     @java.lang.Override
-    public node.codes.v1.Response.ResponseInfo getInfo() {
-      return info_ == null ? node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+    public node.highway.v1.Response.ResponseInfo getInfo() {
+      return info_ == null ? node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
     }
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      */
     @java.lang.Override
-    public node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
+    public node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
       return getInfo();
     }
 
@@ -464,31 +1487,31 @@ public final class Response {
         return this;
       }
 
-      private node.codes.v1.Response.ResponseInfo info_;
+      private node.highway.v1.Response.ResponseInfo info_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder> infoBuilder_;
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> infoBuilder_;
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        * @return Whether the info field is set.
        */
       public boolean hasInfo() {
         return infoBuilder_ != null || info_ != null;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        * @return The info.
        */
-      public node.codes.v1.Response.ResponseInfo getInfo() {
+      public node.highway.v1.Response.ResponseInfo getInfo() {
         if (infoBuilder_ == null) {
-          return info_ == null ? node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+          return info_ == null ? node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
         } else {
           return infoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public Builder setInfo(node.codes.v1.Response.ResponseInfo value) {
+      public Builder setInfo(node.highway.v1.Response.ResponseInfo value) {
         if (infoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -502,10 +1525,10 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public Builder setInfo(
-          node.codes.v1.Response.ResponseInfo.Builder builderForValue) {
+          node.highway.v1.Response.ResponseInfo.Builder builderForValue) {
         if (infoBuilder_ == null) {
           info_ = builderForValue.build();
           onChanged();
@@ -516,13 +1539,13 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public Builder mergeInfo(node.codes.v1.Response.ResponseInfo value) {
+      public Builder mergeInfo(node.highway.v1.Response.ResponseInfo value) {
         if (infoBuilder_ == null) {
           if (info_ != null) {
             info_ =
-              node.codes.v1.Response.ResponseInfo.newBuilder(info_).mergeFrom(value).buildPartial();
+              node.highway.v1.Response.ResponseInfo.newBuilder(info_).mergeFrom(value).buildPartial();
           } else {
             info_ = value;
           }
@@ -534,7 +1557,7 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public Builder clearInfo() {
         if (infoBuilder_ == null) {
@@ -548,33 +1571,33 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public node.codes.v1.Response.ResponseInfo.Builder getInfoBuilder() {
+      public node.highway.v1.Response.ResponseInfo.Builder getInfoBuilder() {
         
         onChanged();
         return getInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
+      public node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
         if (infoBuilder_ != null) {
           return infoBuilder_.getMessageOrBuilder();
         } else {
           return info_ == null ?
-              node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+              node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
         }
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder> 
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> 
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder>(
+              node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder>(
                   getInfo(),
                   getParentForChildren(),
                   isClean());
@@ -640,19 +1663,19 @@ public final class Response {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return The info.
      */
-    node.codes.v1.Response.ResponseInfo getInfo();
+    node.highway.v1.Response.ResponseInfo getInfo();
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      */
-    node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder();
+    node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder();
   }
   /**
    * Protobuf type {@code node.highway.v1.SubscribeChannelResponse}
@@ -700,11 +1723,11 @@ public final class Response {
               done = true;
               break;
             case 10: {
-              node.codes.v1.Response.ResponseInfo.Builder subBuilder = null;
+              node.highway.v1.Response.ResponseInfo.Builder subBuilder = null;
               if (info_ != null) {
                 subBuilder = info_.toBuilder();
               }
-              info_ = input.readMessage(node.codes.v1.Response.ResponseInfo.parser(), extensionRegistry);
+              info_ = input.readMessage(node.highway.v1.Response.ResponseInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(info_);
                 info_ = subBuilder.buildPartial();
@@ -745,9 +1768,9 @@ public final class Response {
     }
 
     public static final int INFO_FIELD_NUMBER = 1;
-    private node.codes.v1.Response.ResponseInfo info_;
+    private node.highway.v1.Response.ResponseInfo info_;
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
     @java.lang.Override
@@ -755,18 +1778,18 @@ public final class Response {
       return info_ != null;
     }
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return The info.
      */
     @java.lang.Override
-    public node.codes.v1.Response.ResponseInfo getInfo() {
-      return info_ == null ? node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+    public node.highway.v1.Response.ResponseInfo getInfo() {
+      return info_ == null ? node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
     }
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      */
     @java.lang.Override
-    public node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
+    public node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
       return getInfo();
     }
 
@@ -1085,31 +2108,31 @@ public final class Response {
         return this;
       }
 
-      private node.codes.v1.Response.ResponseInfo info_;
+      private node.highway.v1.Response.ResponseInfo info_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder> infoBuilder_;
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> infoBuilder_;
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        * @return Whether the info field is set.
        */
       public boolean hasInfo() {
         return infoBuilder_ != null || info_ != null;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        * @return The info.
        */
-      public node.codes.v1.Response.ResponseInfo getInfo() {
+      public node.highway.v1.Response.ResponseInfo getInfo() {
         if (infoBuilder_ == null) {
-          return info_ == null ? node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+          return info_ == null ? node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
         } else {
           return infoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public Builder setInfo(node.codes.v1.Response.ResponseInfo value) {
+      public Builder setInfo(node.highway.v1.Response.ResponseInfo value) {
         if (infoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1123,10 +2146,10 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public Builder setInfo(
-          node.codes.v1.Response.ResponseInfo.Builder builderForValue) {
+          node.highway.v1.Response.ResponseInfo.Builder builderForValue) {
         if (infoBuilder_ == null) {
           info_ = builderForValue.build();
           onChanged();
@@ -1137,13 +2160,13 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public Builder mergeInfo(node.codes.v1.Response.ResponseInfo value) {
+      public Builder mergeInfo(node.highway.v1.Response.ResponseInfo value) {
         if (infoBuilder_ == null) {
           if (info_ != null) {
             info_ =
-              node.codes.v1.Response.ResponseInfo.newBuilder(info_).mergeFrom(value).buildPartial();
+              node.highway.v1.Response.ResponseInfo.newBuilder(info_).mergeFrom(value).buildPartial();
           } else {
             info_ = value;
           }
@@ -1155,7 +2178,7 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public Builder clearInfo() {
         if (infoBuilder_ == null) {
@@ -1169,33 +2192,33 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public node.codes.v1.Response.ResponseInfo.Builder getInfoBuilder() {
+      public node.highway.v1.Response.ResponseInfo.Builder getInfoBuilder() {
         
         onChanged();
         return getInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
+      public node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
         if (infoBuilder_ != null) {
           return infoBuilder_.getMessageOrBuilder();
         } else {
           return info_ == null ?
-              node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+              node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
         }
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder> 
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> 
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder>(
+              node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder>(
                   getInfo(),
                   getParentForChildren(),
                   isClean());
@@ -1261,19 +2284,19 @@ public final class Response {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return The info.
      */
-    node.codes.v1.Response.ResponseInfo getInfo();
+    node.highway.v1.Response.ResponseInfo getInfo();
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      */
-    node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder();
+    node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder();
   }
   /**
    * Protobuf type {@code node.highway.v1.UnsubscribeChannelResponse}
@@ -1321,11 +2344,11 @@ public final class Response {
               done = true;
               break;
             case 10: {
-              node.codes.v1.Response.ResponseInfo.Builder subBuilder = null;
+              node.highway.v1.Response.ResponseInfo.Builder subBuilder = null;
               if (info_ != null) {
                 subBuilder = info_.toBuilder();
               }
-              info_ = input.readMessage(node.codes.v1.Response.ResponseInfo.parser(), extensionRegistry);
+              info_ = input.readMessage(node.highway.v1.Response.ResponseInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(info_);
                 info_ = subBuilder.buildPartial();
@@ -1366,9 +2389,9 @@ public final class Response {
     }
 
     public static final int INFO_FIELD_NUMBER = 1;
-    private node.codes.v1.Response.ResponseInfo info_;
+    private node.highway.v1.Response.ResponseInfo info_;
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
     @java.lang.Override
@@ -1376,18 +2399,18 @@ public final class Response {
       return info_ != null;
     }
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return The info.
      */
     @java.lang.Override
-    public node.codes.v1.Response.ResponseInfo getInfo() {
-      return info_ == null ? node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+    public node.highway.v1.Response.ResponseInfo getInfo() {
+      return info_ == null ? node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
     }
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      */
     @java.lang.Override
-    public node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
+    public node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
       return getInfo();
     }
 
@@ -1706,31 +2729,31 @@ public final class Response {
         return this;
       }
 
-      private node.codes.v1.Response.ResponseInfo info_;
+      private node.highway.v1.Response.ResponseInfo info_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder> infoBuilder_;
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> infoBuilder_;
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        * @return Whether the info field is set.
        */
       public boolean hasInfo() {
         return infoBuilder_ != null || info_ != null;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        * @return The info.
        */
-      public node.codes.v1.Response.ResponseInfo getInfo() {
+      public node.highway.v1.Response.ResponseInfo getInfo() {
         if (infoBuilder_ == null) {
-          return info_ == null ? node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+          return info_ == null ? node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
         } else {
           return infoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public Builder setInfo(node.codes.v1.Response.ResponseInfo value) {
+      public Builder setInfo(node.highway.v1.Response.ResponseInfo value) {
         if (infoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1744,10 +2767,10 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public Builder setInfo(
-          node.codes.v1.Response.ResponseInfo.Builder builderForValue) {
+          node.highway.v1.Response.ResponseInfo.Builder builderForValue) {
         if (infoBuilder_ == null) {
           info_ = builderForValue.build();
           onChanged();
@@ -1758,13 +2781,13 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public Builder mergeInfo(node.codes.v1.Response.ResponseInfo value) {
+      public Builder mergeInfo(node.highway.v1.Response.ResponseInfo value) {
         if (infoBuilder_ == null) {
           if (info_ != null) {
             info_ =
-              node.codes.v1.Response.ResponseInfo.newBuilder(info_).mergeFrom(value).buildPartial();
+              node.highway.v1.Response.ResponseInfo.newBuilder(info_).mergeFrom(value).buildPartial();
           } else {
             info_ = value;
           }
@@ -1776,7 +2799,7 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public Builder clearInfo() {
         if (infoBuilder_ == null) {
@@ -1790,33 +2813,33 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public node.codes.v1.Response.ResponseInfo.Builder getInfoBuilder() {
+      public node.highway.v1.Response.ResponseInfo.Builder getInfoBuilder() {
         
         onChanged();
         return getInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
+      public node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
         if (infoBuilder_ != null) {
           return infoBuilder_.getMessageOrBuilder();
         } else {
           return info_ == null ?
-              node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+              node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
         }
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder> 
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> 
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder>(
+              node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder>(
                   getInfo(),
                   getParentForChildren(),
                   isClean());
@@ -1882,19 +2905,19 @@ public final class Response {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
     boolean hasInfo();
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return The info.
      */
-    node.codes.v1.Response.ResponseInfo getInfo();
+    node.highway.v1.Response.ResponseInfo getInfo();
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      */
-    node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder();
+    node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder();
   }
   /**
    * Protobuf type {@code node.highway.v1.UpdateChannelResponse}
@@ -1942,11 +2965,11 @@ public final class Response {
               done = true;
               break;
             case 10: {
-              node.codes.v1.Response.ResponseInfo.Builder subBuilder = null;
+              node.highway.v1.Response.ResponseInfo.Builder subBuilder = null;
               if (info_ != null) {
                 subBuilder = info_.toBuilder();
               }
-              info_ = input.readMessage(node.codes.v1.Response.ResponseInfo.parser(), extensionRegistry);
+              info_ = input.readMessage(node.highway.v1.Response.ResponseInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(info_);
                 info_ = subBuilder.buildPartial();
@@ -1987,9 +3010,9 @@ public final class Response {
     }
 
     public static final int INFO_FIELD_NUMBER = 1;
-    private node.codes.v1.Response.ResponseInfo info_;
+    private node.highway.v1.Response.ResponseInfo info_;
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return Whether the info field is set.
      */
     @java.lang.Override
@@ -1997,18 +3020,18 @@ public final class Response {
       return info_ != null;
     }
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      * @return The info.
      */
     @java.lang.Override
-    public node.codes.v1.Response.ResponseInfo getInfo() {
-      return info_ == null ? node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+    public node.highway.v1.Response.ResponseInfo getInfo() {
+      return info_ == null ? node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
     }
     /**
-     * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+     * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
      */
     @java.lang.Override
-    public node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
+    public node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
       return getInfo();
     }
 
@@ -2327,31 +3350,31 @@ public final class Response {
         return this;
       }
 
-      private node.codes.v1.Response.ResponseInfo info_;
+      private node.highway.v1.Response.ResponseInfo info_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder> infoBuilder_;
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> infoBuilder_;
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        * @return Whether the info field is set.
        */
       public boolean hasInfo() {
         return infoBuilder_ != null || info_ != null;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        * @return The info.
        */
-      public node.codes.v1.Response.ResponseInfo getInfo() {
+      public node.highway.v1.Response.ResponseInfo getInfo() {
         if (infoBuilder_ == null) {
-          return info_ == null ? node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+          return info_ == null ? node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
         } else {
           return infoBuilder_.getMessage();
         }
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public Builder setInfo(node.codes.v1.Response.ResponseInfo value) {
+      public Builder setInfo(node.highway.v1.Response.ResponseInfo value) {
         if (infoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2365,10 +3388,10 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public Builder setInfo(
-          node.codes.v1.Response.ResponseInfo.Builder builderForValue) {
+          node.highway.v1.Response.ResponseInfo.Builder builderForValue) {
         if (infoBuilder_ == null) {
           info_ = builderForValue.build();
           onChanged();
@@ -2379,13 +3402,13 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public Builder mergeInfo(node.codes.v1.Response.ResponseInfo value) {
+      public Builder mergeInfo(node.highway.v1.Response.ResponseInfo value) {
         if (infoBuilder_ == null) {
           if (info_ != null) {
             info_ =
-              node.codes.v1.Response.ResponseInfo.newBuilder(info_).mergeFrom(value).buildPartial();
+              node.highway.v1.Response.ResponseInfo.newBuilder(info_).mergeFrom(value).buildPartial();
           } else {
             info_ = value;
           }
@@ -2397,7 +3420,7 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public Builder clearInfo() {
         if (infoBuilder_ == null) {
@@ -2411,33 +3434,33 @@ public final class Response {
         return this;
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public node.codes.v1.Response.ResponseInfo.Builder getInfoBuilder() {
+      public node.highway.v1.Response.ResponseInfo.Builder getInfoBuilder() {
         
         onChanged();
         return getInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
-      public node.codes.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
+      public node.highway.v1.Response.ResponseInfoOrBuilder getInfoOrBuilder() {
         if (infoBuilder_ != null) {
           return infoBuilder_.getMessageOrBuilder();
         } else {
           return info_ == null ?
-              node.codes.v1.Response.ResponseInfo.getDefaultInstance() : info_;
+              node.highway.v1.Response.ResponseInfo.getDefaultInstance() : info_;
         }
       }
       /**
-       * <code>.node.codes.v1.ResponseInfo info = 1 [json_name = "info"];</code>
+       * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder> 
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> 
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              node.codes.v1.Response.ResponseInfo, node.codes.v1.Response.ResponseInfo.Builder, node.codes.v1.Response.ResponseInfoOrBuilder>(
+              node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder>(
                   getInfo(),
                   getParentForChildren(),
                   isClean());
@@ -10932,6 +11955,11 @@ public final class Response {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_node_highway_v1_ResponseInfo_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_node_highway_v1_ResponseInfo_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_CreateChannelResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -11031,92 +12059,110 @@ public final class Response {
   static {
     java.lang.String[] descriptorData = {
       "\n\036node/highway/v1/response.proto\022\017node.h" +
-      "ighway.v1\032\024common/v1/core.proto\032\034node/co" +
-      "des/v1/response.proto\"H\n\025CreateChannelRe" +
-      "sponse\022/\n\004info\030\001 \001(\0132\033.node.codes.v1.Res" +
-      "ponseInfoR\004info\"K\n\030SubscribeChannelRespo" +
-      "nse\022/\n\004info\030\001 \001(\0132\033.node.codes.v1.Respon" +
-      "seInfoR\004info\"M\n\032UnsubscribeChannelRespon" +
-      "se\022/\n\004info\030\001 \001(\0132\033.node.codes.v1.Respons" +
-      "eInfoR\004info\"H\n\025UpdateChannelResponse\022/\n\004" +
-      "info\030\001 \001(\0132\033.node.codes.v1.ResponseInfoR" +
-      "\004info\"h\n\021ListPeersResponse\022\020\n\003olc\030\001 \001(\tR" +
-      "\003olc\022%\n\005peers\030\002 \003(\0132\017.common.v1.PeerR\005pe" +
-      "ers\022\032\n\010received\030\003 \001(\003R\010received\"\324\001\n\026Deci" +
-      "deExchangeResponse\022\030\n\007success\030\001 \001(\010R\007suc" +
-      "cess\022\024\n\005error\030\002 \001(\tR\005error\022N\n\007records\030\003 " +
-      "\003(\01324.node.highway.v1.DecideExchangeResp" +
-      "onse.RecordsEntryR\007records\032:\n\014RecordsEnt" +
-      "ry\022\020\n\003key\030\001 \001(\tR\003key\022\024\n\005value\030\002 \001(\tR\005val" +
-      "ue:\0028\001\"F\n\024SendExchangeResponse\022\030\n\007succes" +
-      "s\030\001 \001(\010R\007success\022\024\n\005error\030\002 \001(\tR\005error\"\316" +
-      "\001\n\023CacheRecordResponse\022\030\n\007success\030\001 \001(\010R" +
-      "\007success\022\024\n\005error\030\002 \001(\tR\005error\022K\n\007record" +
-      "s\030\003 \003(\01321.node.highway.v1.CacheRecordRes" +
-      "ponse.RecordsEntryR\007records\032:\n\014RecordsEn" +
-      "try\022\020\n\003key\030\001 \001(\tR\003key\022\024\n\005value\030\002 \001(\tR\005va" +
-      "lue:\0028\001\"\312\001\n\021GetRecordResponse\022\030\n\007success" +
-      "\030\001 \001(\010R\007success\022\024\n\005error\030\002 \001(\tR\005error\022I\n" +
-      "\007records\030\003 \003(\0132/.node.highway.v1.GetReco" +
-      "rdResponse.RecordsEntryR\007records\032:\n\014Reco" +
-      "rdsEntry\022\020\n\003key\030\001 \001(\tR\003key\022\024\n\005value\030\002 \001(" +
-      "\tR\005value:\0028\001\"\316\001\n\023StoreRecordResponse\022\030\n\007" +
-      "success\030\001 \001(\010R\007success\022\024\n\005error\030\002 \001(\tR\005e" +
-      "rror\022K\n\007records\030\003 \003(\01321.node.highway.v1." +
-      "StoreRecordResponse.RecordsEntryR\007record" +
-      "s\032:\n\014RecordsEntry\022\020\n\003key\030\001 \001(\tR\003key\022\024\n\005v" +
-      "alue\030\002 \001(\tR\005value:\0028\001\"\320\001\n\024RegisterNameRe" +
-      "sponse\022\030\n\007success\030\001 \001(\010R\007success\022\024\n\005erro" +
-      "r\030\002 \001(\tR\005error\022L\n\007records\030\003 \003(\01322.node.h" +
-      "ighway.v1.RegisterNameResponse.RecordsEn" +
-      "tryR\007records\032:\n\014RecordsEntry\022\020\n\003key\030\001 \001(" +
-      "\tR\003key\022\024\n\005value\030\002 \001(\tR\005value:\0028\001\"\314\001\n\022Ver" +
-      "ifyNameResponse\022\030\n\007success\030\001 \001(\010R\007succes" +
-      "s\022\024\n\005error\030\002 \001(\tR\005error\022J\n\007records\030\003 \003(\013" +
-      "20.node.highway.v1.VerifyNameResponse.Re" +
+      "ighway.v1\032\024common/v1/core.proto\"\177\n\014Respo" +
+      "nseInfo\022\016\n\002ok\030\001 \001(\010R\002ok\022\022\n\004code\030\002 \001(\005R\004c" +
+      "ode\0221\n\004type\030\003 \001(\0162\035.node.highway.v1.Resp" +
+      "onseTypeR\004type\022\030\n\007message\030\004 \001(\tR\007message" +
+      "\"J\n\025CreateChannelResponse\0221\n\004info\030\001 \001(\0132" +
+      "\035.node.highway.v1.ResponseInfoR\004info\"M\n\030" +
+      "SubscribeChannelResponse\0221\n\004info\030\001 \001(\0132\035" +
+      ".node.highway.v1.ResponseInfoR\004info\"O\n\032U" +
+      "nsubscribeChannelResponse\0221\n\004info\030\001 \001(\0132" +
+      "\035.node.highway.v1.ResponseInfoR\004info\"J\n\025" +
+      "UpdateChannelResponse\0221\n\004info\030\001 \001(\0132\035.no" +
+      "de.highway.v1.ResponseInfoR\004info\"h\n\021List" +
+      "PeersResponse\022\020\n\003olc\030\001 \001(\tR\003olc\022%\n\005peers" +
+      "\030\002 \003(\0132\017.common.v1.PeerR\005peers\022\032\n\010receiv" +
+      "ed\030\003 \001(\003R\010received\"\324\001\n\026DecideExchangeRes" +
+      "ponse\022\030\n\007success\030\001 \001(\010R\007success\022\024\n\005error" +
+      "\030\002 \001(\tR\005error\022N\n\007records\030\003 \003(\01324.node.hi" +
+      "ghway.v1.DecideExchangeResponse.RecordsE" +
+      "ntryR\007records\032:\n\014RecordsEntry\022\020\n\003key\030\001 \001" +
+      "(\tR\003key\022\024\n\005value\030\002 \001(\tR\005value:\0028\001\"F\n\024Sen" +
+      "dExchangeResponse\022\030\n\007success\030\001 \001(\010R\007succ" +
+      "ess\022\024\n\005error\030\002 \001(\tR\005error\"\316\001\n\023CacheRecor" +
+      "dResponse\022\030\n\007success\030\001 \001(\010R\007success\022\024\n\005e" +
+      "rror\030\002 \001(\tR\005error\022K\n\007records\030\003 \003(\01321.nod" +
+      "e.highway.v1.CacheRecordResponse.Records" +
+      "EntryR\007records\032:\n\014RecordsEntry\022\020\n\003key\030\001 " +
+      "\001(\tR\003key\022\024\n\005value\030\002 \001(\tR\005value:\0028\001\"\312\001\n\021G" +
+      "etRecordResponse\022\030\n\007success\030\001 \001(\010R\007succe" +
+      "ss\022\024\n\005error\030\002 \001(\tR\005error\022I\n\007records\030\003 \003(" +
+      "\0132/.node.highway.v1.GetRecordResponse.Re" +
       "cordsEntryR\007records\032:\n\014RecordsEntry\022\020\n\003k" +
-      "ey\030\001 \001(\tR\003key\022\024\n\005value\030\002 \001(\tR\005value:\0028\001B" +
-      "&Z$github.com/sonr-io/core/node/highwayb" +
-      "\006proto3"
+      "ey\030\001 \001(\tR\003key\022\024\n\005value\030\002 \001(\tR\005value:\0028\001\"" +
+      "\316\001\n\023StoreRecordResponse\022\030\n\007success\030\001 \001(\010" +
+      "R\007success\022\024\n\005error\030\002 \001(\tR\005error\022K\n\007recor" +
+      "ds\030\003 \003(\01321.node.highway.v1.StoreRecordRe" +
+      "sponse.RecordsEntryR\007records\032:\n\014RecordsE" +
+      "ntry\022\020\n\003key\030\001 \001(\tR\003key\022\024\n\005value\030\002 \001(\tR\005v" +
+      "alue:\0028\001\"\320\001\n\024RegisterNameResponse\022\030\n\007suc" +
+      "cess\030\001 \001(\010R\007success\022\024\n\005error\030\002 \001(\tR\005erro" +
+      "r\022L\n\007records\030\003 \003(\01322.node.highway.v1.Reg" +
+      "isterNameResponse.RecordsEntryR\007records\032" +
+      ":\n\014RecordsEntry\022\020\n\003key\030\001 \001(\tR\003key\022\024\n\005val" +
+      "ue\030\002 \001(\tR\005value:\0028\001\"\314\001\n\022VerifyNameRespon" +
+      "se\022\030\n\007success\030\001 \001(\010R\007success\022\024\n\005error\030\002 " +
+      "\001(\tR\005error\022J\n\007records\030\003 \003(\01320.node.highw" +
+      "ay.v1.VerifyNameResponse.RecordsEntryR\007r" +
+      "ecords\032:\n\014RecordsEntry\022\020\n\003key\030\001 \001(\tR\003key" +
+      "\022\024\n\005value\030\002 \001(\tR\005value:\0028\001*\272\003\n\014ResponseT" +
+      "ype\022\036\n\032StatusResponse_UNSPECIFIED\020\000\022\025\n\021S" +
+      "tatusResponse_OK\020\001\022\030\n\024StatusResponse_ERR" +
+      "OR\020\002\022\037\n\033StatusResponse_UNAUTHORIZED\020\003\022#\n" +
+      "\037StatusResponse_INVALID_ARGUMENT\020\004\022\034\n\030St" +
+      "atusResponse_NOT_FOUND\020\005\022!\n\035StatusRespon" +
+      "se_ALREADY_EXISTS\020\006\022$\n StatusResponse_PE" +
+      "RMISSION_DENIED\020\007\022%\n!StatusResponse_RESO" +
+      "URCE_EXHAUSTED\020\010\022&\n\"StatusResponse_FAILE" +
+      "D_PRECONDITION\020\t\022\032\n\026StatusResponse_ABORT" +
+      "ED\020\n\022\037\n\033StatusResponse_OUT_OF_RANGE\020\013\022 \n" +
+      "\034StatusResponse_UNIMPLEMENTED\020\014B&Z$githu" +
+      "b.com/sonr-io/core/node/highwayb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           common.v1.Core.getDescriptor(),
-          node.codes.v1.Response.getDescriptor(),
         });
-    internal_static_node_highway_v1_CreateChannelResponse_descriptor =
+    internal_static_node_highway_v1_ResponseInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
+    internal_static_node_highway_v1_ResponseInfo_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_node_highway_v1_ResponseInfo_descriptor,
+        new java.lang.String[] { "Ok", "Code", "Type", "Message", });
+    internal_static_node_highway_v1_CreateChannelResponse_descriptor =
+      getDescriptor().getMessageTypes().get(1);
     internal_static_node_highway_v1_CreateChannelResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_CreateChannelResponse_descriptor,
         new java.lang.String[] { "Info", });
     internal_static_node_highway_v1_SubscribeChannelResponse_descriptor =
-      getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_node_highway_v1_SubscribeChannelResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_SubscribeChannelResponse_descriptor,
         new java.lang.String[] { "Info", });
     internal_static_node_highway_v1_UnsubscribeChannelResponse_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_node_highway_v1_UnsubscribeChannelResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_UnsubscribeChannelResponse_descriptor,
         new java.lang.String[] { "Info", });
     internal_static_node_highway_v1_UpdateChannelResponse_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_node_highway_v1_UpdateChannelResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_UpdateChannelResponse_descriptor,
         new java.lang.String[] { "Info", });
     internal_static_node_highway_v1_ListPeersResponse_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_node_highway_v1_ListPeersResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_ListPeersResponse_descriptor,
         new java.lang.String[] { "Olc", "Peers", "Received", });
     internal_static_node_highway_v1_DecideExchangeResponse_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_node_highway_v1_DecideExchangeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_DecideExchangeResponse_descriptor,
@@ -11128,13 +12174,13 @@ public final class Response {
         internal_static_node_highway_v1_DecideExchangeResponse_RecordsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_node_highway_v1_SendExchangeResponse_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_node_highway_v1_SendExchangeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_SendExchangeResponse_descriptor,
         new java.lang.String[] { "Success", "Error", });
     internal_static_node_highway_v1_CacheRecordResponse_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_node_highway_v1_CacheRecordResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_CacheRecordResponse_descriptor,
@@ -11146,7 +12192,7 @@ public final class Response {
         internal_static_node_highway_v1_CacheRecordResponse_RecordsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_node_highway_v1_GetRecordResponse_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_node_highway_v1_GetRecordResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_GetRecordResponse_descriptor,
@@ -11158,7 +12204,7 @@ public final class Response {
         internal_static_node_highway_v1_GetRecordResponse_RecordsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_node_highway_v1_StoreRecordResponse_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_node_highway_v1_StoreRecordResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_StoreRecordResponse_descriptor,
@@ -11170,7 +12216,7 @@ public final class Response {
         internal_static_node_highway_v1_StoreRecordResponse_RecordsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_node_highway_v1_RegisterNameResponse_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_node_highway_v1_RegisterNameResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_RegisterNameResponse_descriptor,
@@ -11182,7 +12228,7 @@ public final class Response {
         internal_static_node_highway_v1_RegisterNameResponse_RecordsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_node_highway_v1_VerifyNameResponse_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_node_highway_v1_VerifyNameResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_VerifyNameResponse_descriptor,
@@ -11194,7 +12240,6 @@ public final class Response {
         internal_static_node_highway_v1_VerifyNameResponse_RecordsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     common.v1.Core.getDescriptor();
-    node.codes.v1.Response.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

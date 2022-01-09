@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/sonr-io/core/common"
+	"github.com/sonr-io/core/types/go/common/v1"
 )
 
 // Option is a function that can be applied to ExchangeProtocol config

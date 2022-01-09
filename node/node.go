@@ -14,7 +14,7 @@ import (
 	"github.com/libp2p/go-libp2p-core/protocol"
 	"github.com/libp2p/go-libp2p-core/routing"
 	dht "github.com/libp2p/go-libp2p-kad-dht"
-	common "github.com/sonr-io/core/common"
+	common "github.com/sonr-io/core/types/go/common/v1"
 
 	connmgr "github.com/libp2p/go-libp2p-connmgr"
 	"github.com/sonr-io/core/wallet"
@@ -72,7 +72,7 @@ type NodeImpl interface {
 
 	// Role returns the role of the node
 	Role() Role
-	
+
 	// Router returns the routing.Router
 	Router(h host.Host) (routing.PeerRouting, error)
 
