@@ -14,10 +14,11 @@ import (
 	"github.com/libp2p/go-libp2p-core/protocol"
 	"github.com/libp2p/go-libp2p-core/routing"
 	dht "github.com/libp2p/go-libp2p-kad-dht"
-	common "github.com/sonr-io/core/types/go/common/v1"
+	common "github.com/sonr-io/core/types/go/common"
 
 	connmgr "github.com/libp2p/go-libp2p-connmgr"
-	"github.com/sonr-io/core/wallet"
+
+	"github.com/sonr-io/core/types/go/wallet/v1"
 	"google.golang.org/protobuf/proto"
 
 	ps "github.com/libp2p/go-libp2p-pubsub"

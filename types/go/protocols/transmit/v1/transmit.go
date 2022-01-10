@@ -13,8 +13,8 @@ import (
 	"github.com/libp2p/go-msgio"
 	"github.com/sonr-io/core/device"
 	"github.com/sonr-io/core/node"
-	"github.com/sonr-io/core/types/go/common/v1"
-	"github.com/sonr-io/core/types/go/node/motor/v1"
+	"github.com/sonr-io/core/types/go/common"
+	motor "github.com/sonr-io/core/types/go/node/motor/v1"
 )
 
 // Transfer Protocol ID's

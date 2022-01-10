@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/sonr-io/core/types/go/common/v1"
+	"github.com/sonr-io/core/types/go/common"
 	"github.com/sonr-io/core/device"
-	"github.com/sonr-io/core/types/go/node/motor/v1"
+	motor "github.com/sonr-io/core/types/go/node/motor/v1"
 )
 
 // Error Definitions

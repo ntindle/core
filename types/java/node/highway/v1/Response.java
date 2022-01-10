@@ -414,7 +414,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         message_ = s;
@@ -430,7 +430,7 @@ public final class Response {
         getMessageBytes() {
       java.lang.Object ref = message_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         message_ = b;
@@ -808,7 +808,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setOk(boolean value) {
-        
+
         ok_ = value;
         onChanged();
         return this;
@@ -818,7 +818,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearOk() {
-        
+
         ok_ = false;
         onChanged();
         return this;
@@ -839,7 +839,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setCode(int value) {
-        
+
         code_ = value;
         onChanged();
         return this;
@@ -849,7 +849,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearCode() {
-        
+
         code_ = 0;
         onChanged();
         return this;
@@ -869,7 +869,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setTypeValue(int value) {
-        
+
         type_ = value;
         onChanged();
         return this;
@@ -893,7 +893,7 @@ public final class Response {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         type_ = value.getNumber();
         onChanged();
         return this;
@@ -903,7 +903,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearType() {
-        
+
         type_ = 0;
         onChanged();
         return this;
@@ -934,7 +934,7 @@ public final class Response {
           getMessageBytes() {
         java.lang.Object ref = message_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           message_ = b;
@@ -953,7 +953,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         message_ = value;
         onChanged();
         return this;
@@ -963,7 +963,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearMessage() {
-        
+
         message_ = getDefaultInstance().getMessage();
         onChanged();
         return this;
@@ -979,7 +979,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         message_ = value;
         onChanged();
         return this;
@@ -1574,7 +1574,7 @@ public final class Response {
        * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public node.highway.v1.Response.ResponseInfo.Builder getInfoBuilder() {
-        
+
         onChanged();
         return getInfoFieldBuilder().getBuilder();
       }
@@ -1593,7 +1593,7 @@ public final class Response {
        * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> 
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder>
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -2195,7 +2195,7 @@ public final class Response {
        * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public node.highway.v1.Response.ResponseInfo.Builder getInfoBuilder() {
-        
+
         onChanged();
         return getInfoFieldBuilder().getBuilder();
       }
@@ -2214,7 +2214,7 @@ public final class Response {
        * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> 
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder>
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -2816,7 +2816,7 @@ public final class Response {
        * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public node.highway.v1.Response.ResponseInfo.Builder getInfoBuilder() {
-        
+
         onChanged();
         return getInfoFieldBuilder().getBuilder();
       }
@@ -2835,7 +2835,7 @@ public final class Response {
        * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> 
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder>
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -3437,7 +3437,7 @@ public final class Response {
        * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       public node.highway.v1.Response.ResponseInfo.Builder getInfoBuilder() {
-        
+
         onChanged();
         return getInfoFieldBuilder().getBuilder();
       }
@@ -3456,7 +3456,7 @@ public final class Response {
        * <code>.node.highway.v1.ResponseInfo info = 1 [json_name = "info"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder> 
+          node.highway.v1.Response.ResponseInfo, node.highway.v1.Response.ResponseInfo.Builder, node.highway.v1.Response.ResponseInfoOrBuilder>
           getInfoFieldBuilder() {
         if (infoBuilder_ == null) {
           infoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -3550,24 +3550,24 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
-    java.util.List<common.v1.Core.Peer> 
+    java.util.List<common.Core.Peer>
         getPeersList();
     /**
      * <pre>
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
-    common.v1.Core.Peer getPeers(int index);
+    common.Core.Peer getPeers(int index);
     /**
      * <pre>
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     int getPeersCount();
     /**
@@ -3575,18 +3575,18 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
-    java.util.List<? extends common.v1.Core.PeerOrBuilder> 
+    java.util.List<? extends common.Core.PeerOrBuilder>
         getPeersOrBuilderList();
     /**
      * <pre>
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
-    common.v1.Core.PeerOrBuilder getPeersOrBuilder(
+    common.Core.PeerOrBuilder getPeersOrBuilder(
         int index);
 
     /**
@@ -3659,11 +3659,11 @@ public final class Response {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                peers_ = new java.util.ArrayList<common.v1.Core.Peer>();
+                peers_ = new java.util.ArrayList<common.Core.Peer>();
                 mutable_bitField0_ |= 0x00000001;
               }
               peers_.add(
-                  input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry));
+                  input.readMessage(common.Core.Peer.parser(), extensionRegistry));
               break;
             }
             case 24: {
@@ -3722,7 +3722,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         olc_ = s;
@@ -3742,7 +3742,7 @@ public final class Response {
         getOlcBytes() {
       java.lang.Object ref = olc_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         olc_ = b;
@@ -3753,16 +3753,16 @@ public final class Response {
     }
 
     public static final int PEERS_FIELD_NUMBER = 2;
-    private java.util.List<common.v1.Core.Peer> peers_;
+    private java.util.List<common.Core.Peer> peers_;
     /**
      * <pre>
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
-    public java.util.List<common.v1.Core.Peer> getPeersList() {
+    public java.util.List<common.Core.Peer> getPeersList() {
       return peers_;
     }
     /**
@@ -3770,10 +3770,10 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
-    public java.util.List<? extends common.v1.Core.PeerOrBuilder> 
+    public java.util.List<? extends common.Core.PeerOrBuilder>
         getPeersOrBuilderList() {
       return peers_;
     }
@@ -3782,7 +3782,7 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
     public int getPeersCount() {
@@ -3793,10 +3793,10 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.Peer getPeers(int index) {
+    public common.Core.Peer getPeers(int index) {
       return peers_.get(index);
     }
     /**
@@ -3804,10 +3804,10 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getPeersOrBuilder(
+    public common.Core.PeerOrBuilder getPeersOrBuilder(
         int index) {
       return peers_.get(index);
     }
@@ -4167,7 +4167,7 @@ public final class Response {
               peersBuilder_ = null;
               peers_ = other.peers_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              peersBuilder_ = 
+              peersBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPeersFieldBuilder() : null;
             } else {
@@ -4241,7 +4241,7 @@ public final class Response {
           getOlcBytes() {
         java.lang.Object ref = olc_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           olc_ = b;
@@ -4264,7 +4264,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         olc_ = value;
         onChanged();
         return this;
@@ -4278,7 +4278,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearOlc() {
-        
+
         olc_ = getDefaultInstance().getOlc();
         onChanged();
         return this;
@@ -4298,32 +4298,32 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         olc_ = value;
         onChanged();
         return this;
       }
 
-      private java.util.List<common.v1.Core.Peer> peers_ =
+      private java.util.List<common.Core.Peer> peers_ =
         java.util.Collections.emptyList();
       private void ensurePeersIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          peers_ = new java.util.ArrayList<common.v1.Core.Peer>(peers_);
+          peers_ = new java.util.ArrayList<common.Core.Peer>(peers_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> peersBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> peersBuilder_;
 
       /**
        * <pre>
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public java.util.List<common.v1.Core.Peer> getPeersList() {
+      public java.util.List<common.Core.Peer> getPeersList() {
         if (peersBuilder_ == null) {
           return java.util.Collections.unmodifiableList(peers_);
         } else {
@@ -4335,7 +4335,7 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public int getPeersCount() {
         if (peersBuilder_ == null) {
@@ -4349,9 +4349,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.Peer getPeers(int index) {
+      public common.Core.Peer getPeers(int index) {
         if (peersBuilder_ == null) {
           return peers_.get(index);
         } else {
@@ -4363,10 +4363,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder setPeers(
-          int index, common.v1.Core.Peer value) {
+          int index, common.Core.Peer value) {
         if (peersBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4384,10 +4384,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder setPeers(
-          int index, common.v1.Core.Peer.Builder builderForValue) {
+          int index, common.Core.Peer.Builder builderForValue) {
         if (peersBuilder_ == null) {
           ensurePeersIsMutable();
           peers_.set(index, builderForValue.build());
@@ -4402,9 +4402,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public Builder addPeers(common.v1.Core.Peer value) {
+      public Builder addPeers(common.Core.Peer value) {
         if (peersBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4422,10 +4422,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder addPeers(
-          int index, common.v1.Core.Peer value) {
+          int index, common.Core.Peer value) {
         if (peersBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4443,10 +4443,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder addPeers(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (peersBuilder_ == null) {
           ensurePeersIsMutable();
           peers_.add(builderForValue.build());
@@ -4461,10 +4461,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder addPeers(
-          int index, common.v1.Core.Peer.Builder builderForValue) {
+          int index, common.Core.Peer.Builder builderForValue) {
         if (peersBuilder_ == null) {
           ensurePeersIsMutable();
           peers_.add(index, builderForValue.build());
@@ -4479,10 +4479,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder addAllPeers(
-          java.lang.Iterable<? extends common.v1.Core.Peer> values) {
+          java.lang.Iterable<? extends common.Core.Peer> values) {
         if (peersBuilder_ == null) {
           ensurePeersIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -4498,7 +4498,7 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder clearPeers() {
         if (peersBuilder_ == null) {
@@ -4515,7 +4515,7 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder removePeers(int index) {
         if (peersBuilder_ == null) {
@@ -4532,9 +4532,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.Peer.Builder getPeersBuilder(
+      public common.Core.Peer.Builder getPeersBuilder(
           int index) {
         return getPeersFieldBuilder().getBuilder(index);
       }
@@ -4543,9 +4543,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getPeersOrBuilder(
+      public common.Core.PeerOrBuilder getPeersOrBuilder(
           int index) {
         if (peersBuilder_ == null) {
           return peers_.get(index);  } else {
@@ -4557,9 +4557,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public java.util.List<? extends common.v1.Core.PeerOrBuilder> 
+      public java.util.List<? extends common.Core.PeerOrBuilder>
            getPeersOrBuilderList() {
         if (peersBuilder_ != null) {
           return peersBuilder_.getMessageOrBuilderList();
@@ -4572,41 +4572,41 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.Peer.Builder addPeersBuilder() {
+      public common.Core.Peer.Builder addPeersBuilder() {
         return getPeersFieldBuilder().addBuilder(
-            common.v1.Core.Peer.getDefaultInstance());
+            common.Core.Peer.getDefaultInstance());
       }
       /**
        * <pre>
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.Peer.Builder addPeersBuilder(
+      public common.Core.Peer.Builder addPeersBuilder(
           int index) {
         return getPeersFieldBuilder().addBuilder(
-            index, common.v1.Core.Peer.getDefaultInstance());
+            index, common.Core.Peer.getDefaultInstance());
       }
       /**
        * <pre>
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public java.util.List<common.v1.Core.Peer.Builder> 
+      public java.util.List<common.Core.Peer.Builder>
            getPeersBuilderList() {
         return getPeersFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getPeersFieldBuilder() {
         if (peersBuilder_ == null) {
           peersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   peers_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -4639,7 +4639,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setReceived(long value) {
-        
+
         received_ = value;
         onChanged();
         return this;
@@ -4653,7 +4653,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearReceived() {
-        
+
         received_ = 0L;
         onChanged();
         return this;
@@ -4949,7 +4949,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -4969,7 +4969,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -4985,7 +4985,7 @@ public final class Response {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  node.highway.v1.Response.internal_static_node_highway_v1_DecideExchangeResponse_RecordsEntry_descriptor, 
+                  node.highway.v1.Response.internal_static_node_highway_v1_DecideExchangeResponse_RecordsEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -5474,7 +5474,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -5488,7 +5488,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -5527,7 +5527,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -5550,7 +5550,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -5564,7 +5564,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -5584,7 +5584,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -5959,7 +5959,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -5979,7 +5979,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -6336,7 +6336,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -6350,7 +6350,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -6389,7 +6389,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -6412,7 +6412,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -6426,7 +6426,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -6446,7 +6446,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -6742,7 +6742,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -6762,7 +6762,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -6778,7 +6778,7 @@ public final class Response {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  node.highway.v1.Response.internal_static_node_highway_v1_CacheRecordResponse_RecordsEntry_descriptor, 
+                  node.highway.v1.Response.internal_static_node_highway_v1_CacheRecordResponse_RecordsEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -7267,7 +7267,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -7281,7 +7281,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -7320,7 +7320,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -7343,7 +7343,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -7357,7 +7357,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -7377,7 +7377,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -7832,7 +7832,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -7852,7 +7852,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -7868,7 +7868,7 @@ public final class Response {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  node.highway.v1.Response.internal_static_node_highway_v1_GetRecordResponse_RecordsEntry_descriptor, 
+                  node.highway.v1.Response.internal_static_node_highway_v1_GetRecordResponse_RecordsEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -8357,7 +8357,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -8371,7 +8371,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -8410,7 +8410,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -8433,7 +8433,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -8447,7 +8447,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -8467,7 +8467,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -8922,7 +8922,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -8942,7 +8942,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -8958,7 +8958,7 @@ public final class Response {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  node.highway.v1.Response.internal_static_node_highway_v1_StoreRecordResponse_RecordsEntry_descriptor, 
+                  node.highway.v1.Response.internal_static_node_highway_v1_StoreRecordResponse_RecordsEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -9447,7 +9447,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -9461,7 +9461,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -9500,7 +9500,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -9523,7 +9523,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -9537,7 +9537,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -9557,7 +9557,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -10012,7 +10012,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -10032,7 +10032,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -10048,7 +10048,7 @@ public final class Response {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  node.highway.v1.Response.internal_static_node_highway_v1_RegisterNameResponse_RecordsEntry_descriptor, 
+                  node.highway.v1.Response.internal_static_node_highway_v1_RegisterNameResponse_RecordsEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -10537,7 +10537,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -10551,7 +10551,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -10590,7 +10590,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -10613,7 +10613,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -10627,7 +10627,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -10647,7 +10647,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -11102,7 +11102,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -11122,7 +11122,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -11138,7 +11138,7 @@ public final class Response {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  node.highway.v1.Response.internal_static_node_highway_v1_VerifyNameResponse_RecordsEntry_descriptor, 
+                  node.highway.v1.Response.internal_static_node_highway_v1_VerifyNameResponse_RecordsEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -11627,7 +11627,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -11641,7 +11641,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -11680,7 +11680,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -11703,7 +11703,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -11717,7 +11717,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -11737,7 +11737,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -11956,97 +11956,97 @@ public final class Response {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_ResponseInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_ResponseInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_CreateChannelResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_CreateChannelResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_SubscribeChannelResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_SubscribeChannelResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_UnsubscribeChannelResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_UnsubscribeChannelResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_UpdateChannelResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_UpdateChannelResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_ListPeersResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_ListPeersResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_DecideExchangeResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_DecideExchangeResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_DecideExchangeResponse_RecordsEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_DecideExchangeResponse_RecordsEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_SendExchangeResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_SendExchangeResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_CacheRecordResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_CacheRecordResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_CacheRecordResponse_RecordsEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_CacheRecordResponse_RecordsEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_GetRecordResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_GetRecordResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_GetRecordResponse_RecordsEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_GetRecordResponse_RecordsEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_StoreRecordResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_StoreRecordResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_StoreRecordResponse_RecordsEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_StoreRecordResponse_RecordsEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_RegisterNameResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_RegisterNameResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_RegisterNameResponse_RecordsEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_RegisterNameResponse_RecordsEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_VerifyNameResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_VerifyNameResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_VerifyNameResponse_RecordsEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_VerifyNameResponse_RecordsEntry_fieldAccessorTable;
 
@@ -12072,7 +12072,7 @@ public final class Response {
       "UpdateChannelResponse\0221\n\004info\030\001 \001(\0132\035.no" +
       "de.highway.v1.ResponseInfoR\004info\"h\n\021List" +
       "PeersResponse\022\020\n\003olc\030\001 \001(\tR\003olc\022%\n\005peers" +
-      "\030\002 \003(\0132\017.common.v1.PeerR\005peers\022\032\n\010receiv" +
+      "\030\002 \003(\0132\017.common.PeerR\005peers\022\032\n\010receiv" +
       "ed\030\003 \001(\003R\010received\"\324\001\n\026DecideExchangeRes" +
       "ponse\022\030\n\007success\030\001 \001(\010R\007success\022\024\n\005error" +
       "\030\002 \001(\tR\005error\022N\n\007records\030\003 \003(\01324.node.hi" +
@@ -12123,7 +12123,7 @@ public final class Response {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          common.v1.Core.getDescriptor(),
+          common.Core.getDescriptor(),
         });
     internal_static_node_highway_v1_ResponseInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -12239,7 +12239,7 @@ public final class Response {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_VerifyNameResponse_RecordsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    common.v1.Core.getDescriptor();
+    common.Core.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

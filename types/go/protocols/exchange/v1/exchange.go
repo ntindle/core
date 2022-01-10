@@ -3,7 +3,7 @@ package exchange
 import (
 	"time"
 
-	"github.com/sonr-io/core/types/go/node/motor/v1"
+	motor "github.com/sonr-io/core/types/go/node/motor/v1"
 )
 
 // ToEvent method on InviteResponse converts InviteResponse to DecisionEvent.

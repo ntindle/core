@@ -2,7 +2,7 @@
 syntax = "proto3";
 
 package node.highway.v1;
-import "common/v1/core.proto";
+import "common/core.proto";
 option go_package = "github.com/sonr-io/core/types/go/node/highway/v1";
 
 enum ResponseType {
@@ -48,7 +48,7 @@ message UpdateChannelResponse {
 // (Highway) AuthenticateResponse is Message for Verifying Response (Hmac Sha256)
 message ListPeersResponse {
   string olc = 1;                    // OLC Code of Topic
-  repeated common.v1.Peer peers = 2; // User Information
+  repeated common.Peer peers = 2; // User Information
   int64 received = 3;                // Invite received Timestamp
 }
 

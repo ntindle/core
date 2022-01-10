@@ -5,9 +5,9 @@ import (
 
 	"github.com/kataras/golog"
 	"github.com/pkg/errors"
-	"github.com/sonr-io/core/types/go/channel/v1"
-	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/node"
+	"github.com/sonr-io/core/types/go/channel/v1"
+	"github.com/sonr-io/core/types/go/common"
 	"google.golang.org/protobuf/proto"
 )
 

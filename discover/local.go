@@ -6,10 +6,10 @@ import (
 
 	"github.com/libp2p/go-libp2p-core/peer"
 	ps "github.com/libp2p/go-libp2p-pubsub"
-	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/node"
-	"github.com/sonr-io/core/types/go/node/motor/v1"
-	"github.com/sonr-io/core/types/go/protocols/discover/v1"
+	"github.com/sonr-io/core/types/go/common"
+	motor "github.com/sonr-io/core/types/go/node/motor/v1"
+	discover "github.com/sonr-io/core/types/go/protocols/discover/v1"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/sonr-io/core/wallet"
+	"github.com/sonr-io/core/types/go/wallet/v1"
 )
 
 func TestCreateWallet(t *testing.T) {

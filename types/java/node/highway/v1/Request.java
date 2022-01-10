@@ -224,7 +224,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         name_ = s;
@@ -244,7 +244,7 @@ public final class Request {
         getNameBytes() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         name_ = b;
@@ -270,7 +270,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         description_ = s;
@@ -290,7 +290,7 @@ public final class Request {
         getDescriptionBytes() {
       java.lang.Object ref = description_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         description_ = b;
@@ -743,7 +743,7 @@ public final class Request {
           getNameBytes() {
         java.lang.Object ref = name_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           name_ = b;
@@ -766,7 +766,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         name_ = value;
         onChanged();
         return this;
@@ -780,7 +780,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearName() {
-        
+
         name_ = getDefaultInstance().getName();
         onChanged();
         return this;
@@ -800,7 +800,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         name_ = value;
         onChanged();
         return this;
@@ -839,7 +839,7 @@ public final class Request {
           getDescriptionBytes() {
         java.lang.Object ref = description_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           description_ = b;
@@ -862,7 +862,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         description_ = value;
         onChanged();
         return this;
@@ -876,7 +876,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearDescription() {
-        
+
         description_ = getDefaultInstance().getDescription();
         onChanged();
         return this;
@@ -896,7 +896,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         description_ = value;
         onChanged();
         return this;
@@ -1228,7 +1228,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         did_ = s;
@@ -1248,7 +1248,7 @@ public final class Request {
         getDidBytes() {
       java.lang.Object ref = did_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         did_ = b;
@@ -1597,7 +1597,7 @@ public final class Request {
           getDidBytes() {
         java.lang.Object ref = did_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           did_ = b;
@@ -1620,7 +1620,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         did_ = value;
         onChanged();
         return this;
@@ -1634,7 +1634,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearDid() {
-        
+
         did_ = getDefaultInstance().getDid();
         onChanged();
         return this;
@@ -1654,7 +1654,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         did_ = value;
         onChanged();
         return this;
@@ -1840,7 +1840,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         did_ = s;
@@ -1860,7 +1860,7 @@ public final class Request {
         getDidBytes() {
       java.lang.Object ref = did_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         did_ = b;
@@ -2209,7 +2209,7 @@ public final class Request {
           getDidBytes() {
         java.lang.Object ref = did_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           did_ = b;
@@ -2232,7 +2232,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         did_ = value;
         onChanged();
         return this;
@@ -2246,7 +2246,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearDid() {
-        
+
         did_ = getDefaultInstance().getDid();
         onChanged();
         return this;
@@ -2266,7 +2266,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         did_ = value;
         onChanged();
         return this;
@@ -2532,7 +2532,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         did_ = s;
@@ -2552,7 +2552,7 @@ public final class Request {
         getDidBytes() {
       java.lang.Object ref = did_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         did_ = b;
@@ -2568,7 +2568,7 @@ public final class Request {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  node.highway.v1.Request.internal_static_node_highway_v1_UpdateChannelRequest_MetadataEntry_descriptor, 
+                  node.highway.v1.Request.internal_static_node_highway_v1_UpdateChannelRequest_MetadataEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -3049,7 +3049,7 @@ public final class Request {
           getDidBytes() {
         java.lang.Object ref = did_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           did_ = b;
@@ -3072,7 +3072,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         did_ = value;
         onChanged();
         return this;
@@ -3086,7 +3086,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearDid() {
-        
+
         did_ = getDefaultInstance().getDid();
         onChanged();
         return this;
@@ -3106,7 +3106,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         did_ = value;
         onChanged();
         return this;
@@ -3505,7 +3505,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -3525,7 +3525,7 @@ public final class Request {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -3551,7 +3551,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         mnemonic_ = s;
@@ -3571,7 +3571,7 @@ public final class Request {
         getMnemonicBytes() {
       java.lang.Object ref = mnemonic_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         mnemonic_ = b;
@@ -3597,7 +3597,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         deviceId_ = s;
@@ -3617,7 +3617,7 @@ public final class Request {
         getDeviceIdBytes() {
       java.lang.Object ref = deviceId_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         deviceId_ = b;
@@ -4000,7 +4000,7 @@ public final class Request {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -4023,7 +4023,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -4037,7 +4037,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -4057,7 +4057,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -4096,7 +4096,7 @@ public final class Request {
           getMnemonicBytes() {
         java.lang.Object ref = mnemonic_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           mnemonic_ = b;
@@ -4119,7 +4119,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         mnemonic_ = value;
         onChanged();
         return this;
@@ -4133,7 +4133,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearMnemonic() {
-        
+
         mnemonic_ = getDefaultInstance().getMnemonic();
         onChanged();
         return this;
@@ -4153,7 +4153,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         mnemonic_ = value;
         onChanged();
         return this;
@@ -4192,7 +4192,7 @@ public final class Request {
           getDeviceIdBytes() {
         java.lang.Object ref = deviceId_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           deviceId_ = b;
@@ -4215,7 +4215,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         deviceId_ = value;
         onChanged();
         return this;
@@ -4229,7 +4229,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearDeviceId() {
-        
+
         deviceId_ = getDefaultInstance().getDeviceId();
         onChanged();
         return this;
@@ -4249,7 +4249,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         deviceId_ = value;
         onChanged();
         return this;
@@ -4652,7 +4652,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -4672,7 +4672,7 @@ public final class Request {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -4698,7 +4698,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         mnemonic_ = s;
@@ -4718,7 +4718,7 @@ public final class Request {
         getMnemonicBytes() {
       java.lang.Object ref = mnemonic_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         mnemonic_ = b;
@@ -4744,7 +4744,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         deviceId_ = s;
@@ -4764,7 +4764,7 @@ public final class Request {
         getDeviceIdBytes() {
       java.lang.Object ref = deviceId_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         deviceId_ = b;
@@ -5190,7 +5190,7 @@ public final class Request {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -5213,7 +5213,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -5227,7 +5227,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -5247,7 +5247,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -5286,7 +5286,7 @@ public final class Request {
           getMnemonicBytes() {
         java.lang.Object ref = mnemonic_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           mnemonic_ = b;
@@ -5309,7 +5309,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         mnemonic_ = value;
         onChanged();
         return this;
@@ -5323,7 +5323,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearMnemonic() {
-        
+
         mnemonic_ = getDefaultInstance().getMnemonic();
         onChanged();
         return this;
@@ -5343,7 +5343,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         mnemonic_ = value;
         onChanged();
         return this;
@@ -5382,7 +5382,7 @@ public final class Request {
           getDeviceIdBytes() {
         java.lang.Object ref = deviceId_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           deviceId_ = b;
@@ -5405,7 +5405,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         deviceId_ = value;
         onChanged();
         return this;
@@ -5419,7 +5419,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearDeviceId() {
-        
+
         deviceId_ = getDefaultInstance().getDeviceId();
         onChanged();
         return this;
@@ -5439,7 +5439,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         deviceId_ = value;
         onChanged();
         return this;
@@ -5467,7 +5467,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder setMethodValue(int value) {
-        
+
         method_ = value;
         onChanged();
         return this;
@@ -5499,7 +5499,7 @@ public final class Request {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         method_ = value.getNumber();
         onChanged();
         return this;
@@ -5513,7 +5513,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearMethod() {
-        
+
         method_ = 0;
         onChanged();
         return this;
@@ -5580,7 +5580,7 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     boolean hasPeer();
@@ -5589,25 +5589,25 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return The peer.
      */
-    common.v1.Core.Peer getPeer();
+    common.Core.Peer getPeer();
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      */
-    common.v1.Core.PeerOrBuilder getPeerOrBuilder();
+    common.Core.PeerOrBuilder getPeerOrBuilder();
 
     /**
      * <pre>
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      * @return Whether the message field is set.
      */
     boolean hasMessage();
@@ -5616,42 +5616,42 @@ public final class Request {
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      * @return The message.
      */
-    common.v1.Data.MessageItem getMessage();
+    common.Data.MessageItem getMessage();
     /**
      * <pre>
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      */
-    common.v1.Data.MessageItemOrBuilder getMessageOrBuilder();
+    common.Data.MessageItemOrBuilder getMessageOrBuilder();
 
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
-    java.util.List<common.v1.Data.SupplyItem> 
+    java.util.List<common.Data.SupplyItem>
         getItemsList();
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
-    common.v1.Data.SupplyItem getItems(int index);
+    common.Data.SupplyItem getItems(int index);
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     int getItemsCount();
     /**
@@ -5659,18 +5659,18 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
-    java.util.List<? extends common.v1.Data.SupplyItemOrBuilder> 
+    java.util.List<? extends common.Data.SupplyItemOrBuilder>
         getItemsOrBuilderList();
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
-    common.v1.Data.SupplyItemOrBuilder getItemsOrBuilder(
+    common.Data.SupplyItemOrBuilder getItemsOrBuilder(
         int index);
   }
   /**
@@ -5725,11 +5725,11 @@ public final class Request {
               done = true;
               break;
             case 10: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (peer_ != null) {
                 subBuilder = peer_.toBuilder();
               }
-              peer_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              peer_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(peer_);
                 peer_ = subBuilder.buildPartial();
@@ -5738,11 +5738,11 @@ public final class Request {
               break;
             }
             case 18: {
-              common.v1.Data.MessageItem.Builder subBuilder = null;
+              common.Data.MessageItem.Builder subBuilder = null;
               if (message_ != null) {
                 subBuilder = message_.toBuilder();
               }
-              message_ = input.readMessage(common.v1.Data.MessageItem.parser(), extensionRegistry);
+              message_ = input.readMessage(common.Data.MessageItem.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(message_);
                 message_ = subBuilder.buildPartial();
@@ -5752,11 +5752,11 @@ public final class Request {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                items_ = new java.util.ArrayList<common.v1.Data.SupplyItem>();
+                items_ = new java.util.ArrayList<common.Data.SupplyItem>();
                 mutable_bitField0_ |= 0x00000001;
               }
               items_.add(
-                  input.readMessage(common.v1.Data.SupplyItem.parser(), extensionRegistry));
+                  input.readMessage(common.Data.SupplyItem.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -5795,13 +5795,13 @@ public final class Request {
     }
 
     public static final int PEER_FIELD_NUMBER = 1;
-    private common.v1.Core.Peer peer_;
+    private common.Core.Peer peer_;
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     @java.lang.Override
@@ -5813,33 +5813,33 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return The peer.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getPeer() {
-      return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+    public common.Core.Peer getPeer() {
+      return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
     }
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+    public common.Core.PeerOrBuilder getPeerOrBuilder() {
       return getPeer();
     }
 
     public static final int MESSAGE_FIELD_NUMBER = 2;
-    private common.v1.Data.MessageItem message_;
+    private common.Data.MessageItem message_;
     /**
      * <pre>
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      * @return Whether the message field is set.
      */
     @java.lang.Override
@@ -5851,36 +5851,36 @@ public final class Request {
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      * @return The message.
      */
     @java.lang.Override
-    public common.v1.Data.MessageItem getMessage() {
-      return message_ == null ? common.v1.Data.MessageItem.getDefaultInstance() : message_;
+    public common.Data.MessageItem getMessage() {
+      return message_ == null ? common.Data.MessageItem.getDefaultInstance() : message_;
     }
     /**
      * <pre>
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.MessageItemOrBuilder getMessageOrBuilder() {
+    public common.Data.MessageItemOrBuilder getMessageOrBuilder() {
       return getMessage();
     }
 
     public static final int ITEMS_FIELD_NUMBER = 3;
-    private java.util.List<common.v1.Data.SupplyItem> items_;
+    private java.util.List<common.Data.SupplyItem> items_;
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public java.util.List<common.v1.Data.SupplyItem> getItemsList() {
+    public java.util.List<common.Data.SupplyItem> getItemsList() {
       return items_;
     }
     /**
@@ -5888,10 +5888,10 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public java.util.List<? extends common.v1.Data.SupplyItemOrBuilder> 
+    public java.util.List<? extends common.Data.SupplyItemOrBuilder>
         getItemsOrBuilderList() {
       return items_;
     }
@@ -5900,7 +5900,7 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
     public int getItemsCount() {
@@ -5911,10 +5911,10 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.SupplyItem getItems(int index) {
+    public common.Data.SupplyItem getItems(int index) {
       return items_.get(index);
     }
     /**
@@ -5922,10 +5922,10 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.SupplyItemOrBuilder getItemsOrBuilder(
+    public common.Data.SupplyItemOrBuilder getItemsOrBuilder(
         int index) {
       return items_.get(index);
     }
@@ -6298,7 +6298,7 @@ public final class Request {
               itemsBuilder_ = null;
               items_ = other.items_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              itemsBuilder_ = 
+              itemsBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getItemsFieldBuilder() : null;
             } else {
@@ -6336,15 +6336,15 @@ public final class Request {
       }
       private int bitField0_;
 
-      private common.v1.Core.Peer peer_;
+      private common.Core.Peer peer_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> peerBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> peerBuilder_;
       /**
        * <pre>
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        * @return Whether the peer field is set.
        */
       public boolean hasPeer() {
@@ -6355,12 +6355,12 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        * @return The peer.
        */
-      public common.v1.Core.Peer getPeer() {
+      public common.Core.Peer getPeer() {
         if (peerBuilder_ == null) {
-          return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+          return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
         } else {
           return peerBuilder_.getMessage();
         }
@@ -6370,9 +6370,9 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public Builder setPeer(common.v1.Core.Peer value) {
+      public Builder setPeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6390,10 +6390,10 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       public Builder setPeer(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (peerBuilder_ == null) {
           peer_ = builderForValue.build();
           onChanged();
@@ -6408,13 +6408,13 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public Builder mergePeer(common.v1.Core.Peer value) {
+      public Builder mergePeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (peer_ != null) {
             peer_ =
-              common.v1.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
           } else {
             peer_ = value;
           }
@@ -6430,7 +6430,7 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       public Builder clearPeer() {
         if (peerBuilder_ == null) {
@@ -6448,10 +6448,10 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public common.v1.Core.Peer.Builder getPeerBuilder() {
-        
+      public common.Core.Peer.Builder getPeerBuilder() {
+
         onChanged();
         return getPeerFieldBuilder().getBuilder();
       }
@@ -6460,14 +6460,14 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+      public common.Core.PeerOrBuilder getPeerOrBuilder() {
         if (peerBuilder_ != null) {
           return peerBuilder_.getMessageOrBuilder();
         } else {
           return peer_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : peer_;
+              common.Core.Peer.getDefaultInstance() : peer_;
         }
       }
       /**
@@ -6475,14 +6475,14 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getPeerFieldBuilder() {
         if (peerBuilder_ == null) {
           peerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getPeer(),
                   getParentForChildren(),
                   isClean());
@@ -6491,15 +6491,15 @@ public final class Request {
         return peerBuilder_;
       }
 
-      private common.v1.Data.MessageItem message_;
+      private common.Data.MessageItem message_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.MessageItem, common.v1.Data.MessageItem.Builder, common.v1.Data.MessageItemOrBuilder> messageBuilder_;
+          common.Data.MessageItem, common.Data.MessageItem.Builder, common.Data.MessageItemOrBuilder> messageBuilder_;
       /**
        * <pre>
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        * @return Whether the message field is set.
        */
       public boolean hasMessage() {
@@ -6510,12 +6510,12 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        * @return The message.
        */
-      public common.v1.Data.MessageItem getMessage() {
+      public common.Data.MessageItem getMessage() {
         if (messageBuilder_ == null) {
-          return message_ == null ? common.v1.Data.MessageItem.getDefaultInstance() : message_;
+          return message_ == null ? common.Data.MessageItem.getDefaultInstance() : message_;
         } else {
           return messageBuilder_.getMessage();
         }
@@ -6525,9 +6525,9 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
-      public Builder setMessage(common.v1.Data.MessageItem value) {
+      public Builder setMessage(common.Data.MessageItem value) {
         if (messageBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6545,10 +6545,10 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
       public Builder setMessage(
-          common.v1.Data.MessageItem.Builder builderForValue) {
+          common.Data.MessageItem.Builder builderForValue) {
         if (messageBuilder_ == null) {
           message_ = builderForValue.build();
           onChanged();
@@ -6563,13 +6563,13 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
-      public Builder mergeMessage(common.v1.Data.MessageItem value) {
+      public Builder mergeMessage(common.Data.MessageItem value) {
         if (messageBuilder_ == null) {
           if (message_ != null) {
             message_ =
-              common.v1.Data.MessageItem.newBuilder(message_).mergeFrom(value).buildPartial();
+              common.Data.MessageItem.newBuilder(message_).mergeFrom(value).buildPartial();
           } else {
             message_ = value;
           }
@@ -6585,7 +6585,7 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
       public Builder clearMessage() {
         if (messageBuilder_ == null) {
@@ -6603,10 +6603,10 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
-      public common.v1.Data.MessageItem.Builder getMessageBuilder() {
-        
+      public common.Data.MessageItem.Builder getMessageBuilder() {
+
         onChanged();
         return getMessageFieldBuilder().getBuilder();
       }
@@ -6615,14 +6615,14 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
-      public common.v1.Data.MessageItemOrBuilder getMessageOrBuilder() {
+      public common.Data.MessageItemOrBuilder getMessageOrBuilder() {
         if (messageBuilder_ != null) {
           return messageBuilder_.getMessageOrBuilder();
         } else {
           return message_ == null ?
-              common.v1.Data.MessageItem.getDefaultInstance() : message_;
+              common.Data.MessageItem.getDefaultInstance() : message_;
         }
       }
       /**
@@ -6630,14 +6630,14 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.MessageItem, common.v1.Data.MessageItem.Builder, common.v1.Data.MessageItemOrBuilder> 
+          common.Data.MessageItem, common.Data.MessageItem.Builder, common.Data.MessageItemOrBuilder>
           getMessageFieldBuilder() {
         if (messageBuilder_ == null) {
           messageBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Data.MessageItem, common.v1.Data.MessageItem.Builder, common.v1.Data.MessageItemOrBuilder>(
+              common.Data.MessageItem, common.Data.MessageItem.Builder, common.Data.MessageItemOrBuilder>(
                   getMessage(),
                   getParentForChildren(),
                   isClean());
@@ -6646,26 +6646,26 @@ public final class Request {
         return messageBuilder_;
       }
 
-      private java.util.List<common.v1.Data.SupplyItem> items_ =
+      private java.util.List<common.Data.SupplyItem> items_ =
         java.util.Collections.emptyList();
       private void ensureItemsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          items_ = new java.util.ArrayList<common.v1.Data.SupplyItem>(items_);
+          items_ = new java.util.ArrayList<common.Data.SupplyItem>(items_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          common.v1.Data.SupplyItem, common.v1.Data.SupplyItem.Builder, common.v1.Data.SupplyItemOrBuilder> itemsBuilder_;
+          common.Data.SupplyItem, common.Data.SupplyItem.Builder, common.Data.SupplyItemOrBuilder> itemsBuilder_;
 
       /**
        * <pre>
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public java.util.List<common.v1.Data.SupplyItem> getItemsList() {
+      public java.util.List<common.Data.SupplyItem> getItemsList() {
         if (itemsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(items_);
         } else {
@@ -6677,7 +6677,7 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public int getItemsCount() {
         if (itemsBuilder_ == null) {
@@ -6691,9 +6691,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItem getItems(int index) {
+      public common.Data.SupplyItem getItems(int index) {
         if (itemsBuilder_ == null) {
           return items_.get(index);
         } else {
@@ -6705,10 +6705,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder setItems(
-          int index, common.v1.Data.SupplyItem value) {
+          int index, common.Data.SupplyItem value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6726,10 +6726,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder setItems(
-          int index, common.v1.Data.SupplyItem.Builder builderForValue) {
+          int index, common.Data.SupplyItem.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.set(index, builderForValue.build());
@@ -6744,9 +6744,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public Builder addItems(common.v1.Data.SupplyItem value) {
+      public Builder addItems(common.Data.SupplyItem value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6764,10 +6764,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder addItems(
-          int index, common.v1.Data.SupplyItem value) {
+          int index, common.Data.SupplyItem value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6785,10 +6785,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder addItems(
-          common.v1.Data.SupplyItem.Builder builderForValue) {
+          common.Data.SupplyItem.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.add(builderForValue.build());
@@ -6803,10 +6803,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder addItems(
-          int index, common.v1.Data.SupplyItem.Builder builderForValue) {
+          int index, common.Data.SupplyItem.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.add(index, builderForValue.build());
@@ -6821,10 +6821,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder addAllItems(
-          java.lang.Iterable<? extends common.v1.Data.SupplyItem> values) {
+          java.lang.Iterable<? extends common.Data.SupplyItem> values) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -6840,7 +6840,7 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder clearItems() {
         if (itemsBuilder_ == null) {
@@ -6857,7 +6857,7 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder removeItems(int index) {
         if (itemsBuilder_ == null) {
@@ -6874,9 +6874,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItem.Builder getItemsBuilder(
+      public common.Data.SupplyItem.Builder getItemsBuilder(
           int index) {
         return getItemsFieldBuilder().getBuilder(index);
       }
@@ -6885,9 +6885,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItemOrBuilder getItemsOrBuilder(
+      public common.Data.SupplyItemOrBuilder getItemsOrBuilder(
           int index) {
         if (itemsBuilder_ == null) {
           return items_.get(index);  } else {
@@ -6899,9 +6899,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public java.util.List<? extends common.v1.Data.SupplyItemOrBuilder> 
+      public java.util.List<? extends common.Data.SupplyItemOrBuilder>
            getItemsOrBuilderList() {
         if (itemsBuilder_ != null) {
           return itemsBuilder_.getMessageOrBuilderList();
@@ -6914,41 +6914,41 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItem.Builder addItemsBuilder() {
+      public common.Data.SupplyItem.Builder addItemsBuilder() {
         return getItemsFieldBuilder().addBuilder(
-            common.v1.Data.SupplyItem.getDefaultInstance());
+            common.Data.SupplyItem.getDefaultInstance());
       }
       /**
        * <pre>
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItem.Builder addItemsBuilder(
+      public common.Data.SupplyItem.Builder addItemsBuilder(
           int index) {
         return getItemsFieldBuilder().addBuilder(
-            index, common.v1.Data.SupplyItem.getDefaultInstance());
+            index, common.Data.SupplyItem.getDefaultInstance());
       }
       /**
        * <pre>
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public java.util.List<common.v1.Data.SupplyItem.Builder> 
+      public java.util.List<common.Data.SupplyItem.Builder>
            getItemsBuilderList() {
         return getItemsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          common.v1.Data.SupplyItem, common.v1.Data.SupplyItem.Builder, common.v1.Data.SupplyItemOrBuilder> 
+          common.Data.SupplyItem, common.Data.SupplyItem.Builder, common.Data.SupplyItemOrBuilder>
           getItemsFieldBuilder() {
         if (itemsBuilder_ == null) {
           itemsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              common.v1.Data.SupplyItem, common.v1.Data.SupplyItem.Builder, common.v1.Data.SupplyItemOrBuilder>(
+              common.Data.SupplyItem, common.Data.SupplyItem.Builder, common.Data.SupplyItemOrBuilder>(
                   items_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -7219,7 +7219,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -7239,7 +7239,7 @@ public final class Request {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -7265,7 +7265,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         prefix_ = s;
@@ -7285,7 +7285,7 @@ public final class Request {
         getPrefixBytes() {
       java.lang.Object ref = prefix_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         prefix_ = b;
@@ -7311,7 +7311,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fingerprint_ = s;
@@ -7331,7 +7331,7 @@ public final class Request {
         getFingerprintBytes() {
       java.lang.Object ref = fingerprint_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         fingerprint_ = b;
@@ -7357,7 +7357,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         publicKey_ = s;
@@ -7377,7 +7377,7 @@ public final class Request {
         getPublicKeyBytes() {
       java.lang.Object ref = publicKey_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         publicKey_ = b;
@@ -7777,7 +7777,7 @@ public final class Request {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -7800,7 +7800,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -7814,7 +7814,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -7834,7 +7834,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -7873,7 +7873,7 @@ public final class Request {
           getPrefixBytes() {
         java.lang.Object ref = prefix_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           prefix_ = b;
@@ -7896,7 +7896,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         prefix_ = value;
         onChanged();
         return this;
@@ -7910,7 +7910,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPrefix() {
-        
+
         prefix_ = getDefaultInstance().getPrefix();
         onChanged();
         return this;
@@ -7930,7 +7930,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         prefix_ = value;
         onChanged();
         return this;
@@ -7969,7 +7969,7 @@ public final class Request {
           getFingerprintBytes() {
         java.lang.Object ref = fingerprint_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           fingerprint_ = b;
@@ -7992,7 +7992,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -8006,7 +8006,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearFingerprint() {
-        
+
         fingerprint_ = getDefaultInstance().getFingerprint();
         onChanged();
         return this;
@@ -8026,7 +8026,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -8065,7 +8065,7 @@ public final class Request {
           getPublicKeyBytes() {
         java.lang.Object ref = publicKey_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           publicKey_ = b;
@@ -8088,7 +8088,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -8102,7 +8102,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPublicKey() {
-        
+
         publicKey_ = getDefaultInstance().getPublicKey();
         onChanged();
         return this;
@@ -8122,7 +8122,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -8389,7 +8389,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -8409,7 +8409,7 @@ public final class Request {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -8435,7 +8435,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         prefix_ = s;
@@ -8455,7 +8455,7 @@ public final class Request {
         getPrefixBytes() {
       java.lang.Object ref = prefix_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         prefix_ = b;
@@ -8481,7 +8481,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fingerprint_ = s;
@@ -8501,7 +8501,7 @@ public final class Request {
         getFingerprintBytes() {
       java.lang.Object ref = fingerprint_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         fingerprint_ = b;
@@ -8527,7 +8527,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         publicKey_ = s;
@@ -8547,7 +8547,7 @@ public final class Request {
         getPublicKeyBytes() {
       java.lang.Object ref = publicKey_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         publicKey_ = b;
@@ -8947,7 +8947,7 @@ public final class Request {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -8970,7 +8970,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -8984,7 +8984,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -9004,7 +9004,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -9043,7 +9043,7 @@ public final class Request {
           getPrefixBytes() {
         java.lang.Object ref = prefix_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           prefix_ = b;
@@ -9066,7 +9066,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         prefix_ = value;
         onChanged();
         return this;
@@ -9080,7 +9080,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPrefix() {
-        
+
         prefix_ = getDefaultInstance().getPrefix();
         onChanged();
         return this;
@@ -9100,7 +9100,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         prefix_ = value;
         onChanged();
         return this;
@@ -9139,7 +9139,7 @@ public final class Request {
           getFingerprintBytes() {
         java.lang.Object ref = fingerprint_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           fingerprint_ = b;
@@ -9162,7 +9162,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -9176,7 +9176,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearFingerprint() {
-        
+
         fingerprint_ = getDefaultInstance().getFingerprint();
         onChanged();
         return this;
@@ -9196,7 +9196,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -9235,7 +9235,7 @@ public final class Request {
           getPublicKeyBytes() {
         java.lang.Object ref = publicKey_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           publicKey_ = b;
@@ -9258,7 +9258,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -9272,7 +9272,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPublicKey() {
-        
+
         publicKey_ = getDefaultInstance().getPublicKey();
         onChanged();
         return this;
@@ -9292,7 +9292,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -9559,7 +9559,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -9579,7 +9579,7 @@ public final class Request {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -9605,7 +9605,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         prefix_ = s;
@@ -9625,7 +9625,7 @@ public final class Request {
         getPrefixBytes() {
       java.lang.Object ref = prefix_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         prefix_ = b;
@@ -9651,7 +9651,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fingerprint_ = s;
@@ -9671,7 +9671,7 @@ public final class Request {
         getFingerprintBytes() {
       java.lang.Object ref = fingerprint_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         fingerprint_ = b;
@@ -9697,7 +9697,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         publicKey_ = s;
@@ -9717,7 +9717,7 @@ public final class Request {
         getPublicKeyBytes() {
       java.lang.Object ref = publicKey_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         publicKey_ = b;
@@ -10117,7 +10117,7 @@ public final class Request {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -10140,7 +10140,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -10154,7 +10154,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -10174,7 +10174,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -10213,7 +10213,7 @@ public final class Request {
           getPrefixBytes() {
         java.lang.Object ref = prefix_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           prefix_ = b;
@@ -10236,7 +10236,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         prefix_ = value;
         onChanged();
         return this;
@@ -10250,7 +10250,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPrefix() {
-        
+
         prefix_ = getDefaultInstance().getPrefix();
         onChanged();
         return this;
@@ -10270,7 +10270,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         prefix_ = value;
         onChanged();
         return this;
@@ -10309,7 +10309,7 @@ public final class Request {
           getFingerprintBytes() {
         java.lang.Object ref = fingerprint_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           fingerprint_ = b;
@@ -10332,7 +10332,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -10346,7 +10346,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearFingerprint() {
-        
+
         fingerprint_ = getDefaultInstance().getFingerprint();
         onChanged();
         return this;
@@ -10366,7 +10366,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -10405,7 +10405,7 @@ public final class Request {
           getPublicKeyBytes() {
         java.lang.Object ref = publicKey_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           publicKey_ = b;
@@ -10428,7 +10428,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -10442,7 +10442,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPublicKey() {
-        
+
         publicKey_ = getDefaultInstance().getPublicKey();
         onChanged();
         return this;
@@ -10462,7 +10462,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -10729,7 +10729,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -10749,7 +10749,7 @@ public final class Request {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -10775,7 +10775,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         prefix_ = s;
@@ -10795,7 +10795,7 @@ public final class Request {
         getPrefixBytes() {
       java.lang.Object ref = prefix_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         prefix_ = b;
@@ -10821,7 +10821,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fingerprint_ = s;
@@ -10841,7 +10841,7 @@ public final class Request {
         getFingerprintBytes() {
       java.lang.Object ref = fingerprint_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         fingerprint_ = b;
@@ -10867,7 +10867,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         publicKey_ = s;
@@ -10887,7 +10887,7 @@ public final class Request {
         getPublicKeyBytes() {
       java.lang.Object ref = publicKey_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         publicKey_ = b;
@@ -11287,7 +11287,7 @@ public final class Request {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -11310,7 +11310,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -11324,7 +11324,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -11344,7 +11344,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -11383,7 +11383,7 @@ public final class Request {
           getPrefixBytes() {
         java.lang.Object ref = prefix_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           prefix_ = b;
@@ -11406,7 +11406,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         prefix_ = value;
         onChanged();
         return this;
@@ -11420,7 +11420,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPrefix() {
-        
+
         prefix_ = getDefaultInstance().getPrefix();
         onChanged();
         return this;
@@ -11440,7 +11440,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         prefix_ = value;
         onChanged();
         return this;
@@ -11479,7 +11479,7 @@ public final class Request {
           getFingerprintBytes() {
         java.lang.Object ref = fingerprint_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           fingerprint_ = b;
@@ -11502,7 +11502,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -11516,7 +11516,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearFingerprint() {
-        
+
         fingerprint_ = getDefaultInstance().getFingerprint();
         onChanged();
         return this;
@@ -11536,7 +11536,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -11575,7 +11575,7 @@ public final class Request {
           getPublicKeyBytes() {
         java.lang.Object ref = publicKey_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           publicKey_ = b;
@@ -11598,7 +11598,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -11612,7 +11612,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPublicKey() {
-        
+
         publicKey_ = getDefaultInstance().getPublicKey();
         onChanged();
         return this;
@@ -11632,7 +11632,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -11899,7 +11899,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -11919,7 +11919,7 @@ public final class Request {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -11945,7 +11945,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         prefix_ = s;
@@ -11965,7 +11965,7 @@ public final class Request {
         getPrefixBytes() {
       java.lang.Object ref = prefix_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         prefix_ = b;
@@ -11991,7 +11991,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         fingerprint_ = s;
@@ -12011,7 +12011,7 @@ public final class Request {
         getFingerprintBytes() {
       java.lang.Object ref = fingerprint_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         fingerprint_ = b;
@@ -12037,7 +12037,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         publicKey_ = s;
@@ -12057,7 +12057,7 @@ public final class Request {
         getPublicKeyBytes() {
       java.lang.Object ref = publicKey_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         publicKey_ = b;
@@ -12457,7 +12457,7 @@ public final class Request {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -12480,7 +12480,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -12494,7 +12494,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -12514,7 +12514,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -12553,7 +12553,7 @@ public final class Request {
           getPrefixBytes() {
         java.lang.Object ref = prefix_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           prefix_ = b;
@@ -12576,7 +12576,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         prefix_ = value;
         onChanged();
         return this;
@@ -12590,7 +12590,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPrefix() {
-        
+
         prefix_ = getDefaultInstance().getPrefix();
         onChanged();
         return this;
@@ -12610,7 +12610,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         prefix_ = value;
         onChanged();
         return this;
@@ -12649,7 +12649,7 @@ public final class Request {
           getFingerprintBytes() {
         java.lang.Object ref = fingerprint_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           fingerprint_ = b;
@@ -12672,7 +12672,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -12686,7 +12686,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearFingerprint() {
-        
+
         fingerprint_ = getDefaultInstance().getFingerprint();
         onChanged();
         return this;
@@ -12706,7 +12706,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         fingerprint_ = value;
         onChanged();
         return this;
@@ -12745,7 +12745,7 @@ public final class Request {
           getPublicKeyBytes() {
         java.lang.Object ref = publicKey_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           publicKey_ = b;
@@ -12768,7 +12768,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -12782,7 +12782,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearPublicKey() {
-        
+
         publicKey_ = getDefaultInstance().getPublicKey();
         onChanged();
         return this;
@@ -12802,7 +12802,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -12862,67 +12862,67 @@ public final class Request {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_CreateChannelRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_CreateChannelRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_SubscribeChannelRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_SubscribeChannelRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_UnsubscribeChannelRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_UnsubscribeChannelRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_UpdateChannelRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_UpdateChannelRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_UpdateChannelRequest_MetadataEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_UpdateChannelRequest_MetadataEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_ListPeersRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_ListPeersRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_DecideExchangeRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_DecideExchangeRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_SendExchangeRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_SendExchangeRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_CacheRecordRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_CacheRecordRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_GetRecordRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_GetRecordRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_StoreRecordRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_StoreRecordRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_RegisterNameRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_RegisterNameRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_highway_v1_VerifyNameRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_highway_v1_VerifyNameRequest_fieldAccessorTable;
 
@@ -12955,9 +12955,9 @@ public final class Request {
       "changeRequest.MethodR\006method\"C\n\006Method\022\026" +
       "\n\022METHOD_UNSPECIFIED\020\000\022\016\n\nMETHOD_ADD\020\001\022\021" +
       "\n\rMETHOD_REMOVE\020\002\"\231\001\n\023SendExchangeReques" +
-      "t\022#\n\004peer\030\001 \001(\0132\017.common.v1.PeerR\004peer\0220" +
-      "\n\007message\030\002 \001(\0132\026.common.v1.MessageItemR" +
-      "\007message\022+\n\005items\030\003 \003(\0132\025.common.v1.Supp" +
+      "t\022#\n\004peer\030\001 \001(\0132\017.common.PeerR\004peer\0220" +
+      "\n\007message\030\002 \001(\0132\026.common.MessageItemR" +
+      "\007message\022+\n\005items\030\003 \003(\0132\025.common.Supp" +
       "lyItemR\005items\"\204\001\n\022CacheRecordRequest\022\025\n\006" +
       "s_name\030\001 \001(\tR\005sName\022\026\n\006prefix\030\002 \001(\tR\006pre" +
       "fix\022 \n\013fingerprint\030\003 \001(\tR\013fingerprint\022\035\n" +
@@ -12981,8 +12981,8 @@ public final class Request {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          common.v1.Core.getDescriptor(),
-          common.v1.Data.getDescriptor(),
+          common.Core.getDescriptor(),
+          common.Data.getDescriptor(),
         });
     internal_static_node_highway_v1_CreateChannelRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -13062,8 +13062,8 @@ public final class Request {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_highway_v1_VerifyNameRequest_descriptor,
         new java.lang.String[] { "SName", "Prefix", "Fingerprint", "PublicKey", });
-    common.v1.Core.getDescriptor();
-    common.v1.Data.getDescriptor();
+    common.Core.getDescriptor();
+    common.Data.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

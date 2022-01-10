@@ -23,7 +23,7 @@ public final class Discover {
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     boolean hasPeer();
@@ -32,18 +32,18 @@ public final class Discover {
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return The peer.
      */
-    common.v1.Core.Peer getPeer();
+    common.Core.Peer getPeer();
     /**
      * <pre>
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      */
-    common.v1.Core.PeerOrBuilder getPeerOrBuilder();
+    common.Core.PeerOrBuilder getPeerOrBuilder();
 
     /**
      * <pre>
@@ -79,7 +79,7 @@ public final class Discover {
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
      * @return Whether the metadata field is set.
      */
     boolean hasMetadata();
@@ -88,18 +88,18 @@ public final class Discover {
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
      * @return The metadata.
      */
-    common.v1.Core.Metadata getMetadata();
+    common.Core.Metadata getMetadata();
     /**
      * <pre>
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
      */
-    common.v1.Core.MetadataOrBuilder getMetadataOrBuilder();
+    common.Core.MetadataOrBuilder getMetadataOrBuilder();
   }
   /**
    * <pre>
@@ -153,11 +153,11 @@ public final class Discover {
               done = true;
               break;
             case 10: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (peer_ != null) {
                 subBuilder = peer_.toBuilder();
               }
-              peer_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              peer_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(peer_);
                 peer_ = subBuilder.buildPartial();
@@ -172,11 +172,11 @@ public final class Discover {
               break;
             }
             case 26: {
-              common.v1.Core.Metadata.Builder subBuilder = null;
+              common.Core.Metadata.Builder subBuilder = null;
               if (metadata_ != null) {
                 subBuilder = metadata_.toBuilder();
               }
-              metadata_ = input.readMessage(common.v1.Core.Metadata.parser(), extensionRegistry);
+              metadata_ = input.readMessage(common.Core.Metadata.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(metadata_);
                 metadata_ = subBuilder.buildPartial();
@@ -218,13 +218,13 @@ public final class Discover {
 
     private int bitField0_;
     public static final int PEER_FIELD_NUMBER = 1;
-    private common.v1.Core.Peer peer_;
+    private common.Core.Peer peer_;
     /**
      * <pre>
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     @java.lang.Override
@@ -236,22 +236,22 @@ public final class Discover {
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return The peer.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getPeer() {
-      return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+    public common.Core.Peer getPeer() {
+      return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
     }
     /**
      * <pre>
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+    public common.Core.PeerOrBuilder getPeerOrBuilder() {
       return getPeer();
     }
 
@@ -283,7 +283,7 @@ public final class Discover {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         message_ = s;
@@ -303,7 +303,7 @@ public final class Discover {
         getMessageBytes() {
       java.lang.Object ref = message_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         message_ = b;
@@ -314,13 +314,13 @@ public final class Discover {
     }
 
     public static final int METADATA_FIELD_NUMBER = 3;
-    private common.v1.Core.Metadata metadata_;
+    private common.Core.Metadata metadata_;
     /**
      * <pre>
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
      * @return Whether the metadata field is set.
      */
     @java.lang.Override
@@ -332,22 +332,22 @@ public final class Discover {
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
      * @return The metadata.
      */
     @java.lang.Override
-    public common.v1.Core.Metadata getMetadata() {
-      return metadata_ == null ? common.v1.Core.Metadata.getDefaultInstance() : metadata_;
+    public common.Core.Metadata getMetadata() {
+      return metadata_ == null ? common.Core.Metadata.getDefaultInstance() : metadata_;
     }
     /**
      * <pre>
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.MetadataOrBuilder getMetadataOrBuilder() {
+    public common.Core.MetadataOrBuilder getMetadataOrBuilder() {
       return getMetadata();
     }
 
@@ -730,15 +730,15 @@ public final class Discover {
       }
       private int bitField0_;
 
-      private common.v1.Core.Peer peer_;
+      private common.Core.Peer peer_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> peerBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> peerBuilder_;
       /**
        * <pre>
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        * @return Whether the peer field is set.
        */
       public boolean hasPeer() {
@@ -749,12 +749,12 @@ public final class Discover {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        * @return The peer.
        */
-      public common.v1.Core.Peer getPeer() {
+      public common.Core.Peer getPeer() {
         if (peerBuilder_ == null) {
-          return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+          return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
         } else {
           return peerBuilder_.getMessage();
         }
@@ -764,9 +764,9 @@ public final class Discover {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public Builder setPeer(common.v1.Core.Peer value) {
+      public Builder setPeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -784,10 +784,10 @@ public final class Discover {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       public Builder setPeer(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (peerBuilder_ == null) {
           peer_ = builderForValue.build();
           onChanged();
@@ -802,13 +802,13 @@ public final class Discover {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public Builder mergePeer(common.v1.Core.Peer value) {
+      public Builder mergePeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (peer_ != null) {
             peer_ =
-              common.v1.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
           } else {
             peer_ = value;
           }
@@ -824,7 +824,7 @@ public final class Discover {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       public Builder clearPeer() {
         if (peerBuilder_ == null) {
@@ -842,10 +842,10 @@ public final class Discover {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public common.v1.Core.Peer.Builder getPeerBuilder() {
-        
+      public common.Core.Peer.Builder getPeerBuilder() {
+
         onChanged();
         return getPeerFieldBuilder().getBuilder();
       }
@@ -854,14 +854,14 @@ public final class Discover {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+      public common.Core.PeerOrBuilder getPeerOrBuilder() {
         if (peerBuilder_ != null) {
           return peerBuilder_.getMessageOrBuilder();
         } else {
           return peer_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : peer_;
+              common.Core.Peer.getDefaultInstance() : peer_;
         }
       }
       /**
@@ -869,14 +869,14 @@ public final class Discover {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getPeerFieldBuilder() {
         if (peerBuilder_ == null) {
           peerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getPeer(),
                   getParentForChildren(),
                   isClean());
@@ -929,7 +929,7 @@ public final class Discover {
           getMessageBytes() {
         java.lang.Object ref = message_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           message_ = b;
@@ -992,15 +992,15 @@ public final class Discover {
         return this;
       }
 
-      private common.v1.Core.Metadata metadata_;
+      private common.Core.Metadata metadata_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Metadata, common.v1.Core.Metadata.Builder, common.v1.Core.MetadataOrBuilder> metadataBuilder_;
+          common.Core.Metadata, common.Core.Metadata.Builder, common.Core.MetadataOrBuilder> metadataBuilder_;
       /**
        * <pre>
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        * @return Whether the metadata field is set.
        */
       public boolean hasMetadata() {
@@ -1011,12 +1011,12 @@ public final class Discover {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        * @return The metadata.
        */
-      public common.v1.Core.Metadata getMetadata() {
+      public common.Core.Metadata getMetadata() {
         if (metadataBuilder_ == null) {
-          return metadata_ == null ? common.v1.Core.Metadata.getDefaultInstance() : metadata_;
+          return metadata_ == null ? common.Core.Metadata.getDefaultInstance() : metadata_;
         } else {
           return metadataBuilder_.getMessage();
         }
@@ -1026,9 +1026,9 @@ public final class Discover {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        */
-      public Builder setMetadata(common.v1.Core.Metadata value) {
+      public Builder setMetadata(common.Core.Metadata value) {
         if (metadataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1046,10 +1046,10 @@ public final class Discover {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        */
       public Builder setMetadata(
-          common.v1.Core.Metadata.Builder builderForValue) {
+          common.Core.Metadata.Builder builderForValue) {
         if (metadataBuilder_ == null) {
           metadata_ = builderForValue.build();
           onChanged();
@@ -1064,13 +1064,13 @@ public final class Discover {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        */
-      public Builder mergeMetadata(common.v1.Core.Metadata value) {
+      public Builder mergeMetadata(common.Core.Metadata value) {
         if (metadataBuilder_ == null) {
           if (metadata_ != null) {
             metadata_ =
-              common.v1.Core.Metadata.newBuilder(metadata_).mergeFrom(value).buildPartial();
+              common.Core.Metadata.newBuilder(metadata_).mergeFrom(value).buildPartial();
           } else {
             metadata_ = value;
           }
@@ -1086,7 +1086,7 @@ public final class Discover {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        */
       public Builder clearMetadata() {
         if (metadataBuilder_ == null) {
@@ -1104,10 +1104,10 @@ public final class Discover {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        */
-      public common.v1.Core.Metadata.Builder getMetadataBuilder() {
-        
+      public common.Core.Metadata.Builder getMetadataBuilder() {
+
         onChanged();
         return getMetadataFieldBuilder().getBuilder();
       }
@@ -1116,14 +1116,14 @@ public final class Discover {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        */
-      public common.v1.Core.MetadataOrBuilder getMetadataOrBuilder() {
+      public common.Core.MetadataOrBuilder getMetadataOrBuilder() {
         if (metadataBuilder_ != null) {
           return metadataBuilder_.getMessageOrBuilder();
         } else {
           return metadata_ == null ?
-              common.v1.Core.Metadata.getDefaultInstance() : metadata_;
+              common.Core.Metadata.getDefaultInstance() : metadata_;
         }
       }
       /**
@@ -1131,14 +1131,14 @@ public final class Discover {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 3 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 3 [json_name = "metadata"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Metadata, common.v1.Core.Metadata.Builder, common.v1.Core.MetadataOrBuilder> 
+          common.Core.Metadata, common.Core.Metadata.Builder, common.Core.MetadataOrBuilder>
           getMetadataFieldBuilder() {
         if (metadataBuilder_ == null) {
           metadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Metadata, common.v1.Core.Metadata.Builder, common.v1.Core.MetadataOrBuilder>(
+              common.Core.Metadata, common.Core.Metadata.Builder, common.Core.MetadataOrBuilder>(
                   getMetadata(),
                   getParentForChildren(),
                   isClean());
@@ -1519,7 +1519,7 @@ public final class Discover {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -1539,7 +1539,7 @@ public final class Discover {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -1963,7 +1963,7 @@ public final class Discover {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -1986,7 +1986,7 @@ public final class Discover {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -2000,7 +2000,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -2020,7 +2020,7 @@ public final class Discover {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -2052,7 +2052,7 @@ public final class Discover {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         publicKey_ = value;
         onChanged();
         return this;
@@ -2066,7 +2066,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder clearPublicKey() {
-        
+
         publicKey_ = getDefaultInstance().getPublicKey();
         onChanged();
         return this;
@@ -2094,7 +2094,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder setVisibilityValue(int value) {
-        
+
         visibility_ = value;
         onChanged();
         return this;
@@ -2126,7 +2126,7 @@ public final class Discover {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         visibility_ = value.getNumber();
         onChanged();
         return this;
@@ -2140,7 +2140,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder clearVisibility() {
-        
+
         visibility_ = 0;
         onChanged();
         return this;
@@ -2532,7 +2532,7 @@ public final class Discover {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -2552,7 +2552,7 @@ public final class Discover {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -2952,7 +2952,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -2966,7 +2966,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -3005,7 +3005,7 @@ public final class Discover {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -3028,7 +3028,7 @@ public final class Discover {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -3042,7 +3042,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -3062,7 +3062,7 @@ public final class Discover {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -3090,7 +3090,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder setVisibilityValue(int value) {
-        
+
         visibility_ = value;
         onChanged();
         return this;
@@ -3122,7 +3122,7 @@ public final class Discover {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         visibility_ = value.getNumber();
         onChanged();
         return this;
@@ -3136,7 +3136,7 @@ public final class Discover {
        * @return This builder for chaining.
        */
       public Builder clearVisibility() {
-        
+
         visibility_ = 0;
         onChanged();
         return this;
@@ -3196,17 +3196,17 @@ public final class Discover {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_protocols_discover_v1_LobbyMessage_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_protocols_discover_v1_LobbyMessage_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_protocols_discover_v1_VisibilityRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_protocols_discover_v1_VisibilityRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_protocols_discover_v1_VisibilityResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_protocols_discover_v1_VisibilityResponse_fieldAccessorTable;
 
@@ -3222,7 +3222,7 @@ public final class Discover {
       "protocols.discover.v1\032\024common/v1/core.pr" +
       "oto\"\217\001\n\014LobbyMessage\022#\n\004peer\030\001 \001(\0132\017.com" +
       "mon.v1.PeerR\004peer\022\035\n\007message\030\002 \001(\tH\000R\007me" +
-      "ssage\210\001\001\022/\n\010metadata\030\003 \001(\0132\023.common.v1.M" +
+      "ssage\210\001\001\022/\n\010metadata\030\003 \001(\0132\023.common.M" +
       "etadataR\010metadataB\n\n\010_message\"\221\002\n\021Visibi" +
       "lityRequest\022\025\n\006s_name\030\001 \001(\tR\005sName\022\035\n\npu" +
       "blic_key\030\002 \001(\014R\tpublicKey\022S\n\nvisibility\030" +
@@ -3243,7 +3243,7 @@ public final class Discover {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          common.v1.Core.getDescriptor(),
+          common.Core.getDescriptor(),
         });
     internal_static_protocols_discover_v1_LobbyMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -3263,7 +3263,7 @@ public final class Discover {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_protocols_discover_v1_VisibilityResponse_descriptor,
         new java.lang.String[] { "Success", "Error", "Visibility", });
-    common.v1.Core.getDescriptor();
+    common.Core.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

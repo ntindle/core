@@ -4,8 +4,9 @@ import (
 	"errors"
 
 	"github.com/kataras/golog"
+	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/libp2p/go-libp2p-core/protocol"
-	"github.com/sonr-io/core/device"
+	"github.com/sonr-io/core/types/go/common"
 )
 
 // Textile API definitions
@@ -65,18 +66,87 @@ func (o *options) Apply(p *ExchangeProtocol) error {
 		//mail := local.NewMail(cmd.NewClients(TextileClientURL, true, TextileMinerIdx), local.DefaultConfConfig())
 
 		// Create new mailbox
-		if device.ThirdParty.Exists(TextileMailboxDirName) {
-			// Return Existing Mailbox
-			if err := p.loadMailbox(); err != nil {
-				return err
-			}
-		} else {
-			// Create New Mailbox
-			if err := p.newMailbox(); err != nil {
-				return err
-			}
-		}
+		// if device.ThirdParty.Exists(TextileMailboxDirName) {
+		// 	// Return Existing Mailbox
+		// 	if err := p.loadMailbox(); err != nil {
+		// 		return err
+		// 	}
+		// } else {
+		// 	// Create New Mailbox
+		// 	if err := p.newMailbox(); err != nil {
+		// 		return err
+		// 	}
+		// }
 		// go p.handleMailboxEvents()
 	}
 	return nil
+}
+
+// createRequest creates a new InviteRequest
+func (p *ExchangeProtocol) createRequest(to *common.Peer, payload *common.Payload) (peer.ID, *InviteRequest, error) {
+	// Call Peer from Node
+	from, err := p.node.Peer()
+	if err != nil {
+		logger.Errorf("%s - Failed to Get Peer from Node", err)
+		return "", nil, err
+	}
+
+	// Fetch Peer ID from Public Key
+	toId, err := to.Libp2pID()
+	if err != nil {
+		logger.Errorf("%s - Failed to fetch peer id from public key", err)
+		return "", nil, err
+	}
+
+	// Create new Metadata
+	// meta, err := wallet.CreateMetadata(p.host.ID())
+	// if err != nil {
+	// 	logger.Errorf("%s - Failed to create new metadata for Shared Invite", err)
+	// 	return "", nil, err
+	// }
+
+	// Create Invite Request
+	req := &InviteRequest{
+		Payload: payload,
+		// TODO: Implement Signed Meta to Proto Method
+		// Metadata: api.SignedMetadataToProto(meta),
+		To:   to,
+		From: from,
+	}
+	return toId, req, nil
+}
+
+// createResponse creates a new InviteResponse
+func (p *ExchangeProtocol) createResponse(decs bool, to *common.Peer) (peer.ID, *InviteResponse, error) {
+
+	// Call Peer from Node
+	from, err := p.node.Peer()
+	if err != nil {
+		logger.Errorf("%s - Failed to Get Peer from Node", err)
+		return "", nil, err
+	}
+
+	// Create new Metadata
+	// meta, err := wallet.CreateMetadata(p.host.ID())
+	// if err != nil {
+	// 	logger.Errorf("%s - Failed to create new metadata for Shared Invite", err)
+	// 	return "", nil, err
+	// }
+
+	// Create Invite Response
+	resp := &InviteResponse{
+		Decision: decs,
+		// TODO: Implement Signed Meta to Proto Method
+		//Metadata: api.SignedMetadataToProto(meta),
+		From: from,
+		To:   to,
+	}
+
+	// Fetch Peer ID from Public Key
+	toId, err := to.Libp2pID()
+	if err != nil {
+		logger.Errorf("%s - Failed to fetch peer id from public key", err)
+		return "", nil, err
+	}
+	return toId, resp, nil
 }

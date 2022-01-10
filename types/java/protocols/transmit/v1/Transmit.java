@@ -19,60 +19,60 @@ public final class Transmit {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     int getDirectionValue();
     /**
-     * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
      * @return The direction.
      */
-    common.v1.Data.Direction getDirection();
+    common.Data.Direction getDirection();
 
     /**
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     boolean hasFrom();
     /**
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return The from.
      */
-    common.v1.Core.Peer getFrom();
+    common.Core.Peer getFrom();
     /**
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      */
-    common.v1.Core.PeerOrBuilder getFromOrBuilder();
+    common.Core.PeerOrBuilder getFromOrBuilder();
 
     /**
-     * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+     * <code>.common.Peer to = 3 [json_name = "to"];</code>
      * @return Whether the to field is set.
      */
     boolean hasTo();
     /**
-     * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+     * <code>.common.Peer to = 3 [json_name = "to"];</code>
      * @return The to.
      */
-    common.v1.Core.Peer getTo();
+    common.Core.Peer getTo();
     /**
-     * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+     * <code>.common.Peer to = 3 [json_name = "to"];</code>
      */
-    common.v1.Core.PeerOrBuilder getToOrBuilder();
+    common.Core.PeerOrBuilder getToOrBuilder();
 
     /**
-     * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
      * @return Whether the payload field is set.
      */
     boolean hasPayload();
     /**
-     * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
      * @return The payload.
      */
-    common.v1.Data.Payload getPayload();
+    common.Data.Payload getPayload();
     /**
-     * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
      */
-    common.v1.Data.PayloadOrBuilder getPayloadOrBuilder();
+    common.Data.PayloadOrBuilder getPayloadOrBuilder();
 
     /**
      * <code>int64 last_updated = 5 [json_name = "lastUpdated"];</code>
@@ -83,7 +83,7 @@ public final class Transmit {
     /**
      * <code>repeated .protocols.transmit.v1.SessionItem items = 6 [json_name = "items"];</code>
      */
-    java.util.List<protocols.transmit.v1.Transmit.SessionItem> 
+    java.util.List<protocols.transmit.v1.Transmit.SessionItem>
         getItemsList();
     /**
      * <code>repeated .protocols.transmit.v1.SessionItem items = 6 [json_name = "items"];</code>
@@ -96,7 +96,7 @@ public final class Transmit {
     /**
      * <code>repeated .protocols.transmit.v1.SessionItem items = 6 [json_name = "items"];</code>
      */
-    java.util.List<? extends protocols.transmit.v1.Transmit.SessionItemOrBuilder> 
+    java.util.List<? extends protocols.transmit.v1.Transmit.SessionItemOrBuilder>
         getItemsOrBuilderList();
     /**
      * <code>repeated .protocols.transmit.v1.SessionItem items = 6 [json_name = "items"];</code>
@@ -199,11 +199,11 @@ public final class Transmit {
               break;
             }
             case 18: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (from_ != null) {
                 subBuilder = from_.toBuilder();
               }
-              from_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              from_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(from_);
                 from_ = subBuilder.buildPartial();
@@ -212,11 +212,11 @@ public final class Transmit {
               break;
             }
             case 26: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (to_ != null) {
                 subBuilder = to_.toBuilder();
               }
-              to_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              to_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(to_);
                 to_ = subBuilder.buildPartial();
@@ -225,11 +225,11 @@ public final class Transmit {
               break;
             }
             case 34: {
-              common.v1.Data.Payload.Builder subBuilder = null;
+              common.Data.Payload.Builder subBuilder = null;
               if (payload_ != null) {
                 subBuilder = payload_.toBuilder();
               }
-              payload_ = input.readMessage(common.v1.Data.Payload.parser(), extensionRegistry);
+              payload_ = input.readMessage(common.Data.Payload.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(payload_);
                 payload_ = subBuilder.buildPartial();
@@ -319,26 +319,26 @@ public final class Transmit {
     public static final int DIRECTION_FIELD_NUMBER = 1;
     private int direction_;
     /**
-     * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     @java.lang.Override public int getDirectionValue() {
       return direction_;
     }
     /**
-     * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
      * @return The direction.
      */
-    @java.lang.Override public common.v1.Data.Direction getDirection() {
+    @java.lang.Override public common.Data.Direction getDirection() {
       @SuppressWarnings("deprecation")
-      common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-      return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+      common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+      return result == null ? common.Data.Direction.UNRECOGNIZED : result;
     }
 
     public static final int FROM_FIELD_NUMBER = 2;
-    private common.v1.Core.Peer from_;
+    private common.Core.Peer from_;
     /**
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     @java.lang.Override
@@ -346,25 +346,25 @@ public final class Transmit {
       return from_ != null;
     }
     /**
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return The from.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getFrom() {
-      return from_ == null ? common.v1.Core.Peer.getDefaultInstance() : from_;
+    public common.Core.Peer getFrom() {
+      return from_ == null ? common.Core.Peer.getDefaultInstance() : from_;
     }
     /**
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getFromOrBuilder() {
+    public common.Core.PeerOrBuilder getFromOrBuilder() {
       return getFrom();
     }
 
     public static final int TO_FIELD_NUMBER = 3;
-    private common.v1.Core.Peer to_;
+    private common.Core.Peer to_;
     /**
-     * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+     * <code>.common.Peer to = 3 [json_name = "to"];</code>
      * @return Whether the to field is set.
      */
     @java.lang.Override
@@ -372,25 +372,25 @@ public final class Transmit {
       return to_ != null;
     }
     /**
-     * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+     * <code>.common.Peer to = 3 [json_name = "to"];</code>
      * @return The to.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getTo() {
-      return to_ == null ? common.v1.Core.Peer.getDefaultInstance() : to_;
+    public common.Core.Peer getTo() {
+      return to_ == null ? common.Core.Peer.getDefaultInstance() : to_;
     }
     /**
-     * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+     * <code>.common.Peer to = 3 [json_name = "to"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getToOrBuilder() {
+    public common.Core.PeerOrBuilder getToOrBuilder() {
       return getTo();
     }
 
     public static final int PAYLOAD_FIELD_NUMBER = 4;
-    private common.v1.Data.Payload payload_;
+    private common.Data.Payload payload_;
     /**
-     * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
      * @return Whether the payload field is set.
      */
     @java.lang.Override
@@ -398,18 +398,18 @@ public final class Transmit {
       return payload_ != null;
     }
     /**
-     * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
      * @return The payload.
      */
     @java.lang.Override
-    public common.v1.Data.Payload getPayload() {
-      return payload_ == null ? common.v1.Data.Payload.getDefaultInstance() : payload_;
+    public common.Data.Payload getPayload() {
+      return payload_ == null ? common.Data.Payload.getDefaultInstance() : payload_;
     }
     /**
-     * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.PayloadOrBuilder getPayloadOrBuilder() {
+    public common.Data.PayloadOrBuilder getPayloadOrBuilder() {
       return getPayload();
     }
 
@@ -437,7 +437,7 @@ public final class Transmit {
      * <code>repeated .protocols.transmit.v1.SessionItem items = 6 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public java.util.List<? extends protocols.transmit.v1.Transmit.SessionItemOrBuilder> 
+    public java.util.List<? extends protocols.transmit.v1.Transmit.SessionItemOrBuilder>
         getItemsOrBuilderList() {
       return items_;
     }
@@ -481,7 +481,7 @@ public final class Transmit {
           java.lang.Integer, java.lang.Boolean> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Boolean>newDefaultInstance(
-                  protocols.transmit.v1.Transmit.internal_static_protocols_transmit_v1_Session_ResultsEntry_descriptor, 
+                  protocols.transmit.v1.Transmit.internal_static_protocols_transmit_v1_Session_ResultsEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.INT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.BOOL,
@@ -508,7 +508,7 @@ public final class Transmit {
     @java.lang.Override
     public boolean containsResults(
         int key) {
-      
+
       return internalGetResults().getMap().containsKey(key);
     }
     /**
@@ -535,7 +535,7 @@ public final class Transmit {
     public boolean getResultsOrDefault(
         int key,
         boolean defaultValue) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Boolean> map =
           internalGetResults().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -547,7 +547,7 @@ public final class Transmit {
 
     public boolean getResultsOrThrow(
         int key) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Boolean> map =
           internalGetResults().getMap();
       if (!map.containsKey(key)) {
@@ -570,7 +570,7 @@ public final class Transmit {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         output.writeEnum(1, direction_);
       }
       if (from_ != null) {
@@ -606,7 +606,7 @@ public final class Transmit {
       if (size != -1) return size;
 
       size = 0;
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, direction_);
       }
@@ -1045,7 +1045,7 @@ public final class Transmit {
               itemsBuilder_ = null;
               items_ = other.items_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              itemsBuilder_ = 
+              itemsBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getItemsFieldBuilder() : null;
             } else {
@@ -1090,83 +1090,83 @@ public final class Transmit {
 
       private int direction_ = 0;
       /**
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @return The enum numeric value on the wire for direction.
        */
       @java.lang.Override public int getDirectionValue() {
         return direction_;
       }
       /**
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @param value The enum numeric value on the wire for direction to set.
        * @return This builder for chaining.
        */
       public Builder setDirectionValue(int value) {
-        
+
         direction_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @return The direction.
        */
       @java.lang.Override
-      public common.v1.Data.Direction getDirection() {
+      public common.Data.Direction getDirection() {
         @SuppressWarnings("deprecation")
-        common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-        return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+        common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+        return result == null ? common.Data.Direction.UNRECOGNIZED : result;
       }
       /**
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @param value The direction to set.
        * @return This builder for chaining.
        */
-      public Builder setDirection(common.v1.Data.Direction value) {
+      public Builder setDirection(common.Data.Direction value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         direction_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @return This builder for chaining.
        */
       public Builder clearDirection() {
-        
+
         direction_ = 0;
         onChanged();
         return this;
       }
 
-      private common.v1.Core.Peer from_;
+      private common.Core.Peer from_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> fromBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> fromBuilder_;
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        * @return Whether the from field is set.
        */
       public boolean hasFrom() {
         return fromBuilder_ != null || from_ != null;
       }
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        * @return The from.
        */
-      public common.v1.Core.Peer getFrom() {
+      public common.Core.Peer getFrom() {
         if (fromBuilder_ == null) {
-          return from_ == null ? common.v1.Core.Peer.getDefaultInstance() : from_;
+          return from_ == null ? common.Core.Peer.getDefaultInstance() : from_;
         } else {
           return fromBuilder_.getMessage();
         }
       }
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public Builder setFrom(common.v1.Core.Peer value) {
+      public Builder setFrom(common.Core.Peer value) {
         if (fromBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1180,10 +1180,10 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       public Builder setFrom(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (fromBuilder_ == null) {
           from_ = builderForValue.build();
           onChanged();
@@ -1194,13 +1194,13 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public Builder mergeFrom(common.v1.Core.Peer value) {
+      public Builder mergeFrom(common.Core.Peer value) {
         if (fromBuilder_ == null) {
           if (from_ != null) {
             from_ =
-              common.v1.Core.Peer.newBuilder(from_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(from_).mergeFrom(value).buildPartial();
           } else {
             from_ = value;
           }
@@ -1212,7 +1212,7 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       public Builder clearFrom() {
         if (fromBuilder_ == null) {
@@ -1226,33 +1226,33 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public common.v1.Core.Peer.Builder getFromBuilder() {
-        
+      public common.Core.Peer.Builder getFromBuilder() {
+
         onChanged();
         return getFromFieldBuilder().getBuilder();
       }
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getFromOrBuilder() {
+      public common.Core.PeerOrBuilder getFromOrBuilder() {
         if (fromBuilder_ != null) {
           return fromBuilder_.getMessageOrBuilder();
         } else {
           return from_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : from_;
+              common.Core.Peer.getDefaultInstance() : from_;
         }
       }
       /**
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getFromFieldBuilder() {
         if (fromBuilder_ == null) {
           fromBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getFrom(),
                   getParentForChildren(),
                   isClean());
@@ -1261,31 +1261,31 @@ public final class Transmit {
         return fromBuilder_;
       }
 
-      private common.v1.Core.Peer to_;
+      private common.Core.Peer to_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> toBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> toBuilder_;
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        * @return Whether the to field is set.
        */
       public boolean hasTo() {
         return toBuilder_ != null || to_ != null;
       }
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        * @return The to.
        */
-      public common.v1.Core.Peer getTo() {
+      public common.Core.Peer getTo() {
         if (toBuilder_ == null) {
-          return to_ == null ? common.v1.Core.Peer.getDefaultInstance() : to_;
+          return to_ == null ? common.Core.Peer.getDefaultInstance() : to_;
         } else {
           return toBuilder_.getMessage();
         }
       }
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        */
-      public Builder setTo(common.v1.Core.Peer value) {
+      public Builder setTo(common.Core.Peer value) {
         if (toBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1299,10 +1299,10 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        */
       public Builder setTo(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (toBuilder_ == null) {
           to_ = builderForValue.build();
           onChanged();
@@ -1313,13 +1313,13 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        */
-      public Builder mergeTo(common.v1.Core.Peer value) {
+      public Builder mergeTo(common.Core.Peer value) {
         if (toBuilder_ == null) {
           if (to_ != null) {
             to_ =
-              common.v1.Core.Peer.newBuilder(to_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(to_).mergeFrom(value).buildPartial();
           } else {
             to_ = value;
           }
@@ -1331,7 +1331,7 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        */
       public Builder clearTo() {
         if (toBuilder_ == null) {
@@ -1345,33 +1345,33 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        */
-      public common.v1.Core.Peer.Builder getToBuilder() {
-        
+      public common.Core.Peer.Builder getToBuilder() {
+
         onChanged();
         return getToFieldBuilder().getBuilder();
       }
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getToOrBuilder() {
+      public common.Core.PeerOrBuilder getToOrBuilder() {
         if (toBuilder_ != null) {
           return toBuilder_.getMessageOrBuilder();
         } else {
           return to_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : to_;
+              common.Core.Peer.getDefaultInstance() : to_;
         }
       }
       /**
-       * <code>.common.v1.Peer to = 3 [json_name = "to"];</code>
+       * <code>.common.Peer to = 3 [json_name = "to"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getToFieldBuilder() {
         if (toBuilder_ == null) {
           toBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getTo(),
                   getParentForChildren(),
                   isClean());
@@ -1380,31 +1380,31 @@ public final class Transmit {
         return toBuilder_;
       }
 
-      private common.v1.Data.Payload payload_;
+      private common.Data.Payload payload_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder> payloadBuilder_;
+          common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder> payloadBuilder_;
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        * @return Whether the payload field is set.
        */
       public boolean hasPayload() {
         return payloadBuilder_ != null || payload_ != null;
       }
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        * @return The payload.
        */
-      public common.v1.Data.Payload getPayload() {
+      public common.Data.Payload getPayload() {
         if (payloadBuilder_ == null) {
-          return payload_ == null ? common.v1.Data.Payload.getDefaultInstance() : payload_;
+          return payload_ == null ? common.Data.Payload.getDefaultInstance() : payload_;
         } else {
           return payloadBuilder_.getMessage();
         }
       }
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        */
-      public Builder setPayload(common.v1.Data.Payload value) {
+      public Builder setPayload(common.Data.Payload value) {
         if (payloadBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1418,10 +1418,10 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        */
       public Builder setPayload(
-          common.v1.Data.Payload.Builder builderForValue) {
+          common.Data.Payload.Builder builderForValue) {
         if (payloadBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -1432,13 +1432,13 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        */
-      public Builder mergePayload(common.v1.Data.Payload value) {
+      public Builder mergePayload(common.Data.Payload value) {
         if (payloadBuilder_ == null) {
           if (payload_ != null) {
             payload_ =
-              common.v1.Data.Payload.newBuilder(payload_).mergeFrom(value).buildPartial();
+              common.Data.Payload.newBuilder(payload_).mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
           }
@@ -1450,7 +1450,7 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        */
       public Builder clearPayload() {
         if (payloadBuilder_ == null) {
@@ -1464,33 +1464,33 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        */
-      public common.v1.Data.Payload.Builder getPayloadBuilder() {
-        
+      public common.Data.Payload.Builder getPayloadBuilder() {
+
         onChanged();
         return getPayloadFieldBuilder().getBuilder();
       }
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        */
-      public common.v1.Data.PayloadOrBuilder getPayloadOrBuilder() {
+      public common.Data.PayloadOrBuilder getPayloadOrBuilder() {
         if (payloadBuilder_ != null) {
           return payloadBuilder_.getMessageOrBuilder();
         } else {
           return payload_ == null ?
-              common.v1.Data.Payload.getDefaultInstance() : payload_;
+              common.Data.Payload.getDefaultInstance() : payload_;
         }
       }
       /**
-       * <code>.common.v1.Payload payload = 4 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 4 [json_name = "payload"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder> 
+          common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder>
           getPayloadFieldBuilder() {
         if (payloadBuilder_ == null) {
           payloadBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder>(
+              common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder>(
                   getPayload(),
                   getParentForChildren(),
                   isClean());
@@ -1514,7 +1514,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder setLastUpdated(long value) {
-        
+
         lastUpdated_ = value;
         onChanged();
         return this;
@@ -1524,7 +1524,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder clearLastUpdated() {
-        
+
         lastUpdated_ = 0L;
         onChanged();
         return this;
@@ -1725,7 +1725,7 @@ public final class Transmit {
       /**
        * <code>repeated .protocols.transmit.v1.SessionItem items = 6 [json_name = "items"];</code>
        */
-      public java.util.List<? extends protocols.transmit.v1.Transmit.SessionItemOrBuilder> 
+      public java.util.List<? extends protocols.transmit.v1.Transmit.SessionItemOrBuilder>
            getItemsOrBuilderList() {
         if (itemsBuilder_ != null) {
           return itemsBuilder_.getMessageOrBuilderList();
@@ -1751,12 +1751,12 @@ public final class Transmit {
       /**
        * <code>repeated .protocols.transmit.v1.SessionItem items = 6 [json_name = "items"];</code>
        */
-      public java.util.List<protocols.transmit.v1.Transmit.SessionItem.Builder> 
+      public java.util.List<protocols.transmit.v1.Transmit.SessionItem.Builder>
            getItemsBuilderList() {
         return getItemsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          protocols.transmit.v1.Transmit.SessionItem, protocols.transmit.v1.Transmit.SessionItem.Builder, protocols.transmit.v1.Transmit.SessionItemOrBuilder> 
+          protocols.transmit.v1.Transmit.SessionItem, protocols.transmit.v1.Transmit.SessionItem.Builder, protocols.transmit.v1.Transmit.SessionItemOrBuilder>
           getItemsFieldBuilder() {
         if (itemsBuilder_ == null) {
           itemsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
@@ -1785,7 +1785,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder setCurrentIndex(int value) {
-        
+
         currentIndex_ = value;
         onChanged();
         return this;
@@ -1795,7 +1795,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder clearCurrentIndex() {
-        
+
         currentIndex_ = 0;
         onChanged();
         return this;
@@ -1834,7 +1834,7 @@ public final class Transmit {
       @java.lang.Override
       public boolean containsResults(
           int key) {
-        
+
         return internalGetResults().getMap().containsKey(key);
       }
       /**
@@ -1861,7 +1861,7 @@ public final class Transmit {
       public boolean getResultsOrDefault(
           int key,
           boolean defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Boolean> map =
             internalGetResults().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -1873,7 +1873,7 @@ public final class Transmit {
 
       public boolean getResultsOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Boolean> map =
             internalGetResults().getMap();
         if (!map.containsKey(key)) {
@@ -1893,7 +1893,7 @@ public final class Transmit {
 
       public Builder removeResults(
           int key) {
-        
+
         internalGetMutableResults().getMutableMap()
             .remove(key);
         return this;
@@ -1912,8 +1912,8 @@ public final class Transmit {
       public Builder putResults(
           int key,
           boolean value) {
-        
-        
+
+
         internalGetMutableResults().getMutableMap()
             .put(key, value);
         return this;
@@ -1998,19 +1998,19 @@ public final class Transmit {
     int getCount();
 
     /**
-     * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+     * <code>.common.FileItem item = 3 [json_name = "item"];</code>
      * @return Whether the item field is set.
      */
     boolean hasItem();
     /**
-     * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+     * <code>.common.FileItem item = 3 [json_name = "item"];</code>
      * @return The item.
      */
-    common.v1.Data.FileItem getItem();
+    common.Data.FileItem getItem();
     /**
-     * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+     * <code>.common.FileItem item = 3 [json_name = "item"];</code>
      */
-    common.v1.Data.FileItemOrBuilder getItemOrBuilder();
+    common.Data.FileItemOrBuilder getItemOrBuilder();
 
     /**
      * <code>int64 written = 4 [json_name = "written"];</code>
@@ -2031,15 +2031,15 @@ public final class Transmit {
     long getTotalSize();
 
     /**
-     * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     int getDirectionValue();
     /**
-     * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
      * @return The direction.
      */
-    common.v1.Data.Direction getDirection();
+    common.Data.Direction getDirection();
 
     /**
      * <code>string path = 8 [json_name = "path"];</code>
@@ -2111,11 +2111,11 @@ public final class Transmit {
               break;
             }
             case 26: {
-              common.v1.Data.FileItem.Builder subBuilder = null;
+              common.Data.FileItem.Builder subBuilder = null;
               if (item_ != null) {
                 subBuilder = item_.toBuilder();
               }
-              item_ = input.readMessage(common.v1.Data.FileItem.parser(), extensionRegistry);
+              item_ = input.readMessage(common.Data.FileItem.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(item_);
                 item_ = subBuilder.buildPartial();
@@ -2205,9 +2205,9 @@ public final class Transmit {
     }
 
     public static final int ITEM_FIELD_NUMBER = 3;
-    private common.v1.Data.FileItem item_;
+    private common.Data.FileItem item_;
     /**
-     * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+     * <code>.common.FileItem item = 3 [json_name = "item"];</code>
      * @return Whether the item field is set.
      */
     @java.lang.Override
@@ -2215,18 +2215,18 @@ public final class Transmit {
       return item_ != null;
     }
     /**
-     * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+     * <code>.common.FileItem item = 3 [json_name = "item"];</code>
      * @return The item.
      */
     @java.lang.Override
-    public common.v1.Data.FileItem getItem() {
-      return item_ == null ? common.v1.Data.FileItem.getDefaultInstance() : item_;
+    public common.Data.FileItem getItem() {
+      return item_ == null ? common.Data.FileItem.getDefaultInstance() : item_;
     }
     /**
-     * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+     * <code>.common.FileItem item = 3 [json_name = "item"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.FileItemOrBuilder getItemOrBuilder() {
+    public common.Data.FileItemOrBuilder getItemOrBuilder() {
       return getItem();
     }
 
@@ -2266,20 +2266,20 @@ public final class Transmit {
     public static final int DIRECTION_FIELD_NUMBER = 7;
     private int direction_;
     /**
-     * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     @java.lang.Override public int getDirectionValue() {
       return direction_;
     }
     /**
-     * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
      * @return The direction.
      */
-    @java.lang.Override public common.v1.Data.Direction getDirection() {
+    @java.lang.Override public common.Data.Direction getDirection() {
       @SuppressWarnings("deprecation")
-      common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-      return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+      common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+      return result == null ? common.Data.Direction.UNRECOGNIZED : result;
     }
 
     public static final int PATH_FIELD_NUMBER = 8;
@@ -2294,7 +2294,7 @@ public final class Transmit {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         path_ = s;
@@ -2310,7 +2310,7 @@ public final class Transmit {
         getPathBytes() {
       java.lang.Object ref = path_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         path_ = b;
@@ -2352,7 +2352,7 @@ public final class Transmit {
       if (totalSize_ != 0L) {
         output.writeInt64(6, totalSize_);
       }
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         output.writeEnum(7, direction_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(path_)) {
@@ -2391,7 +2391,7 @@ public final class Transmit {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(6, totalSize_);
       }
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(7, direction_);
       }
@@ -2771,7 +2771,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder setIndex(int value) {
-        
+
         index_ = value;
         onChanged();
         return this;
@@ -2781,7 +2781,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder clearIndex() {
-        
+
         index_ = 0;
         onChanged();
         return this;
@@ -2802,7 +2802,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder setCount(int value) {
-        
+
         count_ = value;
         onChanged();
         return this;
@@ -2812,37 +2812,37 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder clearCount() {
-        
+
         count_ = 0;
         onChanged();
         return this;
       }
 
-      private common.v1.Data.FileItem item_;
+      private common.Data.FileItem item_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.FileItem, common.v1.Data.FileItem.Builder, common.v1.Data.FileItemOrBuilder> itemBuilder_;
+          common.Data.FileItem, common.Data.FileItem.Builder, common.Data.FileItemOrBuilder> itemBuilder_;
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        * @return Whether the item field is set.
        */
       public boolean hasItem() {
         return itemBuilder_ != null || item_ != null;
       }
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        * @return The item.
        */
-      public common.v1.Data.FileItem getItem() {
+      public common.Data.FileItem getItem() {
         if (itemBuilder_ == null) {
-          return item_ == null ? common.v1.Data.FileItem.getDefaultInstance() : item_;
+          return item_ == null ? common.Data.FileItem.getDefaultInstance() : item_;
         } else {
           return itemBuilder_.getMessage();
         }
       }
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        */
-      public Builder setItem(common.v1.Data.FileItem value) {
+      public Builder setItem(common.Data.FileItem value) {
         if (itemBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2856,10 +2856,10 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        */
       public Builder setItem(
-          common.v1.Data.FileItem.Builder builderForValue) {
+          common.Data.FileItem.Builder builderForValue) {
         if (itemBuilder_ == null) {
           item_ = builderForValue.build();
           onChanged();
@@ -2870,13 +2870,13 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        */
-      public Builder mergeItem(common.v1.Data.FileItem value) {
+      public Builder mergeItem(common.Data.FileItem value) {
         if (itemBuilder_ == null) {
           if (item_ != null) {
             item_ =
-              common.v1.Data.FileItem.newBuilder(item_).mergeFrom(value).buildPartial();
+              common.Data.FileItem.newBuilder(item_).mergeFrom(value).buildPartial();
           } else {
             item_ = value;
           }
@@ -2888,7 +2888,7 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        */
       public Builder clearItem() {
         if (itemBuilder_ == null) {
@@ -2902,33 +2902,33 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        */
-      public common.v1.Data.FileItem.Builder getItemBuilder() {
-        
+      public common.Data.FileItem.Builder getItemBuilder() {
+
         onChanged();
         return getItemFieldBuilder().getBuilder();
       }
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        */
-      public common.v1.Data.FileItemOrBuilder getItemOrBuilder() {
+      public common.Data.FileItemOrBuilder getItemOrBuilder() {
         if (itemBuilder_ != null) {
           return itemBuilder_.getMessageOrBuilder();
         } else {
           return item_ == null ?
-              common.v1.Data.FileItem.getDefaultInstance() : item_;
+              common.Data.FileItem.getDefaultInstance() : item_;
         }
       }
       /**
-       * <code>.common.v1.FileItem item = 3 [json_name = "item"];</code>
+       * <code>.common.FileItem item = 3 [json_name = "item"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.FileItem, common.v1.Data.FileItem.Builder, common.v1.Data.FileItemOrBuilder> 
+          common.Data.FileItem, common.Data.FileItem.Builder, common.Data.FileItemOrBuilder>
           getItemFieldBuilder() {
         if (itemBuilder_ == null) {
           itemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Data.FileItem, common.v1.Data.FileItem.Builder, common.v1.Data.FileItemOrBuilder>(
+              common.Data.FileItem, common.Data.FileItem.Builder, common.Data.FileItemOrBuilder>(
                   getItem(),
                   getParentForChildren(),
                   isClean());
@@ -2952,7 +2952,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder setWritten(long value) {
-        
+
         written_ = value;
         onChanged();
         return this;
@@ -2962,7 +2962,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder clearWritten() {
-        
+
         written_ = 0L;
         onChanged();
         return this;
@@ -2983,7 +2983,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder setSize(long value) {
-        
+
         size_ = value;
         onChanged();
         return this;
@@ -2993,7 +2993,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder clearSize() {
-        
+
         size_ = 0L;
         onChanged();
         return this;
@@ -3014,7 +3014,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder setTotalSize(long value) {
-        
+
         totalSize_ = value;
         onChanged();
         return this;
@@ -3024,7 +3024,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder clearTotalSize() {
-        
+
         totalSize_ = 0L;
         onChanged();
         return this;
@@ -3032,53 +3032,53 @@ public final class Transmit {
 
       private int direction_ = 0;
       /**
-       * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
        * @return The enum numeric value on the wire for direction.
        */
       @java.lang.Override public int getDirectionValue() {
         return direction_;
       }
       /**
-       * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
        * @param value The enum numeric value on the wire for direction to set.
        * @return This builder for chaining.
        */
       public Builder setDirectionValue(int value) {
-        
+
         direction_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
        * @return The direction.
        */
       @java.lang.Override
-      public common.v1.Data.Direction getDirection() {
+      public common.Data.Direction getDirection() {
         @SuppressWarnings("deprecation")
-        common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-        return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+        common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+        return result == null ? common.Data.Direction.UNRECOGNIZED : result;
       }
       /**
-       * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
        * @param value The direction to set.
        * @return This builder for chaining.
        */
-      public Builder setDirection(common.v1.Data.Direction value) {
+      public Builder setDirection(common.Data.Direction value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         direction_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.common.v1.Direction direction = 7 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 7 [json_name = "direction"];</code>
        * @return This builder for chaining.
        */
       public Builder clearDirection() {
-        
+
         direction_ = 0;
         onChanged();
         return this;
@@ -3109,7 +3109,7 @@ public final class Transmit {
           getPathBytes() {
         java.lang.Object ref = path_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           path_ = b;
@@ -3128,7 +3128,7 @@ public final class Transmit {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         path_ = value;
         onChanged();
         return this;
@@ -3138,7 +3138,7 @@ public final class Transmit {
        * @return This builder for chaining.
        */
       public Builder clearPath() {
-        
+
         path_ = getDefaultInstance().getPath();
         onChanged();
         return this;
@@ -3154,7 +3154,7 @@ public final class Transmit {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         path_ = value;
         onChanged();
         return this;
@@ -3217,30 +3217,30 @@ public final class Transmit {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
      * @return Whether the payload field is set.
      */
     boolean hasPayload();
     /**
-     * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
      * @return The payload.
      */
-    common.v1.Data.Payload getPayload();
+    common.Data.Payload getPayload();
     /**
-     * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
      */
-    common.v1.Data.PayloadOrBuilder getPayloadOrBuilder();
+    common.Data.PayloadOrBuilder getPayloadOrBuilder();
 
     /**
-     * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     int getDirectionValue();
     /**
-     * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
      * @return The direction.
      */
-    common.v1.Data.Direction getDirection();
+    common.Data.Direction getDirection();
   }
   /**
    * Protobuf type {@code protocols.transmit.v1.SessionPayload}
@@ -3289,11 +3289,11 @@ public final class Transmit {
               done = true;
               break;
             case 10: {
-              common.v1.Data.Payload.Builder subBuilder = null;
+              common.Data.Payload.Builder subBuilder = null;
               if (payload_ != null) {
                 subBuilder = payload_.toBuilder();
               }
-              payload_ = input.readMessage(common.v1.Data.Payload.parser(), extensionRegistry);
+              payload_ = input.readMessage(common.Data.Payload.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(payload_);
                 payload_ = subBuilder.buildPartial();
@@ -3340,9 +3340,9 @@ public final class Transmit {
     }
 
     public static final int PAYLOAD_FIELD_NUMBER = 1;
-    private common.v1.Data.Payload payload_;
+    private common.Data.Payload payload_;
     /**
-     * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
      * @return Whether the payload field is set.
      */
     @java.lang.Override
@@ -3350,38 +3350,38 @@ public final class Transmit {
       return payload_ != null;
     }
     /**
-     * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
      * @return The payload.
      */
     @java.lang.Override
-    public common.v1.Data.Payload getPayload() {
-      return payload_ == null ? common.v1.Data.Payload.getDefaultInstance() : payload_;
+    public common.Data.Payload getPayload() {
+      return payload_ == null ? common.Data.Payload.getDefaultInstance() : payload_;
     }
     /**
-     * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.PayloadOrBuilder getPayloadOrBuilder() {
+    public common.Data.PayloadOrBuilder getPayloadOrBuilder() {
       return getPayload();
     }
 
     public static final int DIRECTION_FIELD_NUMBER = 2;
     private int direction_;
     /**
-     * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     @java.lang.Override public int getDirectionValue() {
       return direction_;
     }
     /**
-     * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
      * @return The direction.
      */
-    @java.lang.Override public common.v1.Data.Direction getDirection() {
+    @java.lang.Override public common.Data.Direction getDirection() {
       @SuppressWarnings("deprecation")
-      common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-      return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+      common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+      return result == null ? common.Data.Direction.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3401,7 +3401,7 @@ public final class Transmit {
       if (payload_ != null) {
         output.writeMessage(1, getPayload());
       }
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         output.writeEnum(2, direction_);
       }
       unknownFields.writeTo(output);
@@ -3417,7 +3417,7 @@ public final class Transmit {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getPayload());
       }
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, direction_);
       }
@@ -3715,31 +3715,31 @@ public final class Transmit {
         return this;
       }
 
-      private common.v1.Data.Payload payload_;
+      private common.Data.Payload payload_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder> payloadBuilder_;
+          common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder> payloadBuilder_;
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        * @return Whether the payload field is set.
        */
       public boolean hasPayload() {
         return payloadBuilder_ != null || payload_ != null;
       }
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        * @return The payload.
        */
-      public common.v1.Data.Payload getPayload() {
+      public common.Data.Payload getPayload() {
         if (payloadBuilder_ == null) {
-          return payload_ == null ? common.v1.Data.Payload.getDefaultInstance() : payload_;
+          return payload_ == null ? common.Data.Payload.getDefaultInstance() : payload_;
         } else {
           return payloadBuilder_.getMessage();
         }
       }
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        */
-      public Builder setPayload(common.v1.Data.Payload value) {
+      public Builder setPayload(common.Data.Payload value) {
         if (payloadBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3753,10 +3753,10 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        */
       public Builder setPayload(
-          common.v1.Data.Payload.Builder builderForValue) {
+          common.Data.Payload.Builder builderForValue) {
         if (payloadBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -3767,13 +3767,13 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        */
-      public Builder mergePayload(common.v1.Data.Payload value) {
+      public Builder mergePayload(common.Data.Payload value) {
         if (payloadBuilder_ == null) {
           if (payload_ != null) {
             payload_ =
-              common.v1.Data.Payload.newBuilder(payload_).mergeFrom(value).buildPartial();
+              common.Data.Payload.newBuilder(payload_).mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
           }
@@ -3785,7 +3785,7 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        */
       public Builder clearPayload() {
         if (payloadBuilder_ == null) {
@@ -3799,33 +3799,33 @@ public final class Transmit {
         return this;
       }
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        */
-      public common.v1.Data.Payload.Builder getPayloadBuilder() {
-        
+      public common.Data.Payload.Builder getPayloadBuilder() {
+
         onChanged();
         return getPayloadFieldBuilder().getBuilder();
       }
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        */
-      public common.v1.Data.PayloadOrBuilder getPayloadOrBuilder() {
+      public common.Data.PayloadOrBuilder getPayloadOrBuilder() {
         if (payloadBuilder_ != null) {
           return payloadBuilder_.getMessageOrBuilder();
         } else {
           return payload_ == null ?
-              common.v1.Data.Payload.getDefaultInstance() : payload_;
+              common.Data.Payload.getDefaultInstance() : payload_;
         }
       }
       /**
-       * <code>.common.v1.Payload payload = 1 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 1 [json_name = "payload"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder> 
+          common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder>
           getPayloadFieldBuilder() {
         if (payloadBuilder_ == null) {
           payloadBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder>(
+              common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder>(
                   getPayload(),
                   getParentForChildren(),
                   isClean());
@@ -3836,53 +3836,53 @@ public final class Transmit {
 
       private int direction_ = 0;
       /**
-       * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
        * @return The enum numeric value on the wire for direction.
        */
       @java.lang.Override public int getDirectionValue() {
         return direction_;
       }
       /**
-       * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
        * @param value The enum numeric value on the wire for direction to set.
        * @return This builder for chaining.
        */
       public Builder setDirectionValue(int value) {
-        
+
         direction_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
        * @return The direction.
        */
       @java.lang.Override
-      public common.v1.Data.Direction getDirection() {
+      public common.Data.Direction getDirection() {
         @SuppressWarnings("deprecation")
-        common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-        return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+        common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+        return result == null ? common.Data.Direction.UNRECOGNIZED : result;
       }
       /**
-       * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
        * @param value The direction to set.
        * @return This builder for chaining.
        */
-      public Builder setDirection(common.v1.Data.Direction value) {
+      public Builder setDirection(common.Data.Direction value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         direction_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.common.v1.Direction direction = 2 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 2 [json_name = "direction"];</code>
        * @return This builder for chaining.
        */
       public Builder clearDirection() {
-        
+
         direction_ = 0;
         onChanged();
         return this;
@@ -3942,22 +3942,22 @@ public final class Transmit {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_protocols_transmit_v1_Session_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_protocols_transmit_v1_Session_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_protocols_transmit_v1_Session_ResultsEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_protocols_transmit_v1_Session_ResultsEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_protocols_transmit_v1_SessionItem_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_protocols_transmit_v1_SessionItem_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_protocols_transmit_v1_SessionPayload_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_protocols_transmit_v1_SessionPayload_fieldAccessorTable;
 
@@ -3972,10 +3972,10 @@ public final class Transmit {
       "\n$protocols/transmit/v1/transmit.proto\022\025" +
       "protocols.transmit.v1\032\024common/v1/core.pr" +
       "oto\032\024common/v1/data.proto\"\266\003\n\007Session\0222\n" +
-      "\tdirection\030\001 \001(\0162\024.common.v1.DirectionR\t" +
-      "direction\022#\n\004from\030\002 \001(\0132\017.common.v1.Peer" +
-      "R\004from\022\037\n\002to\030\003 \001(\0132\017.common.v1.PeerR\002to\022" +
-      ",\n\007payload\030\004 \001(\0132\022.common.v1.PayloadR\007pa" +
+      "\tdirection\030\001 \001(\0162\024.common.DirectionR\t" +
+      "direction\022#\n\004from\030\002 \001(\0132\017.common.Peer" +
+      "R\004from\022\037\n\002to\030\003 \001(\0132\017.common.PeerR\002to\022" +
+      ",\n\007payload\030\004 \001(\0132\022.common.PayloadR\007pa" +
       "yload\022!\n\014last_updated\030\005 \001(\003R\013lastUpdated" +
       "\0228\n\005items\030\006 \003(\0132\".protocols.transmit.v1." +
       "SessionItemR\005items\022#\n\rcurrent_index\030\007 \001(" +
@@ -3984,21 +3984,21 @@ public final class Transmit {
       "esults\032:\n\014ResultsEntry\022\020\n\003key\030\001 \001(\005R\003key" +
       "\022\024\n\005value\030\002 \001(\010R\005value:\0028\001\"\367\001\n\013SessionIt" +
       "em\022\024\n\005index\030\001 \001(\005R\005index\022\024\n\005count\030\002 \001(\005R" +
-      "\005count\022\'\n\004item\030\003 \001(\0132\023.common.v1.FileIte" +
+      "\005count\022\'\n\004item\030\003 \001(\0132\023.common.FileIte" +
       "mR\004item\022\030\n\007written\030\004 \001(\003R\007written\022\022\n\004siz" +
       "e\030\005 \001(\003R\004size\022\035\n\ntotal_size\030\006 \001(\003R\ttotal" +
-      "Size\0222\n\tdirection\030\007 \001(\0162\024.common.v1.Dire" +
+      "Size\0222\n\tdirection\030\007 \001(\0162\024.common.Dire" +
       "ctionR\tdirection\022\022\n\004path\030\010 \001(\tR\004path\"r\n\016" +
       "SessionPayload\022,\n\007payload\030\001 \001(\0132\022.common" +
       ".v1.PayloadR\007payload\0222\n\tdirection\030\002 \001(\0162" +
-      "\024.common.v1.DirectionR\tdirectionB\"Z gith" +
+      "\024.common.DirectionR\tdirectionB\"Z gith" +
       "ub.com/sonr-io/core/transmitb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          common.v1.Core.getDescriptor(),
-          common.v1.Data.getDescriptor(),
+          common.Core.getDescriptor(),
+          common.Data.getDescriptor(),
         });
     internal_static_protocols_transmit_v1_Session_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -4024,8 +4024,8 @@ public final class Transmit {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_protocols_transmit_v1_SessionPayload_descriptor,
         new java.lang.String[] { "Payload", "Direction", });
-    common.v1.Core.getDescriptor();
-    common.v1.Data.getDescriptor();
+    common.Core.getDescriptor();
+    common.Data.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -7,10 +7,11 @@ import (
 
 	"git.mills.io/prologic/bitcask"
 	"github.com/libp2p/go-libp2p-core/crypto"
-	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/device"
 	"github.com/sonr-io/core/node"
-	"github.com/sonr-io/core/wallet"
+	"github.com/sonr-io/core/types/go/common"
+
+	"github.com/sonr-io/core/types/go/wallet/v1"
 	"google.golang.org/protobuf/proto"
 )
 

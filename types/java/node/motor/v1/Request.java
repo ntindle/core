@@ -23,7 +23,7 @@ public final class Request {
      * Current Runtime Location
      * </pre>
      *
-     * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+     * <code>.common.Location location = 1 [json_name = "location"];</code>
      * @return Whether the location field is set.
      */
     boolean hasLocation();
@@ -32,25 +32,25 @@ public final class Request {
      * Current Runtime Location
      * </pre>
      *
-     * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+     * <code>.common.Location location = 1 [json_name = "location"];</code>
      * @return The location.
      */
-    common.v1.Core.Location getLocation();
+    common.Core.Location getLocation();
     /**
      * <pre>
      * Current Runtime Location
      * </pre>
      *
-     * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+     * <code>.common.Location location = 1 [json_name = "location"];</code>
      */
-    common.v1.Core.LocationOrBuilder getLocationOrBuilder();
+    common.Core.LocationOrBuilder getLocationOrBuilder();
 
     /**
      * <pre>
      * Users Contact Card
      * </pre>
      *
-     * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+     * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
      * @return Whether the profile field is set.
      */
     boolean hasProfile();
@@ -59,25 +59,25 @@ public final class Request {
      * Users Contact Card
      * </pre>
      *
-     * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+     * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
      * @return The profile.
      */
-    common.v1.Core.Profile getProfile();
+    common.Core.Profile getProfile();
     /**
      * <pre>
      * Users Contact Card
      * </pre>
      *
-     * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+     * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
      */
-    common.v1.Core.ProfileOrBuilder getProfileOrBuilder();
+    common.Core.ProfileOrBuilder getProfileOrBuilder();
 
     /**
      * <pre>
      * Internet Connection Type
      * </pre>
      *
-     * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+     * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
      * @return The enum numeric value on the wire for connection.
      */
     int getConnectionValue();
@@ -86,10 +86,10 @@ public final class Request {
      * Internet Connection Type
      * </pre>
      *
-     * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+     * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
      * @return The connection.
      */
-    common.v1.Core.Connection getConnection();
+    common.Core.Connection getConnection();
 
     /**
      * <pre>
@@ -177,7 +177,7 @@ public final class Request {
      * Environment Config
      * </pre>
      *
-     * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+     * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
      * @return The enum numeric value on the wire for environment.
      */
     int getEnvironmentValue();
@@ -186,10 +186,10 @@ public final class Request {
      * Environment Config
      * </pre>
      *
-     * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+     * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
      * @return The environment.
      */
-    common.v1.Core.Environment getEnvironment();
+    common.Core.Environment getEnvironment();
 
     /**
      * <pre>
@@ -322,11 +322,11 @@ public final class Request {
               done = true;
               break;
             case 10: {
-              common.v1.Core.Location.Builder subBuilder = null;
+              common.Core.Location.Builder subBuilder = null;
               if (location_ != null) {
                 subBuilder = location_.toBuilder();
               }
-              location_ = input.readMessage(common.v1.Core.Location.parser(), extensionRegistry);
+              location_ = input.readMessage(common.Core.Location.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(location_);
                 location_ = subBuilder.buildPartial();
@@ -335,11 +335,11 @@ public final class Request {
               break;
             }
             case 18: {
-              common.v1.Core.Profile.Builder subBuilder = null;
+              common.Core.Profile.Builder subBuilder = null;
               if (profile_ != null) {
                 subBuilder = profile_.toBuilder();
               }
-              profile_ = input.readMessage(common.v1.Core.Profile.parser(), extensionRegistry);
+              profile_ = input.readMessage(common.Core.Profile.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(profile_);
                 profile_ = subBuilder.buildPartial();
@@ -646,7 +646,7 @@ public final class Request {
         if (ref instanceof java.lang.String) {
           return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs = 
+          com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           id_ = s;
@@ -666,7 +666,7 @@ public final class Request {
           getIdBytes() {
         java.lang.Object ref = id_;
         if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           id_ = b;
@@ -688,7 +688,7 @@ public final class Request {
         if (ref instanceof java.lang.String) {
           return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs = 
+          com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           homeDir_ = s;
@@ -704,7 +704,7 @@ public final class Request {
           getHomeDirBytes() {
         java.lang.Object ref = homeDir_;
         if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           homeDir_ = b;
@@ -726,7 +726,7 @@ public final class Request {
         if (ref instanceof java.lang.String) {
           return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs = 
+          com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           supportDir_ = s;
@@ -742,7 +742,7 @@ public final class Request {
           getSupportDirBytes() {
         java.lang.Object ref = supportDir_;
         if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           supportDir_ = b;
@@ -764,7 +764,7 @@ public final class Request {
         if (ref instanceof java.lang.String) {
           return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs = 
+          com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           tempDir_ = s;
@@ -780,7 +780,7 @@ public final class Request {
           getTempDirBytes() {
         java.lang.Object ref = tempDir_;
         if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           tempDir_ = b;
@@ -1180,7 +1180,7 @@ public final class Request {
             getIdBytes() {
           java.lang.Object ref = id_;
           if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString b =
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
             id_ = b;
@@ -1203,7 +1203,7 @@ public final class Request {
           if (value == null) {
     throw new NullPointerException();
   }
-  
+
           id_ = value;
           onChanged();
           return this;
@@ -1217,7 +1217,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearId() {
-          
+
           id_ = getDefaultInstance().getId();
           onChanged();
           return this;
@@ -1237,7 +1237,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-          
+
           id_ = value;
           onChanged();
           return this;
@@ -1268,7 +1268,7 @@ public final class Request {
             getHomeDirBytes() {
           java.lang.Object ref = homeDir_;
           if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString b =
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
             homeDir_ = b;
@@ -1287,7 +1287,7 @@ public final class Request {
           if (value == null) {
     throw new NullPointerException();
   }
-  
+
           homeDir_ = value;
           onChanged();
           return this;
@@ -1297,7 +1297,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearHomeDir() {
-          
+
           homeDir_ = getDefaultInstance().getHomeDir();
           onChanged();
           return this;
@@ -1313,7 +1313,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-          
+
           homeDir_ = value;
           onChanged();
           return this;
@@ -1344,7 +1344,7 @@ public final class Request {
             getSupportDirBytes() {
           java.lang.Object ref = supportDir_;
           if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString b =
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
             supportDir_ = b;
@@ -1363,7 +1363,7 @@ public final class Request {
           if (value == null) {
     throw new NullPointerException();
   }
-  
+
           supportDir_ = value;
           onChanged();
           return this;
@@ -1373,7 +1373,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearSupportDir() {
-          
+
           supportDir_ = getDefaultInstance().getSupportDir();
           onChanged();
           return this;
@@ -1389,7 +1389,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-          
+
           supportDir_ = value;
           onChanged();
           return this;
@@ -1420,7 +1420,7 @@ public final class Request {
             getTempDirBytes() {
           java.lang.Object ref = tempDir_;
           if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString b =
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
             tempDir_ = b;
@@ -1439,7 +1439,7 @@ public final class Request {
           if (value == null) {
     throw new NullPointerException();
   }
-  
+
           tempDir_ = value;
           onChanged();
           return this;
@@ -1449,7 +1449,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearTempDir() {
-          
+
           tempDir_ = getDefaultInstance().getTempDir();
           onChanged();
           return this;
@@ -1465,7 +1465,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-          
+
           tempDir_ = value;
           onChanged();
           return this;
@@ -1564,7 +1564,7 @@ public final class Request {
        *
        * <code>repeated .node.motor.v1.InitializeRequest.IPAddress listen_addrs = 4 [json_name = "listenAddrs"];</code>
        */
-      java.util.List<node.motor.v1.Request.InitializeRequest.IPAddress> 
+      java.util.List<node.motor.v1.Request.InitializeRequest.IPAddress>
           getListenAddrsList();
       /**
        * <pre>
@@ -1589,7 +1589,7 @@ public final class Request {
        *
        * <code>repeated .node.motor.v1.InitializeRequest.IPAddress listen_addrs = 4 [json_name = "listenAddrs"];</code>
        */
-      java.util.List<? extends node.motor.v1.Request.InitializeRequest.IPAddressOrBuilder> 
+      java.util.List<? extends node.motor.v1.Request.InitializeRequest.IPAddressOrBuilder>
           getListenAddrsOrBuilderList();
       /**
        * <pre>
@@ -1777,7 +1777,7 @@ public final class Request {
        * <code>repeated .node.motor.v1.InitializeRequest.IPAddress listen_addrs = 4 [json_name = "listenAddrs"];</code>
        */
       @java.lang.Override
-      public java.util.List<? extends node.motor.v1.Request.InitializeRequest.IPAddressOrBuilder> 
+      public java.util.List<? extends node.motor.v1.Request.InitializeRequest.IPAddressOrBuilder>
           getListenAddrsOrBuilderList() {
         return listenAddrs_;
       }
@@ -2178,7 +2178,7 @@ public final class Request {
                 listenAddrsBuilder_ = null;
                 listenAddrs_ = other.listenAddrs_;
                 bitField0_ = (bitField0_ & ~0x00000001);
-                listenAddrsBuilder_ = 
+                listenAddrsBuilder_ =
                   com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                      getListenAddrsFieldBuilder() : null;
               } else {
@@ -2239,7 +2239,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setQuicTransport(boolean value) {
-          
+
           quicTransport_ = value;
           onChanged();
           return this;
@@ -2253,7 +2253,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearQuicTransport() {
-          
+
           quicTransport_ = false;
           onChanged();
           return this;
@@ -2282,7 +2282,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setHttpTransport(boolean value) {
-          
+
           httpTransport_ = value;
           onChanged();
           return this;
@@ -2296,7 +2296,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearHttpTransport() {
-          
+
           httpTransport_ = false;
           onChanged();
           return this;
@@ -2325,7 +2325,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setIpv4Only(boolean value) {
-          
+
           ipv4Only_ = value;
           onChanged();
           return this;
@@ -2339,7 +2339,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearIpv4Only() {
-          
+
           ipv4Only_ = false;
           onChanged();
           return this;
@@ -2600,7 +2600,7 @@ public final class Request {
          *
          * <code>repeated .node.motor.v1.InitializeRequest.IPAddress listen_addrs = 4 [json_name = "listenAddrs"];</code>
          */
-        public java.util.List<? extends node.motor.v1.Request.InitializeRequest.IPAddressOrBuilder> 
+        public java.util.List<? extends node.motor.v1.Request.InitializeRequest.IPAddressOrBuilder>
              getListenAddrsOrBuilderList() {
           if (listenAddrsBuilder_ != null) {
             return listenAddrsBuilder_.getMessageOrBuilderList();
@@ -2638,12 +2638,12 @@ public final class Request {
          *
          * <code>repeated .node.motor.v1.InitializeRequest.IPAddress listen_addrs = 4 [json_name = "listenAddrs"];</code>
          */
-        public java.util.List<node.motor.v1.Request.InitializeRequest.IPAddress.Builder> 
+        public java.util.List<node.motor.v1.Request.InitializeRequest.IPAddress.Builder>
              getListenAddrsBuilderList() {
           return getListenAddrsFieldBuilder().getBuilderList();
         }
         private com.google.protobuf.RepeatedFieldBuilderV3<
-            node.motor.v1.Request.InitializeRequest.IPAddress, node.motor.v1.Request.InitializeRequest.IPAddress.Builder, node.motor.v1.Request.InitializeRequest.IPAddressOrBuilder> 
+            node.motor.v1.Request.InitializeRequest.IPAddress, node.motor.v1.Request.InitializeRequest.IPAddress.Builder, node.motor.v1.Request.InitializeRequest.IPAddressOrBuilder>
             getListenAddrsFieldBuilder() {
           if (listenAddrsBuilder_ == null) {
             listenAddrsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
@@ -3297,7 +3297,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setTextile(boolean value) {
-          
+
           textile_ = value;
           onChanged();
           return this;
@@ -3311,7 +3311,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearTextile() {
-          
+
           textile_ = false;
           onChanged();
           return this;
@@ -3340,7 +3340,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setMailbox(boolean value) {
-          
+
           mailbox_ = value;
           onChanged();
           return this;
@@ -3354,7 +3354,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearMailbox() {
-          
+
           mailbox_ = false;
           onChanged();
           return this;
@@ -3383,7 +3383,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setBuckets(boolean value) {
-          
+
           buckets_ = value;
           onChanged();
           return this;
@@ -3397,7 +3397,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearBuckets() {
-          
+
           buckets_ = false;
           onChanged();
           return this;
@@ -3426,7 +3426,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setInterval(int value) {
-          
+
           interval_ = value;
           onChanged();
           return this;
@@ -3440,7 +3440,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearInterval() {
-          
+
           interval_ = 0;
           onChanged();
           return this;
@@ -3827,7 +3827,7 @@ public final class Request {
         if (ref instanceof java.lang.String) {
           return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs = 
+          com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           name_ = s;
@@ -3847,7 +3847,7 @@ public final class Request {
           getNameBytes() {
         java.lang.Object ref = name_;
         if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           name_ = b;
@@ -3873,7 +3873,7 @@ public final class Request {
         if (ref instanceof java.lang.String) {
           return (java.lang.String) ref;
         } else {
-          com.google.protobuf.ByteString bs = 
+          com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
           address_ = s;
@@ -3893,7 +3893,7 @@ public final class Request {
           getAddressBytes() {
         java.lang.Object ref = address_;
         if (ref instanceof java.lang.String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           address_ = b;
@@ -4335,7 +4335,7 @@ public final class Request {
             getNameBytes() {
           java.lang.Object ref = name_;
           if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString b =
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
             name_ = b;
@@ -4358,7 +4358,7 @@ public final class Request {
           if (value == null) {
     throw new NullPointerException();
   }
-  
+
           name_ = value;
           onChanged();
           return this;
@@ -4372,7 +4372,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearName() {
-          
+
           name_ = getDefaultInstance().getName();
           onChanged();
           return this;
@@ -4392,7 +4392,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-          
+
           name_ = value;
           onChanged();
           return this;
@@ -4431,7 +4431,7 @@ public final class Request {
             getAddressBytes() {
           java.lang.Object ref = address_;
           if (ref instanceof String) {
-            com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString b =
                 com.google.protobuf.ByteString.copyFromUtf8(
                     (java.lang.String) ref);
             address_ = b;
@@ -4454,7 +4454,7 @@ public final class Request {
           if (value == null) {
     throw new NullPointerException();
   }
-  
+
           address_ = value;
           onChanged();
           return this;
@@ -4468,7 +4468,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearAddress() {
-          
+
           address_ = getDefaultInstance().getAddress();
           onChanged();
           return this;
@@ -4488,7 +4488,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-          
+
           address_ = value;
           onChanged();
           return this;
@@ -4517,7 +4517,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setInternal(boolean value) {
-          
+
           internal_ = value;
           onChanged();
           return this;
@@ -4531,7 +4531,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearInternal() {
-          
+
           internal_ = false;
           onChanged();
           return this;
@@ -4559,7 +4559,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder setFamilyValue(int value) {
-          
+
           family_ = value;
           onChanged();
           return this;
@@ -4591,7 +4591,7 @@ public final class Request {
           if (value == null) {
             throw new NullPointerException();
           }
-          
+
           family_ = value.getNumber();
           onChanged();
           return this;
@@ -4605,7 +4605,7 @@ public final class Request {
          * @return This builder for chaining.
          */
         public Builder clearFamily() {
-          
+
           family_ = 0;
           onChanged();
           return this;
@@ -4664,13 +4664,13 @@ public final class Request {
     }
 
     public static final int LOCATION_FIELD_NUMBER = 1;
-    private common.v1.Core.Location location_;
+    private common.Core.Location location_;
     /**
      * <pre>
      * Current Runtime Location
      * </pre>
      *
-     * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+     * <code>.common.Location location = 1 [json_name = "location"];</code>
      * @return Whether the location field is set.
      */
     @java.lang.Override
@@ -4682,33 +4682,33 @@ public final class Request {
      * Current Runtime Location
      * </pre>
      *
-     * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+     * <code>.common.Location location = 1 [json_name = "location"];</code>
      * @return The location.
      */
     @java.lang.Override
-    public common.v1.Core.Location getLocation() {
-      return location_ == null ? common.v1.Core.Location.getDefaultInstance() : location_;
+    public common.Core.Location getLocation() {
+      return location_ == null ? common.Core.Location.getDefaultInstance() : location_;
     }
     /**
      * <pre>
      * Current Runtime Location
      * </pre>
      *
-     * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+     * <code>.common.Location location = 1 [json_name = "location"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.LocationOrBuilder getLocationOrBuilder() {
+    public common.Core.LocationOrBuilder getLocationOrBuilder() {
       return getLocation();
     }
 
     public static final int PROFILE_FIELD_NUMBER = 2;
-    private common.v1.Core.Profile profile_;
+    private common.Core.Profile profile_;
     /**
      * <pre>
      * Users Contact Card
      * </pre>
      *
-     * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+     * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
      * @return Whether the profile field is set.
      */
     @java.lang.Override
@@ -4720,22 +4720,22 @@ public final class Request {
      * Users Contact Card
      * </pre>
      *
-     * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+     * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
      * @return The profile.
      */
     @java.lang.Override
-    public common.v1.Core.Profile getProfile() {
-      return profile_ == null ? common.v1.Core.Profile.getDefaultInstance() : profile_;
+    public common.Core.Profile getProfile() {
+      return profile_ == null ? common.Core.Profile.getDefaultInstance() : profile_;
     }
     /**
      * <pre>
      * Users Contact Card
      * </pre>
      *
-     * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+     * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.ProfileOrBuilder getProfileOrBuilder() {
+    public common.Core.ProfileOrBuilder getProfileOrBuilder() {
       return getProfile();
     }
 
@@ -4746,7 +4746,7 @@ public final class Request {
      * Internet Connection Type
      * </pre>
      *
-     * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+     * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
      * @return The enum numeric value on the wire for connection.
      */
     @java.lang.Override public int getConnectionValue() {
@@ -4757,13 +4757,13 @@ public final class Request {
      * Internet Connection Type
      * </pre>
      *
-     * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+     * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
      * @return The connection.
      */
-    @java.lang.Override public common.v1.Core.Connection getConnection() {
+    @java.lang.Override public common.Core.Connection getConnection() {
       @SuppressWarnings("deprecation")
-      common.v1.Core.Connection result = common.v1.Core.Connection.valueOf(connection_);
-      return result == null ? common.v1.Core.Connection.UNRECOGNIZED : result;
+      common.Core.Connection result = common.Core.Connection.valueOf(connection_);
+      return result == null ? common.Core.Connection.UNRECOGNIZED : result;
     }
 
     public static final int HOST_OPTIONS_FIELD_NUMBER = 4;
@@ -4887,7 +4887,7 @@ public final class Request {
      * Environment Config
      * </pre>
      *
-     * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+     * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
      * @return The enum numeric value on the wire for environment.
      */
     @java.lang.Override public int getEnvironmentValue() {
@@ -4898,13 +4898,13 @@ public final class Request {
      * Environment Config
      * </pre>
      *
-     * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+     * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
      * @return The environment.
      */
-    @java.lang.Override public common.v1.Core.Environment getEnvironment() {
+    @java.lang.Override public common.Core.Environment getEnvironment() {
       @SuppressWarnings("deprecation")
-      common.v1.Core.Environment result = common.v1.Core.Environment.valueOf(environment_);
-      return result == null ? common.v1.Core.Environment.UNRECOGNIZED : result;
+      common.Core.Environment result = common.Core.Environment.valueOf(environment_);
+      return result == null ? common.Core.Environment.UNRECOGNIZED : result;
     }
 
     public static final int VARIABLES_FIELD_NUMBER = 8;
@@ -4913,7 +4913,7 @@ public final class Request {
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  node.motor.v1.Request.internal_static_node_motor_v1_InitializeRequest_VariablesEntry_descriptor, 
+                  node.motor.v1.Request.internal_static_node_motor_v1_InitializeRequest_VariablesEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
@@ -5020,7 +5020,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         walletPassphrase_ = s;
@@ -5040,7 +5040,7 @@ public final class Request {
         getWalletPassphraseBytes() {
       java.lang.Object ref = walletPassphrase_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         walletPassphrase_ = b;
@@ -5070,7 +5070,7 @@ public final class Request {
       if (profile_ != null) {
         output.writeMessage(2, getProfile());
       }
-      if (connection_ != common.v1.Core.Connection.CONNECTION_UNSPECIFIED.getNumber()) {
+      if (connection_ != common.Core.Connection.CONNECTION_UNSPECIFIED.getNumber()) {
         output.writeEnum(3, connection_);
       }
       if (hostOptions_ != null) {
@@ -5082,7 +5082,7 @@ public final class Request {
       if (deviceOptions_ != null) {
         output.writeMessage(6, getDeviceOptions());
       }
-      if (environment_ != common.v1.Core.Environment.ENVIRONMENT_UNSPECIFIED.getNumber()) {
+      if (environment_ != common.Core.Environment.ENVIRONMENT_UNSPECIFIED.getNumber()) {
         output.writeEnum(7, environment_);
       }
       com.google.protobuf.GeneratedMessageV3
@@ -5111,7 +5111,7 @@ public final class Request {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getProfile());
       }
-      if (connection_ != common.v1.Core.Connection.CONNECTION_UNSPECIFIED.getNumber()) {
+      if (connection_ != common.Core.Connection.CONNECTION_UNSPECIFIED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, connection_);
       }
@@ -5127,7 +5127,7 @@ public final class Request {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getDeviceOptions());
       }
-      if (environment_ != common.v1.Core.Environment.ENVIRONMENT_UNSPECIFIED.getNumber()) {
+      if (environment_ != common.Core.Environment.ENVIRONMENT_UNSPECIFIED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(7, environment_);
       }
@@ -5592,15 +5592,15 @@ public final class Request {
       }
       private int bitField0_;
 
-      private common.v1.Core.Location location_;
+      private common.Core.Location location_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Location, common.v1.Core.Location.Builder, common.v1.Core.LocationOrBuilder> locationBuilder_;
+          common.Core.Location, common.Core.Location.Builder, common.Core.LocationOrBuilder> locationBuilder_;
       /**
        * <pre>
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        * @return Whether the location field is set.
        */
       public boolean hasLocation() {
@@ -5611,12 +5611,12 @@ public final class Request {
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        * @return The location.
        */
-      public common.v1.Core.Location getLocation() {
+      public common.Core.Location getLocation() {
         if (locationBuilder_ == null) {
-          return location_ == null ? common.v1.Core.Location.getDefaultInstance() : location_;
+          return location_ == null ? common.Core.Location.getDefaultInstance() : location_;
         } else {
           return locationBuilder_.getMessage();
         }
@@ -5626,9 +5626,9 @@ public final class Request {
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        */
-      public Builder setLocation(common.v1.Core.Location value) {
+      public Builder setLocation(common.Core.Location value) {
         if (locationBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5646,10 +5646,10 @@ public final class Request {
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        */
       public Builder setLocation(
-          common.v1.Core.Location.Builder builderForValue) {
+          common.Core.Location.Builder builderForValue) {
         if (locationBuilder_ == null) {
           location_ = builderForValue.build();
           onChanged();
@@ -5664,13 +5664,13 @@ public final class Request {
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        */
-      public Builder mergeLocation(common.v1.Core.Location value) {
+      public Builder mergeLocation(common.Core.Location value) {
         if (locationBuilder_ == null) {
           if (location_ != null) {
             location_ =
-              common.v1.Core.Location.newBuilder(location_).mergeFrom(value).buildPartial();
+              common.Core.Location.newBuilder(location_).mergeFrom(value).buildPartial();
           } else {
             location_ = value;
           }
@@ -5686,7 +5686,7 @@ public final class Request {
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        */
       public Builder clearLocation() {
         if (locationBuilder_ == null) {
@@ -5704,10 +5704,10 @@ public final class Request {
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        */
-      public common.v1.Core.Location.Builder getLocationBuilder() {
-        
+      public common.Core.Location.Builder getLocationBuilder() {
+
         onChanged();
         return getLocationFieldBuilder().getBuilder();
       }
@@ -5716,14 +5716,14 @@ public final class Request {
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        */
-      public common.v1.Core.LocationOrBuilder getLocationOrBuilder() {
+      public common.Core.LocationOrBuilder getLocationOrBuilder() {
         if (locationBuilder_ != null) {
           return locationBuilder_.getMessageOrBuilder();
         } else {
           return location_ == null ?
-              common.v1.Core.Location.getDefaultInstance() : location_;
+              common.Core.Location.getDefaultInstance() : location_;
         }
       }
       /**
@@ -5731,14 +5731,14 @@ public final class Request {
        * Current Runtime Location
        * </pre>
        *
-       * <code>.common.v1.Location location = 1 [json_name = "location"];</code>
+       * <code>.common.Location location = 1 [json_name = "location"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Location, common.v1.Core.Location.Builder, common.v1.Core.LocationOrBuilder> 
+          common.Core.Location, common.Core.Location.Builder, common.Core.LocationOrBuilder>
           getLocationFieldBuilder() {
         if (locationBuilder_ == null) {
           locationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Location, common.v1.Core.Location.Builder, common.v1.Core.LocationOrBuilder>(
+              common.Core.Location, common.Core.Location.Builder, common.Core.LocationOrBuilder>(
                   getLocation(),
                   getParentForChildren(),
                   isClean());
@@ -5747,15 +5747,15 @@ public final class Request {
         return locationBuilder_;
       }
 
-      private common.v1.Core.Profile profile_;
+      private common.Core.Profile profile_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder> profileBuilder_;
+          common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder> profileBuilder_;
       /**
        * <pre>
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        * @return Whether the profile field is set.
        */
       public boolean hasProfile() {
@@ -5766,12 +5766,12 @@ public final class Request {
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        * @return The profile.
        */
-      public common.v1.Core.Profile getProfile() {
+      public common.Core.Profile getProfile() {
         if (profileBuilder_ == null) {
-          return profile_ == null ? common.v1.Core.Profile.getDefaultInstance() : profile_;
+          return profile_ == null ? common.Core.Profile.getDefaultInstance() : profile_;
         } else {
           return profileBuilder_.getMessage();
         }
@@ -5781,9 +5781,9 @@ public final class Request {
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        */
-      public Builder setProfile(common.v1.Core.Profile value) {
+      public Builder setProfile(common.Core.Profile value) {
         if (profileBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5801,10 +5801,10 @@ public final class Request {
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        */
       public Builder setProfile(
-          common.v1.Core.Profile.Builder builderForValue) {
+          common.Core.Profile.Builder builderForValue) {
         if (profileBuilder_ == null) {
           profile_ = builderForValue.build();
           onChanged();
@@ -5819,13 +5819,13 @@ public final class Request {
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        */
-      public Builder mergeProfile(common.v1.Core.Profile value) {
+      public Builder mergeProfile(common.Core.Profile value) {
         if (profileBuilder_ == null) {
           if (profile_ != null) {
             profile_ =
-              common.v1.Core.Profile.newBuilder(profile_).mergeFrom(value).buildPartial();
+              common.Core.Profile.newBuilder(profile_).mergeFrom(value).buildPartial();
           } else {
             profile_ = value;
           }
@@ -5841,7 +5841,7 @@ public final class Request {
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        */
       public Builder clearProfile() {
         if (profileBuilder_ == null) {
@@ -5859,10 +5859,10 @@ public final class Request {
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        */
-      public common.v1.Core.Profile.Builder getProfileBuilder() {
-        
+      public common.Core.Profile.Builder getProfileBuilder() {
+
         onChanged();
         return getProfileFieldBuilder().getBuilder();
       }
@@ -5871,14 +5871,14 @@ public final class Request {
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        */
-      public common.v1.Core.ProfileOrBuilder getProfileOrBuilder() {
+      public common.Core.ProfileOrBuilder getProfileOrBuilder() {
         if (profileBuilder_ != null) {
           return profileBuilder_.getMessageOrBuilder();
         } else {
           return profile_ == null ?
-              common.v1.Core.Profile.getDefaultInstance() : profile_;
+              common.Core.Profile.getDefaultInstance() : profile_;
         }
       }
       /**
@@ -5886,14 +5886,14 @@ public final class Request {
        * Users Contact Card
        * </pre>
        *
-       * <code>.common.v1.Profile profile = 2 [json_name = "profile"];</code>
+       * <code>.common.Profile profile = 2 [json_name = "profile"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder> 
+          common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder>
           getProfileFieldBuilder() {
         if (profileBuilder_ == null) {
           profileBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder>(
+              common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder>(
                   getProfile(),
                   getParentForChildren(),
                   isClean());
@@ -5908,7 +5908,7 @@ public final class Request {
        * Internet Connection Type
        * </pre>
        *
-       * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+       * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
        * @return The enum numeric value on the wire for connection.
        */
       @java.lang.Override public int getConnectionValue() {
@@ -5919,12 +5919,12 @@ public final class Request {
        * Internet Connection Type
        * </pre>
        *
-       * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+       * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
        * @param value The enum numeric value on the wire for connection to set.
        * @return This builder for chaining.
        */
       public Builder setConnectionValue(int value) {
-        
+
         connection_ = value;
         onChanged();
         return this;
@@ -5934,29 +5934,29 @@ public final class Request {
        * Internet Connection Type
        * </pre>
        *
-       * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+       * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
        * @return The connection.
        */
       @java.lang.Override
-      public common.v1.Core.Connection getConnection() {
+      public common.Core.Connection getConnection() {
         @SuppressWarnings("deprecation")
-        common.v1.Core.Connection result = common.v1.Core.Connection.valueOf(connection_);
-        return result == null ? common.v1.Core.Connection.UNRECOGNIZED : result;
+        common.Core.Connection result = common.Core.Connection.valueOf(connection_);
+        return result == null ? common.Core.Connection.UNRECOGNIZED : result;
       }
       /**
        * <pre>
        * Internet Connection Type
        * </pre>
        *
-       * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+       * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
        * @param value The connection to set.
        * @return This builder for chaining.
        */
-      public Builder setConnection(common.v1.Core.Connection value) {
+      public Builder setConnection(common.Core.Connection value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         connection_ = value.getNumber();
         onChanged();
         return this;
@@ -5966,11 +5966,11 @@ public final class Request {
        * Internet Connection Type
        * </pre>
        *
-       * <code>.common.v1.Connection connection = 3 [json_name = "connection"];</code>
+       * <code>.common.Connection connection = 3 [json_name = "connection"];</code>
        * @return This builder for chaining.
        */
       public Builder clearConnection() {
-        
+
         connection_ = 0;
         onChanged();
         return this;
@@ -6091,7 +6091,7 @@ public final class Request {
        * <code>.node.motor.v1.InitializeRequest.HostOptions host_options = 4 [json_name = "hostOptions"];</code>
        */
       public node.motor.v1.Request.InitializeRequest.HostOptions.Builder getHostOptionsBuilder() {
-        
+
         onChanged();
         return getHostOptionsFieldBuilder().getBuilder();
       }
@@ -6118,7 +6118,7 @@ public final class Request {
        * <code>.node.motor.v1.InitializeRequest.HostOptions host_options = 4 [json_name = "hostOptions"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.motor.v1.Request.InitializeRequest.HostOptions, node.motor.v1.Request.InitializeRequest.HostOptions.Builder, node.motor.v1.Request.InitializeRequest.HostOptionsOrBuilder> 
+          node.motor.v1.Request.InitializeRequest.HostOptions, node.motor.v1.Request.InitializeRequest.HostOptions.Builder, node.motor.v1.Request.InitializeRequest.HostOptionsOrBuilder>
           getHostOptionsFieldBuilder() {
         if (hostOptionsBuilder_ == null) {
           hostOptionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6246,7 +6246,7 @@ public final class Request {
        * <code>.node.motor.v1.InitializeRequest.ServiceOptions service_options = 5 [json_name = "serviceOptions"];</code>
        */
       public node.motor.v1.Request.InitializeRequest.ServiceOptions.Builder getServiceOptionsBuilder() {
-        
+
         onChanged();
         return getServiceOptionsFieldBuilder().getBuilder();
       }
@@ -6273,7 +6273,7 @@ public final class Request {
        * <code>.node.motor.v1.InitializeRequest.ServiceOptions service_options = 5 [json_name = "serviceOptions"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.motor.v1.Request.InitializeRequest.ServiceOptions, node.motor.v1.Request.InitializeRequest.ServiceOptions.Builder, node.motor.v1.Request.InitializeRequest.ServiceOptionsOrBuilder> 
+          node.motor.v1.Request.InitializeRequest.ServiceOptions, node.motor.v1.Request.InitializeRequest.ServiceOptions.Builder, node.motor.v1.Request.InitializeRequest.ServiceOptionsOrBuilder>
           getServiceOptionsFieldBuilder() {
         if (serviceOptionsBuilder_ == null) {
           serviceOptionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6401,7 +6401,7 @@ public final class Request {
        * <code>.node.motor.v1.InitializeRequest.DeviceOptions device_options = 6 [json_name = "deviceOptions"];</code>
        */
       public node.motor.v1.Request.InitializeRequest.DeviceOptions.Builder getDeviceOptionsBuilder() {
-        
+
         onChanged();
         return getDeviceOptionsFieldBuilder().getBuilder();
       }
@@ -6428,7 +6428,7 @@ public final class Request {
        * <code>.node.motor.v1.InitializeRequest.DeviceOptions device_options = 6 [json_name = "deviceOptions"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          node.motor.v1.Request.InitializeRequest.DeviceOptions, node.motor.v1.Request.InitializeRequest.DeviceOptions.Builder, node.motor.v1.Request.InitializeRequest.DeviceOptionsOrBuilder> 
+          node.motor.v1.Request.InitializeRequest.DeviceOptions, node.motor.v1.Request.InitializeRequest.DeviceOptions.Builder, node.motor.v1.Request.InitializeRequest.DeviceOptionsOrBuilder>
           getDeviceOptionsFieldBuilder() {
         if (deviceOptionsBuilder_ == null) {
           deviceOptionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -6447,7 +6447,7 @@ public final class Request {
        * Environment Config
        * </pre>
        *
-       * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+       * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
        * @return The enum numeric value on the wire for environment.
        */
       @java.lang.Override public int getEnvironmentValue() {
@@ -6458,12 +6458,12 @@ public final class Request {
        * Environment Config
        * </pre>
        *
-       * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+       * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
        * @param value The enum numeric value on the wire for environment to set.
        * @return This builder for chaining.
        */
       public Builder setEnvironmentValue(int value) {
-        
+
         environment_ = value;
         onChanged();
         return this;
@@ -6473,29 +6473,29 @@ public final class Request {
        * Environment Config
        * </pre>
        *
-       * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+       * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
        * @return The environment.
        */
       @java.lang.Override
-      public common.v1.Core.Environment getEnvironment() {
+      public common.Core.Environment getEnvironment() {
         @SuppressWarnings("deprecation")
-        common.v1.Core.Environment result = common.v1.Core.Environment.valueOf(environment_);
-        return result == null ? common.v1.Core.Environment.UNRECOGNIZED : result;
+        common.Core.Environment result = common.Core.Environment.valueOf(environment_);
+        return result == null ? common.Core.Environment.UNRECOGNIZED : result;
       }
       /**
        * <pre>
        * Environment Config
        * </pre>
        *
-       * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+       * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
        * @param value The environment to set.
        * @return This builder for chaining.
        */
-      public Builder setEnvironment(common.v1.Core.Environment value) {
+      public Builder setEnvironment(common.Core.Environment value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         environment_ = value.getNumber();
         onChanged();
         return this;
@@ -6505,11 +6505,11 @@ public final class Request {
        * Environment Config
        * </pre>
        *
-       * <code>.common.v1.Environment environment = 7 [json_name = "environment"];</code>
+       * <code>.common.Environment environment = 7 [json_name = "environment"];</code>
        * @return This builder for chaining.
        */
       public Builder clearEnvironment() {
-        
+
         environment_ = 0;
         onChanged();
         return this;
@@ -6707,7 +6707,7 @@ public final class Request {
           getWalletPassphraseBytes() {
         java.lang.Object ref = walletPassphrase_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           walletPassphrase_ = b;
@@ -6730,7 +6730,7 @@ public final class Request {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         walletPassphrase_ = value;
         onChanged();
         return this;
@@ -6744,7 +6744,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearWalletPassphrase() {
-        
+
         walletPassphrase_ = getDefaultInstance().getWalletPassphrase();
         onChanged();
         return this;
@@ -6764,7 +6764,7 @@ public final class Request {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         walletPassphrase_ = value;
         onChanged();
         return this;
@@ -6831,7 +6831,7 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     boolean hasPeer();
@@ -6840,25 +6840,25 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return The peer.
      */
-    common.v1.Core.Peer getPeer();
+    common.Core.Peer getPeer();
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      */
-    common.v1.Core.PeerOrBuilder getPeerOrBuilder();
+    common.Core.PeerOrBuilder getPeerOrBuilder();
 
     /**
      * <pre>
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      * @return Whether the message field is set.
      */
     boolean hasMessage();
@@ -6867,42 +6867,42 @@ public final class Request {
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      * @return The message.
      */
-    common.v1.Data.MessageItem getMessage();
+    common.Data.MessageItem getMessage();
     /**
      * <pre>
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      */
-    common.v1.Data.MessageItemOrBuilder getMessageOrBuilder();
+    common.Data.MessageItemOrBuilder getMessageOrBuilder();
 
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
-    java.util.List<common.v1.Data.SupplyItem> 
+    java.util.List<common.Data.SupplyItem>
         getItemsList();
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
-    common.v1.Data.SupplyItem getItems(int index);
+    common.Data.SupplyItem getItems(int index);
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     int getItemsCount();
     /**
@@ -6910,18 +6910,18 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
-    java.util.List<? extends common.v1.Data.SupplyItemOrBuilder> 
+    java.util.List<? extends common.Data.SupplyItemOrBuilder>
         getItemsOrBuilderList();
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
-    common.v1.Data.SupplyItemOrBuilder getItemsOrBuilder(
+    common.Data.SupplyItemOrBuilder getItemsOrBuilder(
         int index);
   }
   /**
@@ -6976,11 +6976,11 @@ public final class Request {
               done = true;
               break;
             case 10: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (peer_ != null) {
                 subBuilder = peer_.toBuilder();
               }
-              peer_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              peer_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(peer_);
                 peer_ = subBuilder.buildPartial();
@@ -6989,11 +6989,11 @@ public final class Request {
               break;
             }
             case 18: {
-              common.v1.Data.MessageItem.Builder subBuilder = null;
+              common.Data.MessageItem.Builder subBuilder = null;
               if (message_ != null) {
                 subBuilder = message_.toBuilder();
               }
-              message_ = input.readMessage(common.v1.Data.MessageItem.parser(), extensionRegistry);
+              message_ = input.readMessage(common.Data.MessageItem.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(message_);
                 message_ = subBuilder.buildPartial();
@@ -7003,11 +7003,11 @@ public final class Request {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                items_ = new java.util.ArrayList<common.v1.Data.SupplyItem>();
+                items_ = new java.util.ArrayList<common.Data.SupplyItem>();
                 mutable_bitField0_ |= 0x00000001;
               }
               items_.add(
-                  input.readMessage(common.v1.Data.SupplyItem.parser(), extensionRegistry));
+                  input.readMessage(common.Data.SupplyItem.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -7046,13 +7046,13 @@ public final class Request {
     }
 
     public static final int PEER_FIELD_NUMBER = 1;
-    private common.v1.Core.Peer peer_;
+    private common.Core.Peer peer_;
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     @java.lang.Override
@@ -7064,33 +7064,33 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      * @return The peer.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getPeer() {
-      return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+    public common.Core.Peer getPeer() {
+      return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
     }
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+    public common.Core.PeerOrBuilder getPeerOrBuilder() {
       return getPeer();
     }
 
     public static final int MESSAGE_FIELD_NUMBER = 2;
-    private common.v1.Data.MessageItem message_;
+    private common.Data.MessageItem message_;
     /**
      * <pre>
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      * @return Whether the message field is set.
      */
     @java.lang.Override
@@ -7102,36 +7102,36 @@ public final class Request {
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      * @return The message.
      */
     @java.lang.Override
-    public common.v1.Data.MessageItem getMessage() {
-      return message_ == null ? common.v1.Data.MessageItem.getDefaultInstance() : message_;
+    public common.Data.MessageItem getMessage() {
+      return message_ == null ? common.Data.MessageItem.getDefaultInstance() : message_;
     }
     /**
      * <pre>
      * Message to Share
      * </pre>
      *
-     * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+     * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.MessageItemOrBuilder getMessageOrBuilder() {
+    public common.Data.MessageItemOrBuilder getMessageOrBuilder() {
       return getMessage();
     }
 
     public static final int ITEMS_FIELD_NUMBER = 3;
-    private java.util.List<common.v1.Data.SupplyItem> items_;
+    private java.util.List<common.Data.SupplyItem> items_;
     /**
      * <pre>
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public java.util.List<common.v1.Data.SupplyItem> getItemsList() {
+    public java.util.List<common.Data.SupplyItem> getItemsList() {
       return items_;
     }
     /**
@@ -7139,10 +7139,10 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public java.util.List<? extends common.v1.Data.SupplyItemOrBuilder> 
+    public java.util.List<? extends common.Data.SupplyItemOrBuilder>
         getItemsOrBuilderList() {
       return items_;
     }
@@ -7151,7 +7151,7 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
     public int getItemsCount() {
@@ -7162,10 +7162,10 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.SupplyItem getItems(int index) {
+    public common.Data.SupplyItem getItems(int index) {
       return items_.get(index);
     }
     /**
@@ -7173,10 +7173,10 @@ public final class Request {
      * Supply Items to share
      * </pre>
      *
-     * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+     * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.SupplyItemOrBuilder getItemsOrBuilder(
+    public common.Data.SupplyItemOrBuilder getItemsOrBuilder(
         int index) {
       return items_.get(index);
     }
@@ -7549,7 +7549,7 @@ public final class Request {
               itemsBuilder_ = null;
               items_ = other.items_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              itemsBuilder_ = 
+              itemsBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getItemsFieldBuilder() : null;
             } else {
@@ -7587,15 +7587,15 @@ public final class Request {
       }
       private int bitField0_;
 
-      private common.v1.Core.Peer peer_;
+      private common.Core.Peer peer_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> peerBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> peerBuilder_;
       /**
        * <pre>
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        * @return Whether the peer field is set.
        */
       public boolean hasPeer() {
@@ -7606,12 +7606,12 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        * @return The peer.
        */
-      public common.v1.Core.Peer getPeer() {
+      public common.Core.Peer getPeer() {
         if (peerBuilder_ == null) {
-          return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+          return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
         } else {
           return peerBuilder_.getMessage();
         }
@@ -7621,9 +7621,9 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public Builder setPeer(common.v1.Core.Peer value) {
+      public Builder setPeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7641,10 +7641,10 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       public Builder setPeer(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (peerBuilder_ == null) {
           peer_ = builderForValue.build();
           onChanged();
@@ -7659,13 +7659,13 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public Builder mergePeer(common.v1.Core.Peer value) {
+      public Builder mergePeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (peer_ != null) {
             peer_ =
-              common.v1.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
           } else {
             peer_ = value;
           }
@@ -7681,7 +7681,7 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       public Builder clearPeer() {
         if (peerBuilder_ == null) {
@@ -7699,10 +7699,10 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public common.v1.Core.Peer.Builder getPeerBuilder() {
-        
+      public common.Core.Peer.Builder getPeerBuilder() {
+
         onChanged();
         return getPeerFieldBuilder().getBuilder();
       }
@@ -7711,14 +7711,14 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+      public common.Core.PeerOrBuilder getPeerOrBuilder() {
         if (peerBuilder_ != null) {
           return peerBuilder_.getMessageOrBuilder();
         } else {
           return peer_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : peer_;
+              common.Core.Peer.getDefaultInstance() : peer_;
         }
       }
       /**
@@ -7726,14 +7726,14 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 1 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 1 [json_name = "peer"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getPeerFieldBuilder() {
         if (peerBuilder_ == null) {
           peerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getPeer(),
                   getParentForChildren(),
                   isClean());
@@ -7742,15 +7742,15 @@ public final class Request {
         return peerBuilder_;
       }
 
-      private common.v1.Data.MessageItem message_;
+      private common.Data.MessageItem message_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.MessageItem, common.v1.Data.MessageItem.Builder, common.v1.Data.MessageItemOrBuilder> messageBuilder_;
+          common.Data.MessageItem, common.Data.MessageItem.Builder, common.Data.MessageItemOrBuilder> messageBuilder_;
       /**
        * <pre>
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        * @return Whether the message field is set.
        */
       public boolean hasMessage() {
@@ -7761,12 +7761,12 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        * @return The message.
        */
-      public common.v1.Data.MessageItem getMessage() {
+      public common.Data.MessageItem getMessage() {
         if (messageBuilder_ == null) {
-          return message_ == null ? common.v1.Data.MessageItem.getDefaultInstance() : message_;
+          return message_ == null ? common.Data.MessageItem.getDefaultInstance() : message_;
         } else {
           return messageBuilder_.getMessage();
         }
@@ -7776,9 +7776,9 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
-      public Builder setMessage(common.v1.Data.MessageItem value) {
+      public Builder setMessage(common.Data.MessageItem value) {
         if (messageBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7796,10 +7796,10 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
       public Builder setMessage(
-          common.v1.Data.MessageItem.Builder builderForValue) {
+          common.Data.MessageItem.Builder builderForValue) {
         if (messageBuilder_ == null) {
           message_ = builderForValue.build();
           onChanged();
@@ -7814,13 +7814,13 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
-      public Builder mergeMessage(common.v1.Data.MessageItem value) {
+      public Builder mergeMessage(common.Data.MessageItem value) {
         if (messageBuilder_ == null) {
           if (message_ != null) {
             message_ =
-              common.v1.Data.MessageItem.newBuilder(message_).mergeFrom(value).buildPartial();
+              common.Data.MessageItem.newBuilder(message_).mergeFrom(value).buildPartial();
           } else {
             message_ = value;
           }
@@ -7836,7 +7836,7 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
       public Builder clearMessage() {
         if (messageBuilder_ == null) {
@@ -7854,10 +7854,10 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
-      public common.v1.Data.MessageItem.Builder getMessageBuilder() {
-        
+      public common.Data.MessageItem.Builder getMessageBuilder() {
+
         onChanged();
         return getMessageFieldBuilder().getBuilder();
       }
@@ -7866,14 +7866,14 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
-      public common.v1.Data.MessageItemOrBuilder getMessageOrBuilder() {
+      public common.Data.MessageItemOrBuilder getMessageOrBuilder() {
         if (messageBuilder_ != null) {
           return messageBuilder_.getMessageOrBuilder();
         } else {
           return message_ == null ?
-              common.v1.Data.MessageItem.getDefaultInstance() : message_;
+              common.Data.MessageItem.getDefaultInstance() : message_;
         }
       }
       /**
@@ -7881,14 +7881,14 @@ public final class Request {
        * Message to Share
        * </pre>
        *
-       * <code>.common.v1.MessageItem message = 2 [json_name = "message"];</code>
+       * <code>.common.MessageItem message = 2 [json_name = "message"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.MessageItem, common.v1.Data.MessageItem.Builder, common.v1.Data.MessageItemOrBuilder> 
+          common.Data.MessageItem, common.Data.MessageItem.Builder, common.Data.MessageItemOrBuilder>
           getMessageFieldBuilder() {
         if (messageBuilder_ == null) {
           messageBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Data.MessageItem, common.v1.Data.MessageItem.Builder, common.v1.Data.MessageItemOrBuilder>(
+              common.Data.MessageItem, common.Data.MessageItem.Builder, common.Data.MessageItemOrBuilder>(
                   getMessage(),
                   getParentForChildren(),
                   isClean());
@@ -7897,26 +7897,26 @@ public final class Request {
         return messageBuilder_;
       }
 
-      private java.util.List<common.v1.Data.SupplyItem> items_ =
+      private java.util.List<common.Data.SupplyItem> items_ =
         java.util.Collections.emptyList();
       private void ensureItemsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          items_ = new java.util.ArrayList<common.v1.Data.SupplyItem>(items_);
+          items_ = new java.util.ArrayList<common.Data.SupplyItem>(items_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          common.v1.Data.SupplyItem, common.v1.Data.SupplyItem.Builder, common.v1.Data.SupplyItemOrBuilder> itemsBuilder_;
+          common.Data.SupplyItem, common.Data.SupplyItem.Builder, common.Data.SupplyItemOrBuilder> itemsBuilder_;
 
       /**
        * <pre>
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public java.util.List<common.v1.Data.SupplyItem> getItemsList() {
+      public java.util.List<common.Data.SupplyItem> getItemsList() {
         if (itemsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(items_);
         } else {
@@ -7928,7 +7928,7 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public int getItemsCount() {
         if (itemsBuilder_ == null) {
@@ -7942,9 +7942,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItem getItems(int index) {
+      public common.Data.SupplyItem getItems(int index) {
         if (itemsBuilder_ == null) {
           return items_.get(index);
         } else {
@@ -7956,10 +7956,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder setItems(
-          int index, common.v1.Data.SupplyItem value) {
+          int index, common.Data.SupplyItem value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7977,10 +7977,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder setItems(
-          int index, common.v1.Data.SupplyItem.Builder builderForValue) {
+          int index, common.Data.SupplyItem.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.set(index, builderForValue.build());
@@ -7995,9 +7995,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public Builder addItems(common.v1.Data.SupplyItem value) {
+      public Builder addItems(common.Data.SupplyItem value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8015,10 +8015,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder addItems(
-          int index, common.v1.Data.SupplyItem value) {
+          int index, common.Data.SupplyItem value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8036,10 +8036,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder addItems(
-          common.v1.Data.SupplyItem.Builder builderForValue) {
+          common.Data.SupplyItem.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.add(builderForValue.build());
@@ -8054,10 +8054,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder addItems(
-          int index, common.v1.Data.SupplyItem.Builder builderForValue) {
+          int index, common.Data.SupplyItem.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.add(index, builderForValue.build());
@@ -8072,10 +8072,10 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder addAllItems(
-          java.lang.Iterable<? extends common.v1.Data.SupplyItem> values) {
+          java.lang.Iterable<? extends common.Data.SupplyItem> values) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -8091,7 +8091,7 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder clearItems() {
         if (itemsBuilder_ == null) {
@@ -8108,7 +8108,7 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
       public Builder removeItems(int index) {
         if (itemsBuilder_ == null) {
@@ -8125,9 +8125,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItem.Builder getItemsBuilder(
+      public common.Data.SupplyItem.Builder getItemsBuilder(
           int index) {
         return getItemsFieldBuilder().getBuilder(index);
       }
@@ -8136,9 +8136,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItemOrBuilder getItemsOrBuilder(
+      public common.Data.SupplyItemOrBuilder getItemsOrBuilder(
           int index) {
         if (itemsBuilder_ == null) {
           return items_.get(index);  } else {
@@ -8150,9 +8150,9 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public java.util.List<? extends common.v1.Data.SupplyItemOrBuilder> 
+      public java.util.List<? extends common.Data.SupplyItemOrBuilder>
            getItemsOrBuilderList() {
         if (itemsBuilder_ != null) {
           return itemsBuilder_.getMessageOrBuilderList();
@@ -8165,41 +8165,41 @@ public final class Request {
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItem.Builder addItemsBuilder() {
+      public common.Data.SupplyItem.Builder addItemsBuilder() {
         return getItemsFieldBuilder().addBuilder(
-            common.v1.Data.SupplyItem.getDefaultInstance());
+            common.Data.SupplyItem.getDefaultInstance());
       }
       /**
        * <pre>
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public common.v1.Data.SupplyItem.Builder addItemsBuilder(
+      public common.Data.SupplyItem.Builder addItemsBuilder(
           int index) {
         return getItemsFieldBuilder().addBuilder(
-            index, common.v1.Data.SupplyItem.getDefaultInstance());
+            index, common.Data.SupplyItem.getDefaultInstance());
       }
       /**
        * <pre>
        * Supply Items to share
        * </pre>
        *
-       * <code>repeated .common.v1.SupplyItem items = 3 [json_name = "items"];</code>
+       * <code>repeated .common.SupplyItem items = 3 [json_name = "items"];</code>
        */
-      public java.util.List<common.v1.Data.SupplyItem.Builder> 
+      public java.util.List<common.Data.SupplyItem.Builder>
            getItemsBuilderList() {
         return getItemsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          common.v1.Data.SupplyItem, common.v1.Data.SupplyItem.Builder, common.v1.Data.SupplyItemOrBuilder> 
+          common.Data.SupplyItem, common.Data.SupplyItem.Builder, common.Data.SupplyItemOrBuilder>
           getItemsFieldBuilder() {
         if (itemsBuilder_ == null) {
           itemsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              common.v1.Data.SupplyItem, common.v1.Data.SupplyItem.Builder, common.v1.Data.SupplyItemOrBuilder>(
+              common.Data.SupplyItem, common.Data.SupplyItem.Builder, common.Data.SupplyItemOrBuilder>(
                   items_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -8280,7 +8280,7 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     boolean hasPeer();
@@ -8289,18 +8289,18 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
      * @return The peer.
      */
-    common.v1.Core.Peer getPeer();
+    common.Core.Peer getPeer();
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
      */
-    common.v1.Core.PeerOrBuilder getPeerOrBuilder();
+    common.Core.PeerOrBuilder getPeerOrBuilder();
   }
   /**
    * <pre>
@@ -8357,11 +8357,11 @@ public final class Request {
               break;
             }
             case 18: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (peer_ != null) {
                 subBuilder = peer_.toBuilder();
               }
-              peer_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              peer_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(peer_);
                 peer_ = subBuilder.buildPartial();
@@ -8417,13 +8417,13 @@ public final class Request {
     }
 
     public static final int PEER_FIELD_NUMBER = 2;
-    private common.v1.Core.Peer peer_;
+    private common.Core.Peer peer_;
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     @java.lang.Override
@@ -8435,22 +8435,22 @@ public final class Request {
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
      * @return The peer.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getPeer() {
-      return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+    public common.Core.Peer getPeer() {
+      return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
     }
     /**
      * <pre>
      * Peer to Share with
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+    public common.Core.PeerOrBuilder getPeerOrBuilder() {
       return getPeer();
     }
 
@@ -8814,7 +8814,7 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder setDecision(boolean value) {
-        
+
         decision_ = value;
         onChanged();
         return this;
@@ -8828,21 +8828,21 @@ public final class Request {
        * @return This builder for chaining.
        */
       public Builder clearDecision() {
-        
+
         decision_ = false;
         onChanged();
         return this;
       }
 
-      private common.v1.Core.Peer peer_;
+      private common.Core.Peer peer_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> peerBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> peerBuilder_;
       /**
        * <pre>
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        * @return Whether the peer field is set.
        */
       public boolean hasPeer() {
@@ -8853,12 +8853,12 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        * @return The peer.
        */
-      public common.v1.Core.Peer getPeer() {
+      public common.Core.Peer getPeer() {
         if (peerBuilder_ == null) {
-          return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+          return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
         } else {
           return peerBuilder_.getMessage();
         }
@@ -8868,9 +8868,9 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        */
-      public Builder setPeer(common.v1.Core.Peer value) {
+      public Builder setPeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8888,10 +8888,10 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        */
       public Builder setPeer(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (peerBuilder_ == null) {
           peer_ = builderForValue.build();
           onChanged();
@@ -8906,13 +8906,13 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        */
-      public Builder mergePeer(common.v1.Core.Peer value) {
+      public Builder mergePeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (peer_ != null) {
             peer_ =
-              common.v1.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
           } else {
             peer_ = value;
           }
@@ -8928,7 +8928,7 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        */
       public Builder clearPeer() {
         if (peerBuilder_ == null) {
@@ -8946,10 +8946,10 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        */
-      public common.v1.Core.Peer.Builder getPeerBuilder() {
-        
+      public common.Core.Peer.Builder getPeerBuilder() {
+
         onChanged();
         return getPeerFieldBuilder().getBuilder();
       }
@@ -8958,14 +8958,14 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+      public common.Core.PeerOrBuilder getPeerOrBuilder() {
         if (peerBuilder_ != null) {
           return peerBuilder_.getMessageOrBuilder();
         } else {
           return peer_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : peer_;
+              common.Core.Peer.getDefaultInstance() : peer_;
         }
       }
       /**
@@ -8973,14 +8973,14 @@ public final class Request {
        * Peer to Share with
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 2 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 2 [json_name = "peer"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getPeerFieldBuilder() {
         if (peerBuilder_ == null) {
           peerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getPeer(),
                   getParentForChildren(),
                   isClean());
@@ -9267,7 +9267,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (queryCase_ == 1) {
@@ -9291,7 +9291,7 @@ public final class Request {
         ref = query_;
       }
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         if (queryCase_ == 1) {
@@ -9331,7 +9331,7 @@ public final class Request {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         if (queryCase_ == 2) {
@@ -9355,7 +9355,7 @@ public final class Request {
         ref = query_;
       }
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         if (queryCase_ == 2) {
@@ -9788,7 +9788,7 @@ public final class Request {
           ref = query_;
         }
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           if (queryCase_ == 1) {
@@ -9909,7 +9909,7 @@ public final class Request {
           ref = query_;
         }
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           if (queryCase_ == 2) {
@@ -12538,77 +12538,77 @@ public final class Request {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_InitializeRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_InitializeRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_InitializeRequest_VariablesEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_InitializeRequest_VariablesEntry_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_InitializeRequest_DeviceOptions_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_InitializeRequest_DeviceOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_InitializeRequest_HostOptions_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_InitializeRequest_HostOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_InitializeRequest_ServiceOptions_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_InitializeRequest_ServiceOptions_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_InitializeRequest_IPAddress_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_InitializeRequest_IPAddress_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_ShareRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_ShareRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_DecideRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_DecideRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_SearchRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_SearchRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnLobbyRefreshRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnLobbyRefreshRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnMailboxMessageRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnMailboxMessageRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitDecisionRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitDecisionRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitInviteRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitInviteRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitProgressRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitProgressRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitCompleteRequest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitCompleteRequest_fieldAccessorTable;
 
@@ -12623,9 +12623,9 @@ public final class Request {
       "\n\033node/motor/v1/request.proto\022\rnode.moto" +
       "r.v1\032\024common/v1/core.proto\032\024common/v1/da" +
       "ta.proto\"\304\n\n\021InitializeRequest\022/\n\010locati" +
-      "on\030\001 \001(\0132\023.common.v1.LocationR\010location\022" +
-      ",\n\007profile\030\002 \001(\0132\022.common.v1.ProfileR\007pr" +
-      "ofile\0225\n\nconnection\030\003 \001(\0162\025.common.v1.Co" +
+      "on\030\001 \001(\0132\023.common.LocationR\010location\022" +
+      ",\n\007profile\030\002 \001(\0132\022.common.ProfileR\007pr" +
+      "ofile\0225\n\nconnection\030\003 \001(\0162\025.common.Co" +
       "nnectionR\nconnection\022O\n\014host_options\030\004 \001" +
       "(\0132,.node.motor.v1.InitializeRequest.Hos" +
       "tOptionsR\013hostOptions\022X\n\017service_options" +
@@ -12633,7 +12633,7 @@ public final class Request {
       ".ServiceOptionsR\016serviceOptions\022U\n\016devic" +
       "e_options\030\006 \001(\0132..node.motor.v1.Initiali" +
       "zeRequest.DeviceOptionsR\rdeviceOptions\0228" +
-      "\n\013environment\030\007 \001(\0162\026.common.v1.Environm" +
+      "\n\013environment\030\007 \001(\0162\026.common.Environm" +
       "entR\013environment\022M\n\tvariables\030\010 \003(\0132/.no" +
       "de.motor.v1.InitializeRequest.VariablesE" +
       "ntryR\tvariables\022+\n\021wallet_passphrase\030\t \001" +
@@ -12659,9 +12659,9 @@ public final class Request {
       "\222\001\n\014ShareRequest\022#\n\004peer\030\001 \001(\0132\017.common." +
       "v1.PeerR\004peer\0220\n\007message\030\002 \001(\0132\026.common." +
       "v1.MessageItemR\007message\022+\n\005items\030\003 \003(\0132\025" +
-      ".common.v1.SupplyItemR\005items\"P\n\rDecideRe" +
+      ".common.SupplyItemR\005items\"P\n\rDecideRe" +
       "quest\022\032\n\010decision\030\001 \001(\010R\010decision\022#\n\004pee" +
-      "r\030\002 \001(\0132\017.common.v1.PeerR\004peer\"L\n\rSearch" +
+      "r\030\002 \001(\0132\017.common.PeerR\004peer\"L\n\rSearch" +
       "Request\022\027\n\006s_name\030\001 \001(\tH\000R\005sName\022\031\n\007peer" +
       "_id\030\002 \001(\tH\000R\006peerIdB\007\n\005query\"\027\n\025OnLobbyR" +
       "efreshRequest\"\031\n\027OnMailboxMessageRequest" +
@@ -12673,8 +12673,8 @@ public final class Request {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          common.v1.Core.getDescriptor(),
-          common.v1.Data.getDescriptor(),
+          common.Core.getDescriptor(),
+          common.Data.getDescriptor(),
         });
     internal_static_node_motor_v1_InitializeRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -12766,8 +12766,8 @@ public final class Request {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_motor_v1_OnTransmitCompleteRequest_descriptor,
         new java.lang.String[] { });
-    common.v1.Core.getDescriptor();
-    common.v1.Data.getDescriptor();
+    common.Core.getDescriptor();
+    common.Data.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

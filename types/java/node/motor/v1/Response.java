@@ -172,7 +172,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -192,7 +192,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -549,7 +549,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -563,7 +563,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -602,7 +602,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -625,7 +625,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -639,7 +639,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -659,7 +659,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -875,7 +875,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -895,7 +895,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -1252,7 +1252,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -1266,7 +1266,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -1305,7 +1305,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -1328,7 +1328,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -1342,7 +1342,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -1362,7 +1362,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
@@ -1459,7 +1459,7 @@ public final class Response {
      * Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     boolean hasPeer();
@@ -1468,18 +1468,18 @@ public final class Response {
      * Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
      * @return The peer.
      */
-    common.v1.Core.Peer getPeer();
+    common.Core.Peer getPeer();
     /**
      * <pre>
      * Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
      */
-    common.v1.Core.PeerOrBuilder getPeerOrBuilder();
+    common.Core.PeerOrBuilder getPeerOrBuilder();
 
     /**
      * <pre>
@@ -1585,11 +1585,11 @@ public final class Response {
               break;
             }
             case 26: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (peer_ != null) {
                 subBuilder = peer_.toBuilder();
               }
-              peer_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              peer_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(peer_);
                 peer_ = subBuilder.buildPartial();
@@ -1672,7 +1672,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         error_ = s;
@@ -1692,7 +1692,7 @@ public final class Response {
         getErrorBytes() {
       java.lang.Object ref = error_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         error_ = b;
@@ -1703,13 +1703,13 @@ public final class Response {
     }
 
     public static final int PEER_FIELD_NUMBER = 3;
-    private common.v1.Core.Peer peer_;
+    private common.Core.Peer peer_;
     /**
      * <pre>
      * Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
      * @return Whether the peer field is set.
      */
     @java.lang.Override
@@ -1721,22 +1721,22 @@ public final class Response {
      * Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
      * @return The peer.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getPeer() {
-      return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+    public common.Core.Peer getPeer() {
+      return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
     }
     /**
      * <pre>
      * Peer Data
      * </pre>
      *
-     * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+     * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+    public common.Core.PeerOrBuilder getPeerOrBuilder() {
       return getPeer();
     }
 
@@ -1756,7 +1756,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         peerId_ = s;
@@ -1776,7 +1776,7 @@ public final class Response {
         getPeerIdBytes() {
       java.lang.Object ref = peerId_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         peerId_ = b;
@@ -1802,7 +1802,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         sName_ = s;
@@ -1822,7 +1822,7 @@ public final class Response {
         getSNameBytes() {
       java.lang.Object ref = sName_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         sName_ = b;
@@ -2243,7 +2243,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setSuccess(boolean value) {
-        
+
         success_ = value;
         onChanged();
         return this;
@@ -2257,7 +2257,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSuccess() {
-        
+
         success_ = false;
         onChanged();
         return this;
@@ -2296,7 +2296,7 @@ public final class Response {
           getErrorBytes() {
         java.lang.Object ref = error_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           error_ = b;
@@ -2319,7 +2319,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         error_ = value;
         onChanged();
         return this;
@@ -2333,7 +2333,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearError() {
-        
+
         error_ = getDefaultInstance().getError();
         onChanged();
         return this;
@@ -2353,21 +2353,21 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         error_ = value;
         onChanged();
         return this;
       }
 
-      private common.v1.Core.Peer peer_;
+      private common.Core.Peer peer_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> peerBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> peerBuilder_;
       /**
        * <pre>
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        * @return Whether the peer field is set.
        */
       public boolean hasPeer() {
@@ -2378,12 +2378,12 @@ public final class Response {
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        * @return The peer.
        */
-      public common.v1.Core.Peer getPeer() {
+      public common.Core.Peer getPeer() {
         if (peerBuilder_ == null) {
-          return peer_ == null ? common.v1.Core.Peer.getDefaultInstance() : peer_;
+          return peer_ == null ? common.Core.Peer.getDefaultInstance() : peer_;
         } else {
           return peerBuilder_.getMessage();
         }
@@ -2393,9 +2393,9 @@ public final class Response {
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        */
-      public Builder setPeer(common.v1.Core.Peer value) {
+      public Builder setPeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2413,10 +2413,10 @@ public final class Response {
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        */
       public Builder setPeer(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (peerBuilder_ == null) {
           peer_ = builderForValue.build();
           onChanged();
@@ -2431,13 +2431,13 @@ public final class Response {
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        */
-      public Builder mergePeer(common.v1.Core.Peer value) {
+      public Builder mergePeer(common.Core.Peer value) {
         if (peerBuilder_ == null) {
           if (peer_ != null) {
             peer_ =
-              common.v1.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(peer_).mergeFrom(value).buildPartial();
           } else {
             peer_ = value;
           }
@@ -2453,7 +2453,7 @@ public final class Response {
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        */
       public Builder clearPeer() {
         if (peerBuilder_ == null) {
@@ -2471,10 +2471,10 @@ public final class Response {
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        */
-      public common.v1.Core.Peer.Builder getPeerBuilder() {
-        
+      public common.Core.Peer.Builder getPeerBuilder() {
+
         onChanged();
         return getPeerFieldBuilder().getBuilder();
       }
@@ -2483,14 +2483,14 @@ public final class Response {
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getPeerOrBuilder() {
+      public common.Core.PeerOrBuilder getPeerOrBuilder() {
         if (peerBuilder_ != null) {
           return peerBuilder_.getMessageOrBuilder();
         } else {
           return peer_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : peer_;
+              common.Core.Peer.getDefaultInstance() : peer_;
         }
       }
       /**
@@ -2498,14 +2498,14 @@ public final class Response {
        * Peer Data
        * </pre>
        *
-       * <code>.common.v1.Peer peer = 3 [json_name = "peer"];</code>
+       * <code>.common.Peer peer = 3 [json_name = "peer"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getPeerFieldBuilder() {
         if (peerBuilder_ == null) {
           peerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getPeer(),
                   getParentForChildren(),
                   isClean());
@@ -2547,7 +2547,7 @@ public final class Response {
           getPeerIdBytes() {
         java.lang.Object ref = peerId_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           peerId_ = b;
@@ -2570,7 +2570,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         peerId_ = value;
         onChanged();
         return this;
@@ -2584,7 +2584,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearPeerId() {
-        
+
         peerId_ = getDefaultInstance().getPeerId();
         onChanged();
         return this;
@@ -2604,7 +2604,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         peerId_ = value;
         onChanged();
         return this;
@@ -2643,7 +2643,7 @@ public final class Response {
           getSNameBytes() {
         java.lang.Object ref = sName_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           sName_ = b;
@@ -2666,7 +2666,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         sName_ = value;
         onChanged();
         return this;
@@ -2680,7 +2680,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearSName() {
-        
+
         sName_ = getDefaultInstance().getSName();
         onChanged();
         return this;
@@ -2700,7 +2700,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         sName_ = value;
         onChanged();
         return this;
@@ -2777,7 +2777,7 @@ public final class Response {
      * Peer that made decision
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     boolean hasFrom();
@@ -2786,18 +2786,18 @@ public final class Response {
      * Peer that made decision
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return The from.
      */
-    common.v1.Core.Peer getFrom();
+    common.Core.Peer getFrom();
     /**
      * <pre>
      * Peer that made decision
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      */
-    common.v1.Core.PeerOrBuilder getFromOrBuilder();
+    common.Core.PeerOrBuilder getFromOrBuilder();
 
     /**
      * <pre>
@@ -2864,11 +2864,11 @@ public final class Response {
               break;
             }
             case 18: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (from_ != null) {
                 subBuilder = from_.toBuilder();
               }
-              from_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              from_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(from_);
                 from_ = subBuilder.buildPartial();
@@ -2929,13 +2929,13 @@ public final class Response {
     }
 
     public static final int FROM_FIELD_NUMBER = 2;
-    private common.v1.Core.Peer from_;
+    private common.Core.Peer from_;
     /**
      * <pre>
      * Peer that made decision
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     @java.lang.Override
@@ -2947,22 +2947,22 @@ public final class Response {
      * Peer that made decision
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return The from.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getFrom() {
-      return from_ == null ? common.v1.Core.Peer.getDefaultInstance() : from_;
+    public common.Core.Peer getFrom() {
+      return from_ == null ? common.Core.Peer.getDefaultInstance() : from_;
     }
     /**
      * <pre>
      * Peer that made decision
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getFromOrBuilder() {
+    public common.Core.PeerOrBuilder getFromOrBuilder() {
       return getFrom();
     }
 
@@ -3359,7 +3359,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setDecision(boolean value) {
-        
+
         decision_ = value;
         onChanged();
         return this;
@@ -3373,21 +3373,21 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearDecision() {
-        
+
         decision_ = false;
         onChanged();
         return this;
       }
 
-      private common.v1.Core.Peer from_;
+      private common.Core.Peer from_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> fromBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> fromBuilder_;
       /**
        * <pre>
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        * @return Whether the from field is set.
        */
       public boolean hasFrom() {
@@ -3398,12 +3398,12 @@ public final class Response {
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        * @return The from.
        */
-      public common.v1.Core.Peer getFrom() {
+      public common.Core.Peer getFrom() {
         if (fromBuilder_ == null) {
-          return from_ == null ? common.v1.Core.Peer.getDefaultInstance() : from_;
+          return from_ == null ? common.Core.Peer.getDefaultInstance() : from_;
         } else {
           return fromBuilder_.getMessage();
         }
@@ -3413,9 +3413,9 @@ public final class Response {
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public Builder setFrom(common.v1.Core.Peer value) {
+      public Builder setFrom(common.Core.Peer value) {
         if (fromBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3433,10 +3433,10 @@ public final class Response {
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       public Builder setFrom(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (fromBuilder_ == null) {
           from_ = builderForValue.build();
           onChanged();
@@ -3451,13 +3451,13 @@ public final class Response {
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public Builder mergeFrom(common.v1.Core.Peer value) {
+      public Builder mergeFrom(common.Core.Peer value) {
         if (fromBuilder_ == null) {
           if (from_ != null) {
             from_ =
-              common.v1.Core.Peer.newBuilder(from_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(from_).mergeFrom(value).buildPartial();
           } else {
             from_ = value;
           }
@@ -3473,7 +3473,7 @@ public final class Response {
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       public Builder clearFrom() {
         if (fromBuilder_ == null) {
@@ -3491,10 +3491,10 @@ public final class Response {
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public common.v1.Core.Peer.Builder getFromBuilder() {
-        
+      public common.Core.Peer.Builder getFromBuilder() {
+
         onChanged();
         return getFromFieldBuilder().getBuilder();
       }
@@ -3503,14 +3503,14 @@ public final class Response {
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getFromOrBuilder() {
+      public common.Core.PeerOrBuilder getFromOrBuilder() {
         if (fromBuilder_ != null) {
           return fromBuilder_.getMessageOrBuilder();
         } else {
           return from_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : from_;
+              common.Core.Peer.getDefaultInstance() : from_;
         }
       }
       /**
@@ -3518,14 +3518,14 @@ public final class Response {
        * Peer that made decision
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getFromFieldBuilder() {
         if (fromBuilder_ == null) {
           fromBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getFrom(),
                   getParentForChildren(),
                   isClean());
@@ -3557,7 +3557,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setReceived(long value) {
-        
+
         received_ = value;
         onChanged();
         return this;
@@ -3571,7 +3571,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearReceived() {
-        
+
         received_ = 0L;
         onChanged();
         return this;
@@ -3658,24 +3658,24 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
-    java.util.List<common.v1.Core.Peer> 
+    java.util.List<common.Core.Peer>
         getPeersList();
     /**
      * <pre>
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
-    common.v1.Core.Peer getPeers(int index);
+    common.Core.Peer getPeers(int index);
     /**
      * <pre>
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     int getPeersCount();
     /**
@@ -3683,18 +3683,18 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
-    java.util.List<? extends common.v1.Core.PeerOrBuilder> 
+    java.util.List<? extends common.Core.PeerOrBuilder>
         getPeersOrBuilderList();
     /**
      * <pre>
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
-    common.v1.Core.PeerOrBuilder getPeersOrBuilder(
+    common.Core.PeerOrBuilder getPeersOrBuilder(
         int index);
 
     /**
@@ -3767,11 +3767,11 @@ public final class Response {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                peers_ = new java.util.ArrayList<common.v1.Core.Peer>();
+                peers_ = new java.util.ArrayList<common.Core.Peer>();
                 mutable_bitField0_ |= 0x00000001;
               }
               peers_.add(
-                  input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry));
+                  input.readMessage(common.Core.Peer.parser(), extensionRegistry));
               break;
             }
             case 24: {
@@ -3830,7 +3830,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         olc_ = s;
@@ -3850,7 +3850,7 @@ public final class Response {
         getOlcBytes() {
       java.lang.Object ref = olc_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         olc_ = b;
@@ -3861,16 +3861,16 @@ public final class Response {
     }
 
     public static final int PEERS_FIELD_NUMBER = 2;
-    private java.util.List<common.v1.Core.Peer> peers_;
+    private java.util.List<common.Core.Peer> peers_;
     /**
      * <pre>
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
-    public java.util.List<common.v1.Core.Peer> getPeersList() {
+    public java.util.List<common.Core.Peer> getPeersList() {
       return peers_;
     }
     /**
@@ -3878,10 +3878,10 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
-    public java.util.List<? extends common.v1.Core.PeerOrBuilder> 
+    public java.util.List<? extends common.Core.PeerOrBuilder>
         getPeersOrBuilderList() {
       return peers_;
     }
@@ -3890,7 +3890,7 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
     public int getPeersCount() {
@@ -3901,10 +3901,10 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.Peer getPeers(int index) {
+    public common.Core.Peer getPeers(int index) {
       return peers_.get(index);
     }
     /**
@@ -3912,10 +3912,10 @@ public final class Response {
      * User Information
      * </pre>
      *
-     * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+     * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getPeersOrBuilder(
+    public common.Core.PeerOrBuilder getPeersOrBuilder(
         int index) {
       return peers_.get(index);
     }
@@ -4275,7 +4275,7 @@ public final class Response {
               peersBuilder_ = null;
               peers_ = other.peers_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              peersBuilder_ = 
+              peersBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getPeersFieldBuilder() : null;
             } else {
@@ -4349,7 +4349,7 @@ public final class Response {
           getOlcBytes() {
         java.lang.Object ref = olc_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           olc_ = b;
@@ -4372,7 +4372,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         olc_ = value;
         onChanged();
         return this;
@@ -4386,7 +4386,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearOlc() {
-        
+
         olc_ = getDefaultInstance().getOlc();
         onChanged();
         return this;
@@ -4406,32 +4406,32 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         olc_ = value;
         onChanged();
         return this;
       }
 
-      private java.util.List<common.v1.Core.Peer> peers_ =
+      private java.util.List<common.Core.Peer> peers_ =
         java.util.Collections.emptyList();
       private void ensurePeersIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          peers_ = new java.util.ArrayList<common.v1.Core.Peer>(peers_);
+          peers_ = new java.util.ArrayList<common.Core.Peer>(peers_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> peersBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> peersBuilder_;
 
       /**
        * <pre>
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public java.util.List<common.v1.Core.Peer> getPeersList() {
+      public java.util.List<common.Core.Peer> getPeersList() {
         if (peersBuilder_ == null) {
           return java.util.Collections.unmodifiableList(peers_);
         } else {
@@ -4443,7 +4443,7 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public int getPeersCount() {
         if (peersBuilder_ == null) {
@@ -4457,9 +4457,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.Peer getPeers(int index) {
+      public common.Core.Peer getPeers(int index) {
         if (peersBuilder_ == null) {
           return peers_.get(index);
         } else {
@@ -4471,10 +4471,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder setPeers(
-          int index, common.v1.Core.Peer value) {
+          int index, common.Core.Peer value) {
         if (peersBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4492,10 +4492,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder setPeers(
-          int index, common.v1.Core.Peer.Builder builderForValue) {
+          int index, common.Core.Peer.Builder builderForValue) {
         if (peersBuilder_ == null) {
           ensurePeersIsMutable();
           peers_.set(index, builderForValue.build());
@@ -4510,9 +4510,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public Builder addPeers(common.v1.Core.Peer value) {
+      public Builder addPeers(common.Core.Peer value) {
         if (peersBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4530,10 +4530,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder addPeers(
-          int index, common.v1.Core.Peer value) {
+          int index, common.Core.Peer value) {
         if (peersBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4551,10 +4551,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder addPeers(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (peersBuilder_ == null) {
           ensurePeersIsMutable();
           peers_.add(builderForValue.build());
@@ -4569,10 +4569,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder addPeers(
-          int index, common.v1.Core.Peer.Builder builderForValue) {
+          int index, common.Core.Peer.Builder builderForValue) {
         if (peersBuilder_ == null) {
           ensurePeersIsMutable();
           peers_.add(index, builderForValue.build());
@@ -4587,10 +4587,10 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder addAllPeers(
-          java.lang.Iterable<? extends common.v1.Core.Peer> values) {
+          java.lang.Iterable<? extends common.Core.Peer> values) {
         if (peersBuilder_ == null) {
           ensurePeersIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -4606,7 +4606,7 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder clearPeers() {
         if (peersBuilder_ == null) {
@@ -4623,7 +4623,7 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
       public Builder removePeers(int index) {
         if (peersBuilder_ == null) {
@@ -4640,9 +4640,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.Peer.Builder getPeersBuilder(
+      public common.Core.Peer.Builder getPeersBuilder(
           int index) {
         return getPeersFieldBuilder().getBuilder(index);
       }
@@ -4651,9 +4651,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getPeersOrBuilder(
+      public common.Core.PeerOrBuilder getPeersOrBuilder(
           int index) {
         if (peersBuilder_ == null) {
           return peers_.get(index);  } else {
@@ -4665,9 +4665,9 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public java.util.List<? extends common.v1.Core.PeerOrBuilder> 
+      public java.util.List<? extends common.Core.PeerOrBuilder>
            getPeersOrBuilderList() {
         if (peersBuilder_ != null) {
           return peersBuilder_.getMessageOrBuilderList();
@@ -4680,41 +4680,41 @@ public final class Response {
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.Peer.Builder addPeersBuilder() {
+      public common.Core.Peer.Builder addPeersBuilder() {
         return getPeersFieldBuilder().addBuilder(
-            common.v1.Core.Peer.getDefaultInstance());
+            common.Core.Peer.getDefaultInstance());
       }
       /**
        * <pre>
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public common.v1.Core.Peer.Builder addPeersBuilder(
+      public common.Core.Peer.Builder addPeersBuilder(
           int index) {
         return getPeersFieldBuilder().addBuilder(
-            index, common.v1.Core.Peer.getDefaultInstance());
+            index, common.Core.Peer.getDefaultInstance());
       }
       /**
        * <pre>
        * User Information
        * </pre>
        *
-       * <code>repeated .common.v1.Peer peers = 2 [json_name = "peers"];</code>
+       * <code>repeated .common.Peer peers = 2 [json_name = "peers"];</code>
        */
-      public java.util.List<common.v1.Core.Peer.Builder> 
+      public java.util.List<common.Core.Peer.Builder>
            getPeersBuilderList() {
         return getPeersFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getPeersFieldBuilder() {
         if (peersBuilder_ == null) {
           peersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   peers_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -4747,7 +4747,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setReceived(long value) {
-        
+
         received_ = value;
         onChanged();
         return this;
@@ -4761,7 +4761,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearReceived() {
-        
+
         received_ = 0L;
         onChanged();
         return this;
@@ -4838,7 +4838,7 @@ public final class Response {
      * Peer that sent the Invite
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     boolean hasFrom();
@@ -4847,25 +4847,25 @@ public final class Response {
      * Peer that sent the Invite
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return The from.
      */
-    common.v1.Core.Peer getFrom();
+    common.Core.Peer getFrom();
     /**
      * <pre>
      * Peer that sent the Invite
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      */
-    common.v1.Core.PeerOrBuilder getFromOrBuilder();
+    common.Core.PeerOrBuilder getFromOrBuilder();
 
     /**
      * <pre>
      * Attached Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
      * @return Whether the payload field is set.
      */
     boolean hasPayload();
@@ -4874,18 +4874,18 @@ public final class Response {
      * Attached Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
      * @return The payload.
      */
-    common.v1.Data.Payload getPayload();
+    common.Data.Payload getPayload();
     /**
      * <pre>
      * Attached Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
      */
-    common.v1.Data.PayloadOrBuilder getPayloadOrBuilder();
+    common.Data.PayloadOrBuilder getPayloadOrBuilder();
   }
   /**
    * <pre>
@@ -4942,11 +4942,11 @@ public final class Response {
               break;
             }
             case 18: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (from_ != null) {
                 subBuilder = from_.toBuilder();
               }
-              from_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              from_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(from_);
                 from_ = subBuilder.buildPartial();
@@ -4955,11 +4955,11 @@ public final class Response {
               break;
             }
             case 26: {
-              common.v1.Data.Payload.Builder subBuilder = null;
+              common.Data.Payload.Builder subBuilder = null;
               if (payload_ != null) {
                 subBuilder = payload_.toBuilder();
               }
-              payload_ = input.readMessage(common.v1.Data.Payload.parser(), extensionRegistry);
+              payload_ = input.readMessage(common.Data.Payload.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(payload_);
                 payload_ = subBuilder.buildPartial();
@@ -5015,13 +5015,13 @@ public final class Response {
     }
 
     public static final int FROM_FIELD_NUMBER = 2;
-    private common.v1.Core.Peer from_;
+    private common.Core.Peer from_;
     /**
      * <pre>
      * Peer that sent the Invite
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     @java.lang.Override
@@ -5033,33 +5033,33 @@ public final class Response {
      * Peer that sent the Invite
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      * @return The from.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getFrom() {
-      return from_ == null ? common.v1.Core.Peer.getDefaultInstance() : from_;
+    public common.Core.Peer getFrom() {
+      return from_ == null ? common.Core.Peer.getDefaultInstance() : from_;
     }
     /**
      * <pre>
      * Peer that sent the Invite
      * </pre>
      *
-     * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+     * <code>.common.Peer from = 2 [json_name = "from"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getFromOrBuilder() {
+    public common.Core.PeerOrBuilder getFromOrBuilder() {
       return getFrom();
     }
 
     public static final int PAYLOAD_FIELD_NUMBER = 3;
-    private common.v1.Data.Payload payload_;
+    private common.Data.Payload payload_;
     /**
      * <pre>
      * Attached Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
      * @return Whether the payload field is set.
      */
     @java.lang.Override
@@ -5071,22 +5071,22 @@ public final class Response {
      * Attached Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
      * @return The payload.
      */
     @java.lang.Override
-    public common.v1.Data.Payload getPayload() {
-      return payload_ == null ? common.v1.Data.Payload.getDefaultInstance() : payload_;
+    public common.Data.Payload getPayload() {
+      return payload_ == null ? common.Data.Payload.getDefaultInstance() : payload_;
     }
     /**
      * <pre>
      * Attached Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.PayloadOrBuilder getPayloadOrBuilder() {
+    public common.Data.PayloadOrBuilder getPayloadOrBuilder() {
       return getPayload();
     }
 
@@ -5480,7 +5480,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setReceived(long value) {
-        
+
         received_ = value;
         onChanged();
         return this;
@@ -5494,21 +5494,21 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearReceived() {
-        
+
         received_ = 0L;
         onChanged();
         return this;
       }
 
-      private common.v1.Core.Peer from_;
+      private common.Core.Peer from_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> fromBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> fromBuilder_;
       /**
        * <pre>
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        * @return Whether the from field is set.
        */
       public boolean hasFrom() {
@@ -5519,12 +5519,12 @@ public final class Response {
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        * @return The from.
        */
-      public common.v1.Core.Peer getFrom() {
+      public common.Core.Peer getFrom() {
         if (fromBuilder_ == null) {
-          return from_ == null ? common.v1.Core.Peer.getDefaultInstance() : from_;
+          return from_ == null ? common.Core.Peer.getDefaultInstance() : from_;
         } else {
           return fromBuilder_.getMessage();
         }
@@ -5534,9 +5534,9 @@ public final class Response {
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public Builder setFrom(common.v1.Core.Peer value) {
+      public Builder setFrom(common.Core.Peer value) {
         if (fromBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5554,10 +5554,10 @@ public final class Response {
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       public Builder setFrom(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (fromBuilder_ == null) {
           from_ = builderForValue.build();
           onChanged();
@@ -5572,13 +5572,13 @@ public final class Response {
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public Builder mergeFrom(common.v1.Core.Peer value) {
+      public Builder mergeFrom(common.Core.Peer value) {
         if (fromBuilder_ == null) {
           if (from_ != null) {
             from_ =
-              common.v1.Core.Peer.newBuilder(from_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(from_).mergeFrom(value).buildPartial();
           } else {
             from_ = value;
           }
@@ -5594,7 +5594,7 @@ public final class Response {
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       public Builder clearFrom() {
         if (fromBuilder_ == null) {
@@ -5612,10 +5612,10 @@ public final class Response {
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public common.v1.Core.Peer.Builder getFromBuilder() {
-        
+      public common.Core.Peer.Builder getFromBuilder() {
+
         onChanged();
         return getFromFieldBuilder().getBuilder();
       }
@@ -5624,14 +5624,14 @@ public final class Response {
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getFromOrBuilder() {
+      public common.Core.PeerOrBuilder getFromOrBuilder() {
         if (fromBuilder_ != null) {
           return fromBuilder_.getMessageOrBuilder();
         } else {
           return from_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : from_;
+              common.Core.Peer.getDefaultInstance() : from_;
         }
       }
       /**
@@ -5639,14 +5639,14 @@ public final class Response {
        * Peer that sent the Invite
        * </pre>
        *
-       * <code>.common.v1.Peer from = 2 [json_name = "from"];</code>
+       * <code>.common.Peer from = 2 [json_name = "from"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getFromFieldBuilder() {
         if (fromBuilder_ == null) {
           fromBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getFrom(),
                   getParentForChildren(),
                   isClean());
@@ -5655,15 +5655,15 @@ public final class Response {
         return fromBuilder_;
       }
 
-      private common.v1.Data.Payload payload_;
+      private common.Data.Payload payload_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder> payloadBuilder_;
+          common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder> payloadBuilder_;
       /**
        * <pre>
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        * @return Whether the payload field is set.
        */
       public boolean hasPayload() {
@@ -5674,12 +5674,12 @@ public final class Response {
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        * @return The payload.
        */
-      public common.v1.Data.Payload getPayload() {
+      public common.Data.Payload getPayload() {
         if (payloadBuilder_ == null) {
-          return payload_ == null ? common.v1.Data.Payload.getDefaultInstance() : payload_;
+          return payload_ == null ? common.Data.Payload.getDefaultInstance() : payload_;
         } else {
           return payloadBuilder_.getMessage();
         }
@@ -5689,9 +5689,9 @@ public final class Response {
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        */
-      public Builder setPayload(common.v1.Data.Payload value) {
+      public Builder setPayload(common.Data.Payload value) {
         if (payloadBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5709,10 +5709,10 @@ public final class Response {
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        */
       public Builder setPayload(
-          common.v1.Data.Payload.Builder builderForValue) {
+          common.Data.Payload.Builder builderForValue) {
         if (payloadBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -5727,13 +5727,13 @@ public final class Response {
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        */
-      public Builder mergePayload(common.v1.Data.Payload value) {
+      public Builder mergePayload(common.Data.Payload value) {
         if (payloadBuilder_ == null) {
           if (payload_ != null) {
             payload_ =
-              common.v1.Data.Payload.newBuilder(payload_).mergeFrom(value).buildPartial();
+              common.Data.Payload.newBuilder(payload_).mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
           }
@@ -5749,7 +5749,7 @@ public final class Response {
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        */
       public Builder clearPayload() {
         if (payloadBuilder_ == null) {
@@ -5767,10 +5767,10 @@ public final class Response {
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        */
-      public common.v1.Data.Payload.Builder getPayloadBuilder() {
-        
+      public common.Data.Payload.Builder getPayloadBuilder() {
+
         onChanged();
         return getPayloadFieldBuilder().getBuilder();
       }
@@ -5779,14 +5779,14 @@ public final class Response {
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        */
-      public common.v1.Data.PayloadOrBuilder getPayloadOrBuilder() {
+      public common.Data.PayloadOrBuilder getPayloadOrBuilder() {
         if (payloadBuilder_ != null) {
           return payloadBuilder_.getMessageOrBuilder();
         } else {
           return payload_ == null ?
-              common.v1.Data.Payload.getDefaultInstance() : payload_;
+              common.Data.Payload.getDefaultInstance() : payload_;
         }
       }
       /**
@@ -5794,14 +5794,14 @@ public final class Response {
        * Attached Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 3 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 3 [json_name = "payload"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder> 
+          common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder>
           getPayloadFieldBuilder() {
         if (payloadBuilder_ == null) {
           payloadBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder>(
+              common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder>(
                   getPayload(),
                   getParentForChildren(),
                   isClean());
@@ -5901,7 +5901,7 @@ public final class Response {
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+     * <code>.common.Profile from = 3 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     boolean hasFrom();
@@ -5910,25 +5910,25 @@ public final class Response {
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+     * <code>.common.Profile from = 3 [json_name = "from"];</code>
      * @return The from.
      */
-    common.v1.Core.Profile getFrom();
+    common.Core.Profile getFrom();
     /**
      * <pre>
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+     * <code>.common.Profile from = 3 [json_name = "from"];</code>
      */
-    common.v1.Core.ProfileOrBuilder getFromOrBuilder();
+    common.Core.ProfileOrBuilder getFromOrBuilder();
 
     /**
      * <pre>
      * Receivers Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+     * <code>.common.Profile to = 4 [json_name = "to"];</code>
      * @return Whether the to field is set.
      */
     boolean hasTo();
@@ -5937,25 +5937,25 @@ public final class Response {
      * Receivers Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+     * <code>.common.Profile to = 4 [json_name = "to"];</code>
      * @return The to.
      */
-    common.v1.Core.Profile getTo();
+    common.Core.Profile getTo();
     /**
      * <pre>
      * Receivers Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+     * <code>.common.Profile to = 4 [json_name = "to"];</code>
      */
-    common.v1.Core.ProfileOrBuilder getToOrBuilder();
+    common.Core.ProfileOrBuilder getToOrBuilder();
 
     /**
      * <pre>
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
      * @return Whether the metadata field is set.
      */
     boolean hasMetadata();
@@ -5964,18 +5964,18 @@ public final class Response {
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
      * @return The metadata.
      */
-    common.v1.Core.Metadata getMetadata();
+    common.Core.Metadata getMetadata();
     /**
      * <pre>
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
      */
-    common.v1.Core.MetadataOrBuilder getMetadataOrBuilder();
+    common.Core.MetadataOrBuilder getMetadataOrBuilder();
   }
   /**
    * <pre>
@@ -6040,11 +6040,11 @@ public final class Response {
               break;
             }
             case 26: {
-              common.v1.Core.Profile.Builder subBuilder = null;
+              common.Core.Profile.Builder subBuilder = null;
               if (from_ != null) {
                 subBuilder = from_.toBuilder();
               }
-              from_ = input.readMessage(common.v1.Core.Profile.parser(), extensionRegistry);
+              from_ = input.readMessage(common.Core.Profile.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(from_);
                 from_ = subBuilder.buildPartial();
@@ -6053,11 +6053,11 @@ public final class Response {
               break;
             }
             case 34: {
-              common.v1.Core.Profile.Builder subBuilder = null;
+              common.Core.Profile.Builder subBuilder = null;
               if (to_ != null) {
                 subBuilder = to_.toBuilder();
               }
-              to_ = input.readMessage(common.v1.Core.Profile.parser(), extensionRegistry);
+              to_ = input.readMessage(common.Core.Profile.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(to_);
                 to_ = subBuilder.buildPartial();
@@ -6066,11 +6066,11 @@ public final class Response {
               break;
             }
             case 42: {
-              common.v1.Core.Metadata.Builder subBuilder = null;
+              common.Core.Metadata.Builder subBuilder = null;
               if (metadata_ != null) {
                 subBuilder = metadata_.toBuilder();
               }
-              metadata_ = input.readMessage(common.v1.Core.Metadata.parser(), extensionRegistry);
+              metadata_ = input.readMessage(common.Core.Metadata.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(metadata_);
                 metadata_ = subBuilder.buildPartial();
@@ -6126,7 +6126,7 @@ public final class Response {
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
-        com.google.protobuf.ByteString bs = 
+        com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
         id_ = s;
@@ -6146,7 +6146,7 @@ public final class Response {
         getIdBytes() {
       java.lang.Object ref = id_;
       if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
+        com.google.protobuf.ByteString b =
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
         id_ = b;
@@ -6172,13 +6172,13 @@ public final class Response {
     }
 
     public static final int FROM_FIELD_NUMBER = 3;
-    private common.v1.Core.Profile from_;
+    private common.Core.Profile from_;
     /**
      * <pre>
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+     * <code>.common.Profile from = 3 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     @java.lang.Override
@@ -6190,33 +6190,33 @@ public final class Response {
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+     * <code>.common.Profile from = 3 [json_name = "from"];</code>
      * @return The from.
      */
     @java.lang.Override
-    public common.v1.Core.Profile getFrom() {
-      return from_ == null ? common.v1.Core.Profile.getDefaultInstance() : from_;
+    public common.Core.Profile getFrom() {
+      return from_ == null ? common.Core.Profile.getDefaultInstance() : from_;
     }
     /**
      * <pre>
      * Users Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+     * <code>.common.Profile from = 3 [json_name = "from"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.ProfileOrBuilder getFromOrBuilder() {
+    public common.Core.ProfileOrBuilder getFromOrBuilder() {
       return getFrom();
     }
 
     public static final int TO_FIELD_NUMBER = 4;
-    private common.v1.Core.Profile to_;
+    private common.Core.Profile to_;
     /**
      * <pre>
      * Receivers Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+     * <code>.common.Profile to = 4 [json_name = "to"];</code>
      * @return Whether the to field is set.
      */
     @java.lang.Override
@@ -6228,33 +6228,33 @@ public final class Response {
      * Receivers Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+     * <code>.common.Profile to = 4 [json_name = "to"];</code>
      * @return The to.
      */
     @java.lang.Override
-    public common.v1.Core.Profile getTo() {
-      return to_ == null ? common.v1.Core.Profile.getDefaultInstance() : to_;
+    public common.Core.Profile getTo() {
+      return to_ == null ? common.Core.Profile.getDefaultInstance() : to_;
     }
     /**
      * <pre>
      * Receivers Peer Data
      * </pre>
      *
-     * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+     * <code>.common.Profile to = 4 [json_name = "to"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.ProfileOrBuilder getToOrBuilder() {
+    public common.Core.ProfileOrBuilder getToOrBuilder() {
       return getTo();
     }
 
     public static final int METADATA_FIELD_NUMBER = 5;
-    private common.v1.Core.Metadata metadata_;
+    private common.Core.Metadata metadata_;
     /**
      * <pre>
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
      * @return Whether the metadata field is set.
      */
     @java.lang.Override
@@ -6266,22 +6266,22 @@ public final class Response {
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
      * @return The metadata.
      */
     @java.lang.Override
-    public common.v1.Core.Metadata getMetadata() {
-      return metadata_ == null ? common.v1.Core.Metadata.getDefaultInstance() : metadata_;
+    public common.Core.Metadata getMetadata() {
+      return metadata_ == null ? common.Core.Metadata.getDefaultInstance() : metadata_;
     }
     /**
      * <pre>
      * Metadata
      * </pre>
      *
-     * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+     * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.MetadataOrBuilder getMetadataOrBuilder() {
+    public common.Core.MetadataOrBuilder getMetadataOrBuilder() {
       return getMetadata();
     }
 
@@ -6731,7 +6731,7 @@ public final class Response {
           getIdBytes() {
         java.lang.Object ref = id_;
         if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString b =
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
           id_ = b;
@@ -6754,7 +6754,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         id_ = value;
         onChanged();
         return this;
@@ -6768,7 +6768,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearId() {
-        
+
         id_ = getDefaultInstance().getId();
         onChanged();
         return this;
@@ -6788,7 +6788,7 @@ public final class Response {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-        
+
         id_ = value;
         onChanged();
         return this;
@@ -6820,7 +6820,7 @@ public final class Response {
         if (value == null) {
     throw new NullPointerException();
   }
-  
+
         buffer_ = value;
         onChanged();
         return this;
@@ -6834,21 +6834,21 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearBuffer() {
-        
+
         buffer_ = getDefaultInstance().getBuffer();
         onChanged();
         return this;
       }
 
-      private common.v1.Core.Profile from_;
+      private common.Core.Profile from_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder> fromBuilder_;
+          common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder> fromBuilder_;
       /**
        * <pre>
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        * @return Whether the from field is set.
        */
       public boolean hasFrom() {
@@ -6859,12 +6859,12 @@ public final class Response {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        * @return The from.
        */
-      public common.v1.Core.Profile getFrom() {
+      public common.Core.Profile getFrom() {
         if (fromBuilder_ == null) {
-          return from_ == null ? common.v1.Core.Profile.getDefaultInstance() : from_;
+          return from_ == null ? common.Core.Profile.getDefaultInstance() : from_;
         } else {
           return fromBuilder_.getMessage();
         }
@@ -6874,9 +6874,9 @@ public final class Response {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        */
-      public Builder setFrom(common.v1.Core.Profile value) {
+      public Builder setFrom(common.Core.Profile value) {
         if (fromBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6894,10 +6894,10 @@ public final class Response {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        */
       public Builder setFrom(
-          common.v1.Core.Profile.Builder builderForValue) {
+          common.Core.Profile.Builder builderForValue) {
         if (fromBuilder_ == null) {
           from_ = builderForValue.build();
           onChanged();
@@ -6912,13 +6912,13 @@ public final class Response {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        */
-      public Builder mergeFrom(common.v1.Core.Profile value) {
+      public Builder mergeFrom(common.Core.Profile value) {
         if (fromBuilder_ == null) {
           if (from_ != null) {
             from_ =
-              common.v1.Core.Profile.newBuilder(from_).mergeFrom(value).buildPartial();
+              common.Core.Profile.newBuilder(from_).mergeFrom(value).buildPartial();
           } else {
             from_ = value;
           }
@@ -6934,7 +6934,7 @@ public final class Response {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        */
       public Builder clearFrom() {
         if (fromBuilder_ == null) {
@@ -6952,10 +6952,10 @@ public final class Response {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        */
-      public common.v1.Core.Profile.Builder getFromBuilder() {
-        
+      public common.Core.Profile.Builder getFromBuilder() {
+
         onChanged();
         return getFromFieldBuilder().getBuilder();
       }
@@ -6964,14 +6964,14 @@ public final class Response {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        */
-      public common.v1.Core.ProfileOrBuilder getFromOrBuilder() {
+      public common.Core.ProfileOrBuilder getFromOrBuilder() {
         if (fromBuilder_ != null) {
           return fromBuilder_.getMessageOrBuilder();
         } else {
           return from_ == null ?
-              common.v1.Core.Profile.getDefaultInstance() : from_;
+              common.Core.Profile.getDefaultInstance() : from_;
         }
       }
       /**
@@ -6979,14 +6979,14 @@ public final class Response {
        * Users Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile from = 3 [json_name = "from"];</code>
+       * <code>.common.Profile from = 3 [json_name = "from"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder> 
+          common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder>
           getFromFieldBuilder() {
         if (fromBuilder_ == null) {
           fromBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder>(
+              common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder>(
                   getFrom(),
                   getParentForChildren(),
                   isClean());
@@ -6995,15 +6995,15 @@ public final class Response {
         return fromBuilder_;
       }
 
-      private common.v1.Core.Profile to_;
+      private common.Core.Profile to_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder> toBuilder_;
+          common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder> toBuilder_;
       /**
        * <pre>
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        * @return Whether the to field is set.
        */
       public boolean hasTo() {
@@ -7014,12 +7014,12 @@ public final class Response {
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        * @return The to.
        */
-      public common.v1.Core.Profile getTo() {
+      public common.Core.Profile getTo() {
         if (toBuilder_ == null) {
-          return to_ == null ? common.v1.Core.Profile.getDefaultInstance() : to_;
+          return to_ == null ? common.Core.Profile.getDefaultInstance() : to_;
         } else {
           return toBuilder_.getMessage();
         }
@@ -7029,9 +7029,9 @@ public final class Response {
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        */
-      public Builder setTo(common.v1.Core.Profile value) {
+      public Builder setTo(common.Core.Profile value) {
         if (toBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7049,10 +7049,10 @@ public final class Response {
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        */
       public Builder setTo(
-          common.v1.Core.Profile.Builder builderForValue) {
+          common.Core.Profile.Builder builderForValue) {
         if (toBuilder_ == null) {
           to_ = builderForValue.build();
           onChanged();
@@ -7067,13 +7067,13 @@ public final class Response {
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        */
-      public Builder mergeTo(common.v1.Core.Profile value) {
+      public Builder mergeTo(common.Core.Profile value) {
         if (toBuilder_ == null) {
           if (to_ != null) {
             to_ =
-              common.v1.Core.Profile.newBuilder(to_).mergeFrom(value).buildPartial();
+              common.Core.Profile.newBuilder(to_).mergeFrom(value).buildPartial();
           } else {
             to_ = value;
           }
@@ -7089,7 +7089,7 @@ public final class Response {
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        */
       public Builder clearTo() {
         if (toBuilder_ == null) {
@@ -7107,10 +7107,10 @@ public final class Response {
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        */
-      public common.v1.Core.Profile.Builder getToBuilder() {
-        
+      public common.Core.Profile.Builder getToBuilder() {
+
         onChanged();
         return getToFieldBuilder().getBuilder();
       }
@@ -7119,14 +7119,14 @@ public final class Response {
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        */
-      public common.v1.Core.ProfileOrBuilder getToOrBuilder() {
+      public common.Core.ProfileOrBuilder getToOrBuilder() {
         if (toBuilder_ != null) {
           return toBuilder_.getMessageOrBuilder();
         } else {
           return to_ == null ?
-              common.v1.Core.Profile.getDefaultInstance() : to_;
+              common.Core.Profile.getDefaultInstance() : to_;
         }
       }
       /**
@@ -7134,14 +7134,14 @@ public final class Response {
        * Receivers Peer Data
        * </pre>
        *
-       * <code>.common.v1.Profile to = 4 [json_name = "to"];</code>
+       * <code>.common.Profile to = 4 [json_name = "to"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder> 
+          common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder>
           getToFieldBuilder() {
         if (toBuilder_ == null) {
           toBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Profile, common.v1.Core.Profile.Builder, common.v1.Core.ProfileOrBuilder>(
+              common.Core.Profile, common.Core.Profile.Builder, common.Core.ProfileOrBuilder>(
                   getTo(),
                   getParentForChildren(),
                   isClean());
@@ -7150,15 +7150,15 @@ public final class Response {
         return toBuilder_;
       }
 
-      private common.v1.Core.Metadata metadata_;
+      private common.Core.Metadata metadata_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Metadata, common.v1.Core.Metadata.Builder, common.v1.Core.MetadataOrBuilder> metadataBuilder_;
+          common.Core.Metadata, common.Core.Metadata.Builder, common.Core.MetadataOrBuilder> metadataBuilder_;
       /**
        * <pre>
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        * @return Whether the metadata field is set.
        */
       public boolean hasMetadata() {
@@ -7169,12 +7169,12 @@ public final class Response {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        * @return The metadata.
        */
-      public common.v1.Core.Metadata getMetadata() {
+      public common.Core.Metadata getMetadata() {
         if (metadataBuilder_ == null) {
-          return metadata_ == null ? common.v1.Core.Metadata.getDefaultInstance() : metadata_;
+          return metadata_ == null ? common.Core.Metadata.getDefaultInstance() : metadata_;
         } else {
           return metadataBuilder_.getMessage();
         }
@@ -7184,9 +7184,9 @@ public final class Response {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        */
-      public Builder setMetadata(common.v1.Core.Metadata value) {
+      public Builder setMetadata(common.Core.Metadata value) {
         if (metadataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7204,10 +7204,10 @@ public final class Response {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        */
       public Builder setMetadata(
-          common.v1.Core.Metadata.Builder builderForValue) {
+          common.Core.Metadata.Builder builderForValue) {
         if (metadataBuilder_ == null) {
           metadata_ = builderForValue.build();
           onChanged();
@@ -7222,13 +7222,13 @@ public final class Response {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        */
-      public Builder mergeMetadata(common.v1.Core.Metadata value) {
+      public Builder mergeMetadata(common.Core.Metadata value) {
         if (metadataBuilder_ == null) {
           if (metadata_ != null) {
             metadata_ =
-              common.v1.Core.Metadata.newBuilder(metadata_).mergeFrom(value).buildPartial();
+              common.Core.Metadata.newBuilder(metadata_).mergeFrom(value).buildPartial();
           } else {
             metadata_ = value;
           }
@@ -7244,7 +7244,7 @@ public final class Response {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        */
       public Builder clearMetadata() {
         if (metadataBuilder_ == null) {
@@ -7262,10 +7262,10 @@ public final class Response {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        */
-      public common.v1.Core.Metadata.Builder getMetadataBuilder() {
-        
+      public common.Core.Metadata.Builder getMetadataBuilder() {
+
         onChanged();
         return getMetadataFieldBuilder().getBuilder();
       }
@@ -7274,14 +7274,14 @@ public final class Response {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        */
-      public common.v1.Core.MetadataOrBuilder getMetadataOrBuilder() {
+      public common.Core.MetadataOrBuilder getMetadataOrBuilder() {
         if (metadataBuilder_ != null) {
           return metadataBuilder_.getMessageOrBuilder();
         } else {
           return metadata_ == null ?
-              common.v1.Core.Metadata.getDefaultInstance() : metadata_;
+              common.Core.Metadata.getDefaultInstance() : metadata_;
         }
       }
       /**
@@ -7289,14 +7289,14 @@ public final class Response {
        * Metadata
        * </pre>
        *
-       * <code>.common.v1.Metadata metadata = 5 [json_name = "metadata"];</code>
+       * <code>.common.Metadata metadata = 5 [json_name = "metadata"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Metadata, common.v1.Core.Metadata.Builder, common.v1.Core.MetadataOrBuilder> 
+          common.Core.Metadata, common.Core.Metadata.Builder, common.Core.MetadataOrBuilder>
           getMetadataFieldBuilder() {
         if (metadataBuilder_ == null) {
           metadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Metadata, common.v1.Core.Metadata.Builder, common.v1.Core.MetadataOrBuilder>(
+              common.Core.Metadata, common.Core.Metadata.Builder, common.Core.MetadataOrBuilder>(
                   getMetadata(),
                   getParentForChildren(),
                   isClean());
@@ -7406,7 +7406,7 @@ public final class Response {
      * Direction of Transfer
      * </pre>
      *
-     * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     int getDirectionValue();
@@ -7415,10 +7415,10 @@ public final class Response {
      * Direction of Transfer
      * </pre>
      *
-     * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
      * @return The direction.
      */
-    common.v1.Data.Direction getDirection();
+    common.Data.Direction getDirection();
   }
   /**
    * <pre>
@@ -7595,7 +7595,7 @@ public final class Response {
      * Direction of Transfer
      * </pre>
      *
-     * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     @java.lang.Override public int getDirectionValue() {
@@ -7606,13 +7606,13 @@ public final class Response {
      * Direction of Transfer
      * </pre>
      *
-     * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
      * @return The direction.
      */
-    @java.lang.Override public common.v1.Data.Direction getDirection() {
+    @java.lang.Override public common.Data.Direction getDirection() {
       @SuppressWarnings("deprecation")
-      common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-      return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+      common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+      return result == null ? common.Data.Direction.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -7641,7 +7641,7 @@ public final class Response {
       if (total_ != 0) {
         output.writeInt32(4, total_);
       }
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         output.writeEnum(5, direction_);
       }
       unknownFields.writeTo(output);
@@ -7669,7 +7669,7 @@ public final class Response {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(4, total_);
       }
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(5, direction_);
       }
@@ -8014,7 +8014,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setProgress(double value) {
-        
+
         progress_ = value;
         onChanged();
         return this;
@@ -8028,7 +8028,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearProgress() {
-        
+
         progress_ = 0D;
         onChanged();
         return this;
@@ -8057,7 +8057,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setReceived(long value) {
-        
+
         received_ = value;
         onChanged();
         return this;
@@ -8071,7 +8071,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearReceived() {
-        
+
         received_ = 0L;
         onChanged();
         return this;
@@ -8100,7 +8100,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setCurrent(int value) {
-        
+
         current_ = value;
         onChanged();
         return this;
@@ -8114,7 +8114,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearCurrent() {
-        
+
         current_ = 0;
         onChanged();
         return this;
@@ -8143,7 +8143,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setTotal(int value) {
-        
+
         total_ = value;
         onChanged();
         return this;
@@ -8157,7 +8157,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearTotal() {
-        
+
         total_ = 0;
         onChanged();
         return this;
@@ -8169,7 +8169,7 @@ public final class Response {
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
        * @return The enum numeric value on the wire for direction.
        */
       @java.lang.Override public int getDirectionValue() {
@@ -8180,12 +8180,12 @@ public final class Response {
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
        * @param value The enum numeric value on the wire for direction to set.
        * @return This builder for chaining.
        */
       public Builder setDirectionValue(int value) {
-        
+
         direction_ = value;
         onChanged();
         return this;
@@ -8195,29 +8195,29 @@ public final class Response {
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
        * @return The direction.
        */
       @java.lang.Override
-      public common.v1.Data.Direction getDirection() {
+      public common.Data.Direction getDirection() {
         @SuppressWarnings("deprecation")
-        common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-        return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+        common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+        return result == null ? common.Data.Direction.UNRECOGNIZED : result;
       }
       /**
        * <pre>
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
        * @param value The direction to set.
        * @return This builder for chaining.
        */
-      public Builder setDirection(common.v1.Data.Direction value) {
+      public Builder setDirection(common.Data.Direction value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         direction_ = value.getNumber();
         onChanged();
         return this;
@@ -8227,11 +8227,11 @@ public final class Response {
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 5 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 5 [json_name = "direction"];</code>
        * @return This builder for chaining.
        */
       public Builder clearDirection() {
-        
+
         direction_ = 0;
         onChanged();
         return this;
@@ -8298,7 +8298,7 @@ public final class Response {
      * Direction of Transfer
      * </pre>
      *
-     * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     int getDirectionValue();
@@ -8307,17 +8307,17 @@ public final class Response {
      * Direction of Transfer
      * </pre>
      *
-     * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
      * @return The direction.
      */
-    common.v1.Data.Direction getDirection();
+    common.Data.Direction getDirection();
 
     /**
      * <pre>
      * Transfer Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
      * @return Whether the payload field is set.
      */
     boolean hasPayload();
@@ -8326,25 +8326,25 @@ public final class Response {
      * Transfer Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
      * @return The payload.
      */
-    common.v1.Data.Payload getPayload();
+    common.Data.Payload getPayload();
     /**
      * <pre>
      * Transfer Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
      */
-    common.v1.Data.PayloadOrBuilder getPayloadOrBuilder();
+    common.Data.PayloadOrBuilder getPayloadOrBuilder();
 
     /**
      * <pre>
      * Peer that sent the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+     * <code>.common.Peer from = 3 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     boolean hasFrom();
@@ -8353,25 +8353,25 @@ public final class Response {
      * Peer that sent the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+     * <code>.common.Peer from = 3 [json_name = "from"];</code>
      * @return The from.
      */
-    common.v1.Core.Peer getFrom();
+    common.Core.Peer getFrom();
     /**
      * <pre>
      * Peer that sent the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+     * <code>.common.Peer from = 3 [json_name = "from"];</code>
      */
-    common.v1.Core.PeerOrBuilder getFromOrBuilder();
+    common.Core.PeerOrBuilder getFromOrBuilder();
 
     /**
      * <pre>
      * Peer that received the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+     * <code>.common.Peer to = 4 [json_name = "to"];</code>
      * @return Whether the to field is set.
      */
     boolean hasTo();
@@ -8380,18 +8380,18 @@ public final class Response {
      * Peer that received the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+     * <code>.common.Peer to = 4 [json_name = "to"];</code>
      * @return The to.
      */
-    common.v1.Core.Peer getTo();
+    common.Core.Peer getTo();
     /**
      * <pre>
      * Peer that received the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+     * <code>.common.Peer to = 4 [json_name = "to"];</code>
      */
-    common.v1.Core.PeerOrBuilder getToOrBuilder();
+    common.Core.PeerOrBuilder getToOrBuilder();
 
     /**
      * <pre>
@@ -8525,11 +8525,11 @@ public final class Response {
               break;
             }
             case 18: {
-              common.v1.Data.Payload.Builder subBuilder = null;
+              common.Data.Payload.Builder subBuilder = null;
               if (payload_ != null) {
                 subBuilder = payload_.toBuilder();
               }
-              payload_ = input.readMessage(common.v1.Data.Payload.parser(), extensionRegistry);
+              payload_ = input.readMessage(common.Data.Payload.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(payload_);
                 payload_ = subBuilder.buildPartial();
@@ -8538,11 +8538,11 @@ public final class Response {
               break;
             }
             case 26: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (from_ != null) {
                 subBuilder = from_.toBuilder();
               }
-              from_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              from_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(from_);
                 from_ = subBuilder.buildPartial();
@@ -8551,11 +8551,11 @@ public final class Response {
               break;
             }
             case 34: {
-              common.v1.Core.Peer.Builder subBuilder = null;
+              common.Core.Peer.Builder subBuilder = null;
               if (to_ != null) {
                 subBuilder = to_.toBuilder();
               }
-              to_ = input.readMessage(common.v1.Core.Peer.parser(), extensionRegistry);
+              to_ = input.readMessage(common.Core.Peer.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(to_);
                 to_ = subBuilder.buildPartial();
@@ -8637,7 +8637,7 @@ public final class Response {
      * Direction of Transfer
      * </pre>
      *
-     * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
      * @return The enum numeric value on the wire for direction.
      */
     @java.lang.Override public int getDirectionValue() {
@@ -8648,23 +8648,23 @@ public final class Response {
      * Direction of Transfer
      * </pre>
      *
-     * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+     * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
      * @return The direction.
      */
-    @java.lang.Override public common.v1.Data.Direction getDirection() {
+    @java.lang.Override public common.Data.Direction getDirection() {
       @SuppressWarnings("deprecation")
-      common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-      return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+      common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+      return result == null ? common.Data.Direction.UNRECOGNIZED : result;
     }
 
     public static final int PAYLOAD_FIELD_NUMBER = 2;
-    private common.v1.Data.Payload payload_;
+    private common.Data.Payload payload_;
     /**
      * <pre>
      * Transfer Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
      * @return Whether the payload field is set.
      */
     @java.lang.Override
@@ -8676,33 +8676,33 @@ public final class Response {
      * Transfer Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
      * @return The payload.
      */
     @java.lang.Override
-    public common.v1.Data.Payload getPayload() {
-      return payload_ == null ? common.v1.Data.Payload.getDefaultInstance() : payload_;
+    public common.Data.Payload getPayload() {
+      return payload_ == null ? common.Data.Payload.getDefaultInstance() : payload_;
     }
     /**
      * <pre>
      * Transfer Data
      * </pre>
      *
-     * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+     * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
      */
     @java.lang.Override
-    public common.v1.Data.PayloadOrBuilder getPayloadOrBuilder() {
+    public common.Data.PayloadOrBuilder getPayloadOrBuilder() {
       return getPayload();
     }
 
     public static final int FROM_FIELD_NUMBER = 3;
-    private common.v1.Core.Peer from_;
+    private common.Core.Peer from_;
     /**
      * <pre>
      * Peer that sent the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+     * <code>.common.Peer from = 3 [json_name = "from"];</code>
      * @return Whether the from field is set.
      */
     @java.lang.Override
@@ -8714,33 +8714,33 @@ public final class Response {
      * Peer that sent the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+     * <code>.common.Peer from = 3 [json_name = "from"];</code>
      * @return The from.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getFrom() {
-      return from_ == null ? common.v1.Core.Peer.getDefaultInstance() : from_;
+    public common.Core.Peer getFrom() {
+      return from_ == null ? common.Core.Peer.getDefaultInstance() : from_;
     }
     /**
      * <pre>
      * Peer that sent the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+     * <code>.common.Peer from = 3 [json_name = "from"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getFromOrBuilder() {
+    public common.Core.PeerOrBuilder getFromOrBuilder() {
       return getFrom();
     }
 
     public static final int TO_FIELD_NUMBER = 4;
-    private common.v1.Core.Peer to_;
+    private common.Core.Peer to_;
     /**
      * <pre>
      * Peer that received the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+     * <code>.common.Peer to = 4 [json_name = "to"];</code>
      * @return Whether the to field is set.
      */
     @java.lang.Override
@@ -8752,22 +8752,22 @@ public final class Response {
      * Peer that received the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+     * <code>.common.Peer to = 4 [json_name = "to"];</code>
      * @return The to.
      */
     @java.lang.Override
-    public common.v1.Core.Peer getTo() {
-      return to_ == null ? common.v1.Core.Peer.getDefaultInstance() : to_;
+    public common.Core.Peer getTo() {
+      return to_ == null ? common.Core.Peer.getDefaultInstance() : to_;
     }
     /**
      * <pre>
      * Peer that received the Complete Event
      * </pre>
      *
-     * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+     * <code>.common.Peer to = 4 [json_name = "to"];</code>
      */
     @java.lang.Override
-    public common.v1.Core.PeerOrBuilder getToOrBuilder() {
+    public common.Core.PeerOrBuilder getToOrBuilder() {
       return getTo();
     }
 
@@ -8807,7 +8807,7 @@ public final class Response {
           java.lang.Integer, java.lang.Boolean> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Boolean>newDefaultInstance(
-                  node.motor.v1.Response.internal_static_node_motor_v1_OnTransmitCompleteResponse_ResultsEntry_descriptor, 
+                  node.motor.v1.Response.internal_static_node_motor_v1_OnTransmitCompleteResponse_ResultsEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.INT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.BOOL,
@@ -8838,7 +8838,7 @@ public final class Response {
     @java.lang.Override
     public boolean containsResults(
         int key) {
-      
+
       return internalGetResults().getMap().containsKey(key);
     }
     /**
@@ -8873,7 +8873,7 @@ public final class Response {
     public boolean getResultsOrDefault(
         int key,
         boolean defaultValue) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Boolean> map =
           internalGetResults().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -8889,7 +8889,7 @@ public final class Response {
 
     public boolean getResultsOrThrow(
         int key) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Boolean> map =
           internalGetResults().getMap();
       if (!map.containsKey(key)) {
@@ -8912,7 +8912,7 @@ public final class Response {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         output.writeEnum(1, direction_);
       }
       if (payload_ != null) {
@@ -8945,7 +8945,7 @@ public final class Response {
       if (size != -1) return size;
 
       size = 0;
-      if (direction_ != common.v1.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
+      if (direction_ != common.Data.Direction.DIRECTION_UNSPECIFIED.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, direction_);
       }
@@ -9386,7 +9386,7 @@ public final class Response {
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @return The enum numeric value on the wire for direction.
        */
       @java.lang.Override public int getDirectionValue() {
@@ -9397,12 +9397,12 @@ public final class Response {
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @param value The enum numeric value on the wire for direction to set.
        * @return This builder for chaining.
        */
       public Builder setDirectionValue(int value) {
-        
+
         direction_ = value;
         onChanged();
         return this;
@@ -9412,29 +9412,29 @@ public final class Response {
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @return The direction.
        */
       @java.lang.Override
-      public common.v1.Data.Direction getDirection() {
+      public common.Data.Direction getDirection() {
         @SuppressWarnings("deprecation")
-        common.v1.Data.Direction result = common.v1.Data.Direction.valueOf(direction_);
-        return result == null ? common.v1.Data.Direction.UNRECOGNIZED : result;
+        common.Data.Direction result = common.Data.Direction.valueOf(direction_);
+        return result == null ? common.Data.Direction.UNRECOGNIZED : result;
       }
       /**
        * <pre>
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @param value The direction to set.
        * @return This builder for chaining.
        */
-      public Builder setDirection(common.v1.Data.Direction value) {
+      public Builder setDirection(common.Data.Direction value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         direction_ = value.getNumber();
         onChanged();
         return this;
@@ -9444,25 +9444,25 @@ public final class Response {
        * Direction of Transfer
        * </pre>
        *
-       * <code>.common.v1.Direction direction = 1 [json_name = "direction"];</code>
+       * <code>.common.Direction direction = 1 [json_name = "direction"];</code>
        * @return This builder for chaining.
        */
       public Builder clearDirection() {
-        
+
         direction_ = 0;
         onChanged();
         return this;
       }
 
-      private common.v1.Data.Payload payload_;
+      private common.Data.Payload payload_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder> payloadBuilder_;
+          common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder> payloadBuilder_;
       /**
        * <pre>
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        * @return Whether the payload field is set.
        */
       public boolean hasPayload() {
@@ -9473,12 +9473,12 @@ public final class Response {
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        * @return The payload.
        */
-      public common.v1.Data.Payload getPayload() {
+      public common.Data.Payload getPayload() {
         if (payloadBuilder_ == null) {
-          return payload_ == null ? common.v1.Data.Payload.getDefaultInstance() : payload_;
+          return payload_ == null ? common.Data.Payload.getDefaultInstance() : payload_;
         } else {
           return payloadBuilder_.getMessage();
         }
@@ -9488,9 +9488,9 @@ public final class Response {
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        */
-      public Builder setPayload(common.v1.Data.Payload value) {
+      public Builder setPayload(common.Data.Payload value) {
         if (payloadBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9508,10 +9508,10 @@ public final class Response {
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        */
       public Builder setPayload(
-          common.v1.Data.Payload.Builder builderForValue) {
+          common.Data.Payload.Builder builderForValue) {
         if (payloadBuilder_ == null) {
           payload_ = builderForValue.build();
           onChanged();
@@ -9526,13 +9526,13 @@ public final class Response {
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        */
-      public Builder mergePayload(common.v1.Data.Payload value) {
+      public Builder mergePayload(common.Data.Payload value) {
         if (payloadBuilder_ == null) {
           if (payload_ != null) {
             payload_ =
-              common.v1.Data.Payload.newBuilder(payload_).mergeFrom(value).buildPartial();
+              common.Data.Payload.newBuilder(payload_).mergeFrom(value).buildPartial();
           } else {
             payload_ = value;
           }
@@ -9548,7 +9548,7 @@ public final class Response {
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        */
       public Builder clearPayload() {
         if (payloadBuilder_ == null) {
@@ -9566,10 +9566,10 @@ public final class Response {
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        */
-      public common.v1.Data.Payload.Builder getPayloadBuilder() {
-        
+      public common.Data.Payload.Builder getPayloadBuilder() {
+
         onChanged();
         return getPayloadFieldBuilder().getBuilder();
       }
@@ -9578,14 +9578,14 @@ public final class Response {
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        */
-      public common.v1.Data.PayloadOrBuilder getPayloadOrBuilder() {
+      public common.Data.PayloadOrBuilder getPayloadOrBuilder() {
         if (payloadBuilder_ != null) {
           return payloadBuilder_.getMessageOrBuilder();
         } else {
           return payload_ == null ?
-              common.v1.Data.Payload.getDefaultInstance() : payload_;
+              common.Data.Payload.getDefaultInstance() : payload_;
         }
       }
       /**
@@ -9593,14 +9593,14 @@ public final class Response {
        * Transfer Data
        * </pre>
        *
-       * <code>.common.v1.Payload payload = 2 [json_name = "payload"];</code>
+       * <code>.common.Payload payload = 2 [json_name = "payload"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder> 
+          common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder>
           getPayloadFieldBuilder() {
         if (payloadBuilder_ == null) {
           payloadBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Data.Payload, common.v1.Data.Payload.Builder, common.v1.Data.PayloadOrBuilder>(
+              common.Data.Payload, common.Data.Payload.Builder, common.Data.PayloadOrBuilder>(
                   getPayload(),
                   getParentForChildren(),
                   isClean());
@@ -9609,15 +9609,15 @@ public final class Response {
         return payloadBuilder_;
       }
 
-      private common.v1.Core.Peer from_;
+      private common.Core.Peer from_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> fromBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> fromBuilder_;
       /**
        * <pre>
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        * @return Whether the from field is set.
        */
       public boolean hasFrom() {
@@ -9628,12 +9628,12 @@ public final class Response {
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        * @return The from.
        */
-      public common.v1.Core.Peer getFrom() {
+      public common.Core.Peer getFrom() {
         if (fromBuilder_ == null) {
-          return from_ == null ? common.v1.Core.Peer.getDefaultInstance() : from_;
+          return from_ == null ? common.Core.Peer.getDefaultInstance() : from_;
         } else {
           return fromBuilder_.getMessage();
         }
@@ -9643,9 +9643,9 @@ public final class Response {
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        */
-      public Builder setFrom(common.v1.Core.Peer value) {
+      public Builder setFrom(common.Core.Peer value) {
         if (fromBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9663,10 +9663,10 @@ public final class Response {
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        */
       public Builder setFrom(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (fromBuilder_ == null) {
           from_ = builderForValue.build();
           onChanged();
@@ -9681,13 +9681,13 @@ public final class Response {
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        */
-      public Builder mergeFrom(common.v1.Core.Peer value) {
+      public Builder mergeFrom(common.Core.Peer value) {
         if (fromBuilder_ == null) {
           if (from_ != null) {
             from_ =
-              common.v1.Core.Peer.newBuilder(from_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(from_).mergeFrom(value).buildPartial();
           } else {
             from_ = value;
           }
@@ -9703,7 +9703,7 @@ public final class Response {
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        */
       public Builder clearFrom() {
         if (fromBuilder_ == null) {
@@ -9721,10 +9721,10 @@ public final class Response {
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        */
-      public common.v1.Core.Peer.Builder getFromBuilder() {
-        
+      public common.Core.Peer.Builder getFromBuilder() {
+
         onChanged();
         return getFromFieldBuilder().getBuilder();
       }
@@ -9733,14 +9733,14 @@ public final class Response {
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getFromOrBuilder() {
+      public common.Core.PeerOrBuilder getFromOrBuilder() {
         if (fromBuilder_ != null) {
           return fromBuilder_.getMessageOrBuilder();
         } else {
           return from_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : from_;
+              common.Core.Peer.getDefaultInstance() : from_;
         }
       }
       /**
@@ -9748,14 +9748,14 @@ public final class Response {
        * Peer that sent the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer from = 3 [json_name = "from"];</code>
+       * <code>.common.Peer from = 3 [json_name = "from"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getFromFieldBuilder() {
         if (fromBuilder_ == null) {
           fromBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getFrom(),
                   getParentForChildren(),
                   isClean());
@@ -9764,15 +9764,15 @@ public final class Response {
         return fromBuilder_;
       }
 
-      private common.v1.Core.Peer to_;
+      private common.Core.Peer to_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> toBuilder_;
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder> toBuilder_;
       /**
        * <pre>
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        * @return Whether the to field is set.
        */
       public boolean hasTo() {
@@ -9783,12 +9783,12 @@ public final class Response {
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        * @return The to.
        */
-      public common.v1.Core.Peer getTo() {
+      public common.Core.Peer getTo() {
         if (toBuilder_ == null) {
-          return to_ == null ? common.v1.Core.Peer.getDefaultInstance() : to_;
+          return to_ == null ? common.Core.Peer.getDefaultInstance() : to_;
         } else {
           return toBuilder_.getMessage();
         }
@@ -9798,9 +9798,9 @@ public final class Response {
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        */
-      public Builder setTo(common.v1.Core.Peer value) {
+      public Builder setTo(common.Core.Peer value) {
         if (toBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -9818,10 +9818,10 @@ public final class Response {
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        */
       public Builder setTo(
-          common.v1.Core.Peer.Builder builderForValue) {
+          common.Core.Peer.Builder builderForValue) {
         if (toBuilder_ == null) {
           to_ = builderForValue.build();
           onChanged();
@@ -9836,13 +9836,13 @@ public final class Response {
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        */
-      public Builder mergeTo(common.v1.Core.Peer value) {
+      public Builder mergeTo(common.Core.Peer value) {
         if (toBuilder_ == null) {
           if (to_ != null) {
             to_ =
-              common.v1.Core.Peer.newBuilder(to_).mergeFrom(value).buildPartial();
+              common.Core.Peer.newBuilder(to_).mergeFrom(value).buildPartial();
           } else {
             to_ = value;
           }
@@ -9858,7 +9858,7 @@ public final class Response {
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        */
       public Builder clearTo() {
         if (toBuilder_ == null) {
@@ -9876,10 +9876,10 @@ public final class Response {
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        */
-      public common.v1.Core.Peer.Builder getToBuilder() {
-        
+      public common.Core.Peer.Builder getToBuilder() {
+
         onChanged();
         return getToFieldBuilder().getBuilder();
       }
@@ -9888,14 +9888,14 @@ public final class Response {
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        */
-      public common.v1.Core.PeerOrBuilder getToOrBuilder() {
+      public common.Core.PeerOrBuilder getToOrBuilder() {
         if (toBuilder_ != null) {
           return toBuilder_.getMessageOrBuilder();
         } else {
           return to_ == null ?
-              common.v1.Core.Peer.getDefaultInstance() : to_;
+              common.Core.Peer.getDefaultInstance() : to_;
         }
       }
       /**
@@ -9903,14 +9903,14 @@ public final class Response {
        * Peer that received the Complete Event
        * </pre>
        *
-       * <code>.common.v1.Peer to = 4 [json_name = "to"];</code>
+       * <code>.common.Peer to = 4 [json_name = "to"];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder> 
+          common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>
           getToFieldBuilder() {
         if (toBuilder_ == null) {
           toBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              common.v1.Core.Peer, common.v1.Core.Peer.Builder, common.v1.Core.PeerOrBuilder>(
+              common.Core.Peer, common.Core.Peer.Builder, common.Core.PeerOrBuilder>(
                   getTo(),
                   getParentForChildren(),
                   isClean());
@@ -9942,7 +9942,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setCreatedAt(long value) {
-        
+
         createdAt_ = value;
         onChanged();
         return this;
@@ -9956,7 +9956,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearCreatedAt() {
-        
+
         createdAt_ = 0L;
         onChanged();
         return this;
@@ -9985,7 +9985,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder setReceivedAt(long value) {
-        
+
         receivedAt_ = value;
         onChanged();
         return this;
@@ -9999,7 +9999,7 @@ public final class Response {
        * @return This builder for chaining.
        */
       public Builder clearReceivedAt() {
-        
+
         receivedAt_ = 0L;
         onChanged();
         return this;
@@ -10042,7 +10042,7 @@ public final class Response {
       @java.lang.Override
       public boolean containsResults(
           int key) {
-        
+
         return internalGetResults().getMap().containsKey(key);
       }
       /**
@@ -10077,7 +10077,7 @@ public final class Response {
       public boolean getResultsOrDefault(
           int key,
           boolean defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Boolean> map =
             internalGetResults().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -10093,7 +10093,7 @@ public final class Response {
 
       public boolean getResultsOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Boolean> map =
             internalGetResults().getMap();
         if (!map.containsKey(key)) {
@@ -10117,7 +10117,7 @@ public final class Response {
 
       public Builder removeResults(
           int key) {
-        
+
         internalGetMutableResults().getMutableMap()
             .remove(key);
         return this;
@@ -10140,8 +10140,8 @@ public final class Response {
       public Builder putResults(
           int key,
           boolean value) {
-        
-        
+
+
         internalGetMutableResults().getMutableMap()
             .put(key, value);
         return this;
@@ -10215,52 +10215,52 @@ public final class Response {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_ShareResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_ShareResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_DecideResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_DecideResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_SearchResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_SearchResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitDecisionResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitDecisionResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnLobbyRefreshResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnLobbyRefreshResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitInviteResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitInviteResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnMailboxMessageResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnMailboxMessageResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitProgressResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitProgressResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitCompleteResponse_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitCompleteResponse_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_node_motor_v1_OnTransmitCompleteResponse_ResultsEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_node_motor_v1_OnTransmitCompleteResponse_ResultsEntry_fieldAccessorTable;
 
@@ -10279,32 +10279,32 @@ public final class Response {
       "cideResponse\022\030\n\007success\030\001 \001(\010R\007success\022\024" +
       "\n\005error\030\002 \001(\tR\005error\"\225\001\n\016SearchResponse\022" +
       "\030\n\007success\030\001 \001(\010R\007success\022\024\n\005error\030\002 \001(\t" +
-      "R\005error\022#\n\004peer\030\003 \001(\0132\017.common.v1.PeerR\004" +
+      "R\005error\022#\n\004peer\030\003 \001(\0132\017.common.PeerR\004" +
       "peer\022\027\n\007peer_id\030\004 \001(\tR\006peerId\022\025\n\006s_name\030" +
       "\005 \001(\tR\005sName\"y\n\032OnTransmitDecisionRespon" +
       "se\022\032\n\010decision\030\001 \001(\010R\010decision\022#\n\004from\030\002" +
-      " \001(\0132\017.common.v1.PeerR\004from\022\032\n\010received\030" +
+      " \001(\0132\017.common.PeerR\004from\022\032\n\010received\030" +
       "\003 \001(\003R\010received\"m\n\026OnLobbyRefreshRespons" +
       "e\022\020\n\003olc\030\001 \001(\tR\003olc\022%\n\005peers\030\002 \003(\0132\017.com" +
       "mon.v1.PeerR\005peers\022\032\n\010received\030\003 \001(\003R\010re" +
       "ceived\"\211\001\n\030OnTransmitInviteResponse\022\032\n\010r" +
       "eceived\030\001 \001(\003R\010received\022#\n\004from\030\002 \001(\0132\017." +
-      "common.v1.PeerR\004from\022,\n\007payload\030\003 \001(\0132\022." +
-      "common.v1.PayloadR\007payload\"\277\001\n\030OnMailbox" +
+      "common.PeerR\004from\022,\n\007payload\030\003 \001(\0132\022." +
+      "common.PayloadR\007payload\"\277\001\n\030OnMailbox" +
       "MessageResponse\022\016\n\002id\030\001 \001(\tR\002id\022\026\n\006buffe" +
       "r\030\002 \001(\014R\006buffer\022&\n\004from\030\003 \001(\0132\022.common.v" +
-      "1.ProfileR\004from\022\"\n\002to\030\004 \001(\0132\022.common.v1." +
+      "1.ProfileR\004from\022\"\n\002to\030\004 \001(\0132\022.common." +
       "ProfileR\002to\022/\n\010metadata\030\005 \001(\0132\023.common.v" +
       "1.MetadataR\010metadata\"\270\001\n\032OnTransmitProgr" +
       "essResponse\022\032\n\010progress\030\001 \001(\001R\010progress\022" +
       "\032\n\010received\030\002 \001(\003R\010received\022\030\n\007current\030\003" +
       " \001(\005R\007current\022\024\n\005total\030\004 \001(\005R\005total\0222\n\td" +
-      "irection\030\005 \001(\0162\024.common.v1.DirectionR\tdi" +
+      "irection\030\005 \001(\0162\024.common.DirectionR\tdi" +
       "rection\"\222\003\n\032OnTransmitCompleteResponse\0222" +
-      "\n\tdirection\030\001 \001(\0162\024.common.v1.DirectionR" +
-      "\tdirection\022,\n\007payload\030\002 \001(\0132\022.common.v1." +
+      "\n\tdirection\030\001 \001(\0162\024.common.DirectionR" +
+      "\tdirection\022,\n\007payload\030\002 \001(\0132\022.common." +
       "PayloadR\007payload\022#\n\004from\030\003 \001(\0132\017.common." +
-      "v1.PeerR\004from\022\037\n\002to\030\004 \001(\0132\017.common.v1.Pe" +
+      "v1.PeerR\004from\022\037\n\002to\030\004 \001(\0132\017.common.Pe" +
       "erR\002to\022\035\n\ncreated_at\030\005 \001(\003R\tcreatedAt\022\037\n" +
       "\013received_at\030\006 \001(\003R\nreceivedAt\022P\n\007result" +
       "s\030\007 \003(\01326.node.motor.v1.OnTransmitComple" +
@@ -10316,8 +10316,8 @@ public final class Response {
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          common.v1.Core.getDescriptor(),
-          common.v1.Data.getDescriptor(),
+          common.Core.getDescriptor(),
+          common.Data.getDescriptor(),
         });
     internal_static_node_motor_v1_ShareResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -10379,8 +10379,8 @@ public final class Response {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_node_motor_v1_OnTransmitCompleteResponse_ResultsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    common.v1.Core.getDescriptor();
-    common.v1.Data.getDescriptor();
+    common.Core.getDescriptor();
+    common.Data.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

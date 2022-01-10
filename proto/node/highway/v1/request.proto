@@ -2,8 +2,8 @@
 syntax = "proto3";
 
 package node.highway.v1;
-import "common/v1/core.proto";
-import "common/v1/data.proto";
+import "common/core.proto";
+import "common/data.proto";
 option go_package = "github.com/sonr-io/core/types/go/node/highway/v1";
 
 // CreateChannelRequest is the request to create a new channel
@@ -65,9 +65,9 @@ message DecideExchangeRequest {
 
 // (Client) ShareRequest is request to share supplied files/urls with a peer
 message SendExchangeRequest {
-  common.v1.Peer peer = 1; // Peer to Share with
-  common.v1.MessageItem message = 2; // Message to Share
-  repeated common.v1.SupplyItem items = 3; // Supply Items to share
+  common.Peer peer = 1; // Peer to Share with
+  common.MessageItem message = 2; // Message to Share
+  repeated common.SupplyItem items = 3; // Supply Items to share
 }
 
 

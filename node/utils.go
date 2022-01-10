@@ -9,10 +9,11 @@ import (
 	"syscall"
 
 	"github.com/kataras/golog"
-	"github.com/sonr-io/core/types/go/common/v1"
 	"github.com/sonr-io/core/device"
-	"github.com/sonr-io/core/types/go/node/motor/v1"
-	"github.com/sonr-io/core/wallet"
+	"github.com/sonr-io/core/types/go/common"
+	motor "github.com/sonr-io/core/types/go/node/motor/v1"
+
+	"github.com/sonr-io/core/types/go/wallet/v1"
 	"github.com/spf13/viper"
 )
 
