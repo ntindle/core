@@ -8,7 +8,7 @@ import (
 
 	common "github.com/sonr-io/core/common"
 	"github.com/sonr-io/core/device"
-	motor "github.com/sonr-io/core/types/go/node/motor/v1"
+	motor "github.com/sonr-io/core/node/motor/v1"
 )
 
 // Error Definitions

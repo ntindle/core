@@ -2,8 +2,8 @@
 syntax = "proto3";
 
 package node.motor.v1;
-import "common/core/v1/core.proto";
-import "common/core/v1/data.proto";
+import "common/data/core.proto";
+import "common/data/data.proto";
 
 option go_package = "github.com/sonr-io/core/node/motor/v1";
 
@@ -14,13 +14,13 @@ option go_package = "github.com/sonr-io/core/node/motor/v1";
 // -----------------------------------------------------------------------------
 // (Client) InitializeRequest Message to Establish Sonr Host/API/Room
 message InitializeRequest {
-  common.core.v1.Location location = 1;     // Current Runtime Location
-  common.core.v1.Profile profile = 2;       // Users Contact Card
-  common.core.v1.Connection connection = 3; // Internet Connection Type
+  common.data.Location location = 1;     // Current Runtime Location
+  common.data.Profile profile = 2;       // Users Contact Card
+  common.data.Connection connection = 3; // Internet Connection Type
   HostOptions host_options = 4;         // Libp2p Host config
   ServiceOptions service_options = 5;   // Service Config
   DeviceOptions device_options = 6;     // File System Config
-  common.core.v1.Environment environment = 7; // Environment Config
+  common.data.Environment environment = 7; // Environment Config
   map<string,string> variables = 8;     // Domain TXT Records
   string wallet_passphrase = 9;          // Wallet Passphrase
 
@@ -65,15 +65,15 @@ message InitializeRequest {
 
 // (Client) ShareRequest is request to share supplied files/urls with a peer
 message ShareRequest {
-  common.core.v1.Peer peer = 1; // Peer to Share with
-  common.core.v1.MessageItem message = 2; // Message to Share
-  repeated common.core.v1.SupplyItem items = 3; // Supply Items to share
+  common.data.Peer peer = 1; // Peer to Share with
+  common.data.MessageItem message = 2; // Message to Share
+  repeated common.data.SupplyItem items = 3; // Supply Items to share
 }
 
 // (Client) DecideRequest is request to respond to a share request
 message DecideRequest {
   bool decision = 1;       // True if Supply is Active
-  common.core.v1.Peer peer = 2; // Peer to Share with
+  common.data.Peer peer = 2; // Peer to Share with
 }
 
 // (Client) SearchRequest is Message for Searching for Peer

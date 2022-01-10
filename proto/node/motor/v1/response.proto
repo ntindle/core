@@ -2,8 +2,8 @@
 syntax = "proto3";
 
 package node.motor.v1;
-import "common/core/v1/core.proto";
-import "common/core/v1/data.proto";
+import "common/data/core.proto";
+import "common/data/data.proto";
 
 option go_package = "github.com/sonr-io/core/node/motor/v1";
 
@@ -25,7 +25,7 @@ message DecideResponse {
 message SearchResponse {
   bool success = 1;        // Success
   string error = 2;        // Error Message
-  common.core.v1.Peer peer = 3; // Peer Data
+  common.data.Peer peer = 3; // Peer Data
   string peer_id = 4;       // Peer ID
   string s_name = 5;        // SName
 }
@@ -34,31 +34,31 @@ message SearchResponse {
 // DecisionEvent is emitted when a decision is made by Peer.
 message OnTransmitDecisionResponse {
   bool decision = 1;       // true = accept, false = reject
-  common.core.v1.Peer from = 2; // Peer that made decision
+  common.data.Peer from = 2; // Peer that made decision
   int64 received = 3;      // Timestamp
 }
 
 // Message Sent when peer messages Lobby
 message OnLobbyRefreshResponse {
   string olc = 1;                    // OLC Code of Topic
-  repeated common.core.v1.Peer peers = 2; // User Information
+  repeated common.data.Peer peers = 2; // User Information
   int64 received = 3;                // Invite received Timestamp
 }
 
 // InviteEvent notifies Peer that an Invite has been received
 message OnTransmitInviteResponse {
   int64 received = 1;            // Invite received Timestamp
-  common.core.v1.Peer from = 2;       // Peer that sent the Invite
-  common.core.v1.Payload payload = 3; // Attached Data
+  common.data.Peer from = 2;       // Peer that sent the Invite
+  common.data.Payload payload = 3; // Attached Data
 }
 
 // Received Mail Event
 message OnMailboxMessageResponse {
   string id = 1;                    // ID is the Message ID
   bytes buffer = 2;                 // Buffer is the message data
-  common.core.v1.Profile from = 3;       // Users Peer Data
-  common.core.v1.Profile to = 4;         // Receivers Peer Data
-  common.core.v1.Metadata metadata = 5;  // Metadata
+  common.data.Profile from = 3;       // Users Peer Data
+  common.data.Profile to = 4;         // Receivers Peer Data
+  common.data.Metadata metadata = 5;  // Metadata
 }
 
 // Transfer Progress Event
@@ -67,15 +67,15 @@ message OnTransmitProgressResponse {
   int64 received = 2;  // Timestamp
   int32 current = 3; // Current position of item in list
   int32 total = 4; // Total number of items in list
-  common.core.v1.Direction direction = 5; // Direction of Transfer
+  common.data.Direction direction = 5; // Direction of Transfer
 }
 
 // Message Sent after Completed Transfer
 message OnTransmitCompleteResponse {
-  common.core.v1.Direction direction = 1; // Direction of Transfer
-  common.core.v1.Payload payload = 2;     // Transfer Data
-  common.core.v1.Peer from = 3; // Peer that sent the Complete Event
-  common.core.v1.Peer to = 4;   // Peer that received the Complete Event
+  common.data.Direction direction = 1; // Direction of Transfer
+  common.data.Payload payload = 2;     // Transfer Data
+  common.data.Peer from = 3; // Peer that sent the Complete Event
+  common.data.Peer to = 4;   // Peer that received the Complete Event
   int64 created_at = 5;     // Transfer Created Timestamp
   int64 received_at = 6;    // Transfer Received Timestamp
   map<int32, bool> results = 7; // Transfer Success

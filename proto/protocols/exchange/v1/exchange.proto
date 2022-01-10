@@ -1,32 +1,32 @@
 syntax = "proto3";
 
 package protocols.exchange.v1;
-import "common/core/v1/core.proto";
-import "common/core/v1/data.proto";
+import "common/data/core.proto";
+import "common/data/data.proto";
 
 option go_package = "github.com/sonr-io/core/protocols/exchange/v1";
 
 message MailboxMessage {
   string id = 1; // ID is the Message ID
-  common.core.v1.Payload payload = 2;    // Payload is the message data
-  common.core.v1.Profile from = 3;         // Users Peer Data
-  common.core.v1.Profile to = 4;           // Receivers Peer Data
-  common.core.v1.Metadata metadata = 5; // Metadata
+  common.data.Payload payload = 2;    // Payload is the message data
+  common.data.Profile from = 3;         // Users Peer Data
+  common.data.Profile to = 4;           // Receivers Peer Data
+  common.data.Metadata metadata = 5; // Metadata
   int64 created_at = 6; // Timestamp
 }
 
 // Invitation Message sent on RPC
 message InviteRequest {
-  common.core.v1.Payload payload = 1;   // Attached Data
-  common.core.v1.Peer from = 3;         // Users Peer Data
-  common.core.v1.Peer to = 4;           // Receivers Peer Data
-  common.core.v1.Metadata metadata = 5; // Metadata
+  common.data.Payload payload = 1;   // Attached Data
+  common.data.Peer from = 3;         // Users Peer Data
+  common.data.Peer to = 4;           // Receivers Peer Data
+  common.data.Metadata metadata = 5; // Metadata
 }
 
 // Reply Message sent on RPC
 message InviteResponse {
   bool decision = 1;               // Success
-  common.core.v1.Peer from = 3;         // Users Peer Data
-  common.core.v1.Peer to = 4;           // Receivers Peer Data
-  common.core.v1.Metadata metadata = 5; // Metadata
+  common.data.Peer from = 3;         // Users Peer Data
+  common.data.Peer to = 4;           // Receivers Peer Data
+  common.data.Metadata metadata = 5; // Metadata
 }
