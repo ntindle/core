@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/kataras/golog"
-	"github.com/sonr-io/core/types/go/common"
+	common "github.com/sonr-io/core/common"
 )
 
 var (

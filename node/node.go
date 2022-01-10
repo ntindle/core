@@ -14,7 +14,7 @@ import (
 	"github.com/libp2p/go-libp2p-core/protocol"
 	"github.com/libp2p/go-libp2p-core/routing"
 	dht "github.com/libp2p/go-libp2p-kad-dht"
-	common "github.com/sonr-io/core/types/go/common"
+	common "github.com/sonr-io/core/common"
 
 	connmgr "github.com/libp2p/go-libp2p-connmgr"
 

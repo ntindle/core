@@ -9,7 +9,7 @@
 package v1
 
 import (
-	common "github.com/sonr-io/core/types/go/common"
+		common "github.com/sonr-io/core/common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

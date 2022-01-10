@@ -5,7 +5,7 @@ import (
 
 	"github.com/libp2p/go-libp2p-core/network"
 	"github.com/sonr-io/core/node"
-	"github.com/sonr-io/core/types/go/common"
+	common "github.com/sonr-io/core/common"
 	motor "github.com/sonr-io/core/types/go/node/motor/v1"
 	"github.com/sonr-io/core/types/go/protocols/transmit/v1"
 	_ "github.com/sonr-io/core/types/go/protocols/transmit/v1"

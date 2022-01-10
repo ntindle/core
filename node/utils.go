@@ -9,8 +9,8 @@ import (
 	"syscall"
 
 	"github.com/kataras/golog"
+	common "github.com/sonr-io/core/common"
 	"github.com/sonr-io/core/device"
-	"github.com/sonr-io/core/types/go/common"
 	motor "github.com/sonr-io/core/types/go/node/motor/v1"
 
 	"github.com/sonr-io/core/types/go/wallet/v1"

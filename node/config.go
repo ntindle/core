@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/sonr-io/core/types/go/common"
+	common "github.com/sonr-io/core/common"
 	"github.com/sonr-io/core/device"
 	motor "github.com/sonr-io/core/types/go/node/motor/v1"
 )

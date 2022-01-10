@@ -13,7 +13,7 @@ import (
 	"github.com/libp2p/go-msgio"
 	"github.com/sonr-io/core/device"
 	"github.com/sonr-io/core/node"
-	"github.com/sonr-io/core/types/go/common"
+	common "github.com/sonr-io/core/common"
 	motor "github.com/sonr-io/core/types/go/node/motor/v1"
 )
 

@@ -8,7 +8,7 @@ import (
 	"github.com/libp2p/go-msgio"
 	"github.com/patrickmn/go-cache"
 	"github.com/sonr-io/core/node"
-	"github.com/sonr-io/core/types/go/common"
+	"github.com/sonr-io/core/common"
 	motor "github.com/sonr-io/core/types/go/node/motor/v1"
 	"github.com/sonr-io/core/types/go/protocols/exchange/v1"
 	"google.golang.org/protobuf/proto"
