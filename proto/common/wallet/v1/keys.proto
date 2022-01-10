@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package wallet.v1;
-option go_package = "github.com/sonr-io/core/wallet";
+package common.wallet.v1;
+option go_package = "github.com/sonr-io/core/common/wallet/v1";
 
 
 // SNID is the unique identifier of a user with Sonr Protocol

@@ -1,8 +1,7 @@
 syntax = "proto3";
 
-package common;
-
-option go_package = "github.com/sonr-io/core/types/go/common";
+package common.core.v1;
+option go_package = "github.com/sonr-io/core/common/core/v1";
 
 // Internet Connection Type
 enum Connection {

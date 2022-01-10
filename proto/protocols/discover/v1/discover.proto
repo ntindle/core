@@ -1,17 +1,17 @@
 syntax = "proto3";
 
 package protocols.discover.v1;
-import "common/core.proto";
+import "common/core/v1/core.proto";
 
-option go_package = "github.com/sonr-io/core/types/go/protocols/discover/v1";
+option go_package = "github.com/sonr-io/core/protocols/discover/v1";
 
 
 
 // LobbyMessage is message passed from Peer in Lobby
 message LobbyMessage {
-  common.Peer peer = 1;     // Users Peer Data
+  common.core.v1.Peer peer = 1;     // Users Peer Data
   optional string message = 2; // Message to be published
-  common.Metadata metadata = 3; // Metadata
+  common.core.v1.Metadata metadata = 3; // Metadata
 }
 
 // VisibilityRequest is Message for updating Peer Visibility in Exchange

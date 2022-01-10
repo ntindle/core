@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package common;
+package common.core.v1;
 
-option go_package = "github.com/sonr-io/core/types/go/common";
+option go_package = "github.com/sonr-io/core/common/core/v1";
 
 message Did {
     string method = 1;

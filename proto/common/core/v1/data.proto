@@ -1,10 +1,9 @@
 syntax = "proto3";
 
-package common;
-import "common/core.proto";
+package common.core.v1;
+import "common/core/v1/core.proto";
 
-
-option go_package = "github.com/sonr-io/core/types/go/common";
+option go_package = "github.com/sonr-io/core/common/core/v1";
 
 enum Direction {
   DIRECTION_UNSPECIFIED = 0;
@@ -14,7 +13,7 @@ enum Direction {
 
 // For Transfer File Payload
 message FileItem {
-  common.MIME mime = 1; // Standard Mime Type
+  common.core.v1.MIME mime = 1; // Standard Mime Type
   string name = 2;         // File Name without Path
   string path = 3;         // File Location
   int64 size = 4;          // File Size in Bytes
@@ -24,7 +23,7 @@ message FileItem {
 
 // For Transfer Text Payload
 message MessageItem {
-  common.MIME mime = 1;           // Standard Mime Type
+  common.core.v1.MIME mime = 1;           // Standard Mime Type
   string subject = 2;                // Subject of Message
   string body = 3;                   // Body of Message
   int64 created_at = 4;               // Created Time in Seconds
@@ -33,7 +32,7 @@ message MessageItem {
 
 // Sonr Url Link Contains metadata of provided URL
 message UrlItem {
-  common.MIME mime = 1; // Standard Mime Type
+  common.core.v1.MIME mime = 1; // Standard Mime Type
   string link = 2;         // OG URL Link
   string title = 3;        // Meta Field for Title
   string site = 4;         // Meta field for site

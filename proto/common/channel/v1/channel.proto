@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package channel.v1;
-option go_package = "github.com/sonr-io/core/channel";
+package common.channel.v1;
+option go_package = "github.com/sonr-io/core/common/channel/v1";
 
 enum EventType {
     EVENT_TYPE_UNSPECIFIED = 0;
